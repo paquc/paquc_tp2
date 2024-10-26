@@ -1,0 +1,478 @@
+EventId,EventTemplate,Occurrences
+E0,"('instruction', 'cache', 'parity', 'error', 'corrected')",105924
+E1,"('machine', 'check', 'status', 'register:', '<*>')",246
+E2,"('critical', 'input', 'interrupt', 'enable..', '<*>')",6559
+E3,"('external', 'input', 'interrupt', 'enable..', '<*>')",6556
+E4,"('guaranteed', 'instruction', 'cache', 'block', '<*>')",2390
+E5,"('rts', 'panic!', '-', 'stopping', 'execution')",3983
+E6,"('<*>', 'global', 'control', 'register:', '<*>')",48
+E7,"('<*>', 'ecc', '<*>', 'register:', '<*>')",95
+E8,"('DDR', 'failing', 'info', 'register:', '<*>')",18
+E9,"('program', 'interrupt:', 'privileged', 'instruction..', '<*>')",9824
+E10,"('program', 'interrupt:', 'unimplemented', 'operation..', '<*>')",8102
+E11,"('<*>', 'floating', 'point', 'alignment', 'exceptions')",267725
+E12,"('MidplaneSwitchController::sendTrain(', ')', 'port', 'disconnected:', '<*>')",24
+E13,"('<*>', 'is', 'not', 'fully', 'functional')",308
+E14,"('parity', 'error..', '..', '..', '<*>')",1
+E15,"('Torus', 'non-recoverable', 'error', 'DCRs', 'follow.')",10
+E16,"('Error:', 'unable', 'to', 'mount', 'filesystem')",720
+E17,"('idoproxy', 'communication', 'failure:', 'socket', 'closed')",41
+E18,"('Machine', 'Check', 'Status', 'Register:', '<*>')",56
+E19,"('Core', 'Configuration', 'Register', '<*>', '<*>')",69
+E20,"('fpr0=', '<*>', '<*>', '<*>', '<*>')",49
+E21,"('fpr1=', '<*>', '<*>', '<*>', '<*>')",47
+E22,"('fpr2=', '<*>', '<*>', '<*>', '<*>')",43
+E23,"('fpr3=', '<*>', '<*>', '<*>', '<*>')",47
+E24,"('fpr4=', '<*>', '<*>', '<*>', '<*>')",47
+E25,"('fpr5=', '<*>', '<*>', '<*>', '<*>')",33
+E26,"('fpr6=', '<*>', '<*>', '<*>', '<*>')",40
+E27,"('fpr7=', '<*>', '<*>', '<*>', '<*>')",42
+E28,"('fpr8=', '<*>', '<*>', '<*>', '<*>')",33
+E29,"('fpr9=', '<*>', '<*>', '<*>', '<*>')",41
+E30,"('<*>', '<*>', '<*>', '<*>', '<*>')",1504
+E31,"('<*>', '<*>', '<*>', 'a7aba2ea', '<*>')",1
+E32,"('<*>', '0xfffffef0', '<*>', '<*>', '<*>')",1
+E33,"('<*>', '0xfcffd0ad', '<*>', '<*>', '<*>')",1
+E34,"('<*>', '<*>', '<*>', '<*>', 'fffffffc')",1
+E35,"('<*>', '<*>', '<*>', '<*>', '3fc7afbd')",1
+E36,"('<*>', '<*>', '<*>', 'ae4ee1be', 'bfaf15cf')",1
+E37,"('<*>', '<*>', '<*>', 'f4afcb3f', '<*>')",1
+E38,"('<*>', '<*>', '<*>', '<*>', 'bfc0e6fa')",1
+E39,"('<*>', '<*>', '<*>', '<*>', '3fdcc0ca')",1
+E40,"('<*>', '<*>', 'bfe0bbc0', '<*>', '<*>')",1
+E41,"('<*>', '<*>', 'bfdab5ea', '<*>', '<*>')",1
+E42,"('<*>', '<*>', 'bfed0fde', '<*>', '<*>')",1
+E43,"('<*>', '<*>', '<*>', '<*>', 'bffee1ae')",1
+E44,"('<*>', '<*>', '<*>', '<*>', '3ff8ddaf')",1
+E45,"('<*>', '<*>', '<*>', '<*>', 'bffcbf8a')",1
+E46,"('<*>', '<*>', 'bff2dec1', '<*>', '<*>')",1
+E47,"('<*>', '<*>', 'bfbaf6fe', '<*>', '<*>')",1
+E48,"('<*>', '0xc8cdfbab', '<*>', '<*>', '<*>')",1
+E49,"('<*>', '<*>', 'bff6fdf9', '<*>', 'bffc2f3a')",1
+E50,"('<*>', '<*>', '<*>', 'ee00caaa', '<*>')",1
+E51,"('<*>', '<*>', '<*>', '<*>', 'bfeb7b2e')",1
+E52,"('<*>', '<*>', 'bfe3cfc7', '<*>', '<*>')",1
+E53,"('<*>', '<*>', 'bdecab74', '<*>', '3df3ddff')",1
+E54,"('<*>', '<*>', '<*>', '<*>', 'be3ba3ec')",1
+E55,"('<*>', '<*>', '<*>', 'd6dbe0ae', '<*>')",1
+E56,"('<*>', '<*>', '<*>', '<*>', '3fdffffe')",1
+E57,"('<*>', '<*>', 'bfcbd0a0', '<*>', '<*>')",1
+E58,"('<*>', '<*>', '<*>', '<*>', '3f2dfdac')",1
+E59,"('<*>', '<*>', '<*>', '<*>', '3fefcf0c')",1
+E60,"('<*>', '<*>', 'bffac6de', '<*>', '<*>')",1
+E61,"('<*>', '<*>', 'bffcf2e2', '<*>', '<*>')",1
+E62,"('<*>', '0xffffffff', 'ffffffff', '<*>', '<*>')",185
+E63,"('<*>', '<*>', '3fefab3a', '<*>', '<*>')",1
+E64,"('<*>', '<*>', 'bfed5eb3', '<*>', '<*>')",1
+E65,"('<*>', '<*>', 'c04bbccf', '<*>', '<*>')",1
+E66,"('<*>', '0xffffffff', '<*>', '<*>', '<*>')",8
+E67,"('<*>', '<*>', 'b8cac5bd', '<*>', '<*>')",1
+E68,"('<*>', '<*>', 'bc45cceb', '<*>', '<*>')",1
+E69,"('<*>', '0xfffffebc', '<*>', '<*>', '<*>')",1
+E70,"('<*>', '<*>', 'bccac03e', '<*>', '<*>')",1
+E71,"('<*>', '<*>', 'bfdc2b6a', '<*>', '<*>')",1
+E72,"('<*>', '0xe3efcbad', '<*>', '<*>', '<*>')",1
+E73,"('<*>', '<*>', '<*>', '<*>', 'bfe83feb')",2
+E74,"('<*>', '<*>', '<*>', '<*>', '3fdd0fef')",1
+E75,"('<*>', '<*>', '<*>', '7f7fffff', '7f7fffff')",2
+E76,"('<*>', '0xffffffff', 'ffffffff', '<*>', '3feff9db')",9
+E77,"('MidplaneSwitchController::clearPort(', '<*>', 'bll_clear_port', '<*>', '<*>')",2
+E78,"('ddr:', 'Suppressing', 'further', 'CE', 'interrupts')",302
+E79,"('<*>', '<*>', '<*>', 'fffffe7a', '<*>')",1
+E80,"('<*>', '<*>', '3f4fffff', 'fffffe7a', '3f4fffff')",2
+E81,"('MidplaneSwitchController', 'performing', 'bit', 'sparing', 'on', '<*>', 'bit', '<*>')",964
+E82,"('ddr:', 'excessive', 'soft', 'failures,', 'consider', 'replacing', 'the', 'card')",41
+E83,"('d-cache', 'flush', 'parity', 'error..', '..', '..', '..', '<*>')",294
+E84,"('imprecise', 'machine', 'check..', '..', '..', '..', '..', '<*>')",289
+E85,"('disable', 'apu', 'instruction', 'broadcast..', '..', '..', '..', '<*>')",2396
+E86,"('disable', 'all', 'access', 'to', 'cache', 'directory..', '..', '<*>')",48
+E87,"('uncorrectable', 'error', 'detected', 'in', 'directory', '<*>', '..', '<*>')",94
+E88,"('uncorrectable', 'error', 'detected', 'in', 'EDRAM', 'bank', '<*>', '<*>')",94
+E89,"('memory', 'manager', '/', 'command', 'manager', 'address', 'parity..', '<*>')",47
+E90,"('qw', 'trapped..', '..', '..', '..', '..', '..', '<*>')",47
+E91,"('Can', 'not', 'get', 'assembly', 'information', 'for', 'node', 'card')",17305
+E92,"('ciod:', 'sendMsgToDebugger:', 'error', 'sending', 'PROGRAM_EXITED', 'message', 'to', 'debugger.')",3
+E93,"('program', 'interrupt:', 'trap', 'instruction..', '..', '..', '..', '<*>')",9824
+E94,"('NodeCard', 'temperature', 'sensor', 'chip', '<*>', 'is', 'not', 'accessible')",5
+E95,"('MidplaneSwitchController::parityAlignment(', ')', 'pap', 'failed:', '<*>', 'status=', '<*>', '<*>')",12
+E96,"('mmcs_server', 'exited', 'abnormally', 'due', 'to', 'signal:', 'Segmentation', 'fault')",3
+E97,"('While', 'inserting', 'monitor', 'info', 'into', 'DB', 'caught', 'java.lang.NullPointerException')",2
+E98,"('Added', '<*>', 'subnets', 'and', '<*>', 'addresses', 'to', 'DB')",1
+E99,"('MidplaneSwitchController::receiveTrain(', ')', 'iap', 'failed:', '<*>', 'status=', '<*>', '<*>')",166
+E100,"('ciod:', 'generated', '<*>', 'core', 'files', 'for', 'program', '<*>')",62456
+E101,"('Lustre', 'mount', 'FAILED', ':', '<*>', ':', 'point', '<*>')",26426
+E102,"('EndServiceAction', '<*>', 'was', 'performed', 'upon', '<*>', 'by', '<*>')",4
+E103,"('MidplaneSwitchController::parityAlignment(', ')', 'pap', 'failed:', '<*>', 'status=', 'ff7ffffc', '<*>')",2
+E104,"('<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",479
+E105,"('<*>', '<*>', '<*>', '0x1eeeeeee', '<*>', '<*>', '<*>', '<*>')",68
+E106,"('lr=', '<*>', 'cr=', '<*>', 'xer=', '<*>', 'ctr=', '<*>')",68
+E107,"('msr=', '<*>', 'dear=', '<*>', 'esr=', '<*>', 'fpscr=', '<*>')",68
+E108,"('invalid', 'operation', 'exception', '(', 'int', 'cnvt)', '..', '<*>')",68
+E109,"('generating', '<*>')",1706751
+E110,"('<*>', '<*>')",141
+E111,"('Starting', 'SystemController')",71
+E112,"('program', 'interrupt')",3667
+E113,"('shutdown', 'complete')",99
+E114,"('max=', '<*>')",130
+E115,"('ax=', '<*>')",13
+E116,"('x=', '<*>')",2
+E117,"('Microloader', 'Assertion')",1504
+E118,"('kernel', 'panic')",18
+E119,"('<*>', 'ddr', 'errors(', 's)', 'detected', 'and', 'corrected', 'on', 'rank', '<*>', 'symbol', '<*>', 'bit', '<*>')",33939
+E120,"('ciod:', 'Error', 'loading', '<*>', 'invalid', 'or', 'missing', 'program', 'image,', 'No', 'such', 'file', 'or', 'directory')",46384
+E121,"('ciod:', 'failed', 'to', 'read', 'message', 'prefix', 'on', 'control', 'stream', '(', 'CioStream', 'socket', 'to', '<*>')",5983
+E122,"('summary..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",244
+E123,"('tlb', 'error..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",296
+E124,"('<*>', 'torus', 'receiver', '<*>', 'input', 'pipe', 'error(', 's)', '(', 'dcr', '<*>', 'detected', 'and', 'corrected')",10487
+E125,"('start', 'prefetching..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",48
+E126,"('parity', 'error', 'in', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",94
+E127,"('command', 'manager', 'unit', 'summary..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E128,"('memory', 'manager', 'address', 'error..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E129,"('EndServiceAction', 'is', 'restarting', 'the', '<*>', 'in', 'midplane', '<*>', 'as', 'part', 'of', 'Service', 'Action', '<*>')",537
+E130,"('machine', 'check:', 'i-fetch..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",18017
+E131,"('auxiliary', 'processor..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",8419
+E132,"('critical', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', 'warning', 'for', '<*>', '<*>', 'wire')",7682
+E133,"('New', 'ido', 'chip', 'inserted', 'into', 'the', 'database:', '<*>', 'ip=', '<*>', 'v=', '<*>', 't=', '<*>')",3455
+E134,"('ciod:', 'Error', 'opening', 'node', 'map', 'file', '<*>', '/..', '<*>', 'No', 'such', 'file', 'or', 'directory')",128
+E135,"('DeclareServiceNetworkCharacteristics', 'has', 'been', 'run', 'with', 'the', 'force', 'option', 'but', 'the', 'DB', 'is', 'not', 'empty')",1
+E136,"('mmcs_db_server', 'has', 'been', 'started:', './mmcs_db_server', '--useDatabase', 'BGL', '--dbproperties', 'serverdb.properties', '--iolog', '/bgl/BlueLight/logs/BGL', '--reconnect-blocks', 'all', '--no-reconnect-blocks')",2
+E137,"('rts', 'assertion', 'failed:', '`personality->version', '=', '=', ""BGLPERSONALITY_VERSION'"", 'in', '`void', 'start(', ')', ""'"", 'at', '<*>')",2
+E138,"('<*>', 'DCACHE', 'summary', 'averages:', '#ofDirtyLines:', '<*>', 'out', 'of', '<*>', '#ofDirtyDblWord:', '<*>', 'out', 'of', '<*>')",3149
+E139,"('<*>', '<*>', '<*>', 'error(', 's)', '(', 'dcr', '<*>', 'detected', 'and', 'corrected', 'over', '<*>', 'seconds')",1515
+E140,"('exception', 'summary..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E141,"('inexact', 'exception..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E142,"('fraction', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",136
+E143,"('ciod:', 'Error', 'reading', 'message', 'prefix', 'on', 'CioStream', 'socket', 'to', '<*>', 'Link', 'has', 'been', 'severed')",26546
+E144,"('ciod:', 'Error', 'reading', 'message', 'prefix', 'on', 'CioStream', 'socket', 'to', '<*>', 'Connection', 'reset', 'by', 'peer')",2256
+E145,"('monitor', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.net.SocketException:', 'Broken', 'pipe', 'and', 'is', 'stopping')",190
+E146,"('machine', 'check', 'interrupt', '(', 'bit=', '<*>', ':', '<*>', 'dcache', 'unit', '<*>', '<*>', 'parity', 'error')",23
+E147,"('<*>', '<*>', '<*>', 'error(', 's)', '(', 'dcr', '<*>', 'detected', 'and', 'corrected')",5040
+E148,"('data', '<*>', 'plb', 'error..', '..', '..', '..', '..', '..', '..', '<*>')",593
+E149,"('wait', 'state', 'enable..', '..', '..', '..', '..', '..', '..', '..', '<*>')",6745
+E150,"('problem', 'state', '(', '<*>', 'sup,', '<*>', 'usr)', '..', '..', '..', '<*>')",6546
+E151,"('debug', 'wait', 'enable..', '..', '..', '..', '..', '..', '..', '..', '<*>')",6524
+E152,"('data', 'address', 'space..', '..', '..', '..', '..', '..', '..', '..', '<*>')",6503
+E153,"('icache', 'prefetch', 'threshold..', '..', '..', '..', '..', '..', '..', '..', '<*>')",2388
+E154,"('ciod:', 'for', 'node', '<*>', 'read', 'continuation', 'request', 'but', 'ioState', 'is', '<*>')",395
+E155,"('machine', 'check', 'interrupt', '(', 'bit=', '<*>', ':', '<*>', 'major', 'internal', 'error')",57
+E156,"('prefetch', 'depth', 'for', 'PLB', 'slave..', '..', '..', '..', '..', '..', '<*>')",48
+E157,"('number', 'of', 'lines', 'with', 'parity', 'errors', 'written', 'to', '<*>', 'EDRAMs..', '<*>')",47
+E158,"('memory', 'manager', 'uncorrectable', 'error..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E159,"('machine', 'check', 'interrupt', '(', 'bit=', '<*>', ':', '<*>', 'DCU', 'read', 'error')",3
+E160,"('<*>', 'correctable', 'errors', 'exceeds', 'threshold', '(', 'iar', '<*>', 'lr', '<*>', '')",26
+E161,"('program', 'interrupt:', 'fp', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",16204
+E162,"('BGLMaster', 'has', 'been', 'started:', './BGLMaster', '--consoleip', '<*>', '--consoleport', '<*>', '--configfile', 'bglmaster.init')",6
+E163,"('ciod:', 'Unexpected', 'eof', 'at', 'line', '<*>', 'of', 'node', 'map', 'file', '<*>')",328
+E164,"('ciod:', 'Error', 'creating', 'node', 'map', 'from', '<*>', '<*>', '<*>', '<*>', '<*>')",5080
+E165,"('ciod:', 'Error', 'loading', '<*>', 'program', 'image', 'too', 'big,', '<*>', '>', '<*>')",1512
+E166,"('While', 'initializing', 'node', 'card,', 'ido', 'with', 'LP', 'of', '<*>', 'caught', 'java.lang.NullPointerException')",1
+E167,"('machine', 'check', 'interrupt', '(', 'bit=', '<*>', ':', 'Torus/Tree/GI', 'read', 'error', '<*>')",2
+E168,"('PrepareForService', 'is', 'being', 'done', 'on', 'this', 'rack', '(', '<*>', 'by', '<*>')",30
+E169,"('monitor', 'caught', 'java.lang.UnsupportedOperationException:', 'power', 'module', '<*>', 'not', 'present', 'and', 'is', 'stopping')",2
+E170,"('Found', 'invalid', 'node', 'ecid', 'in', 'processor', 'card', 'slot', '<*>', 'ecid', '<*>')",5558
+E171,"('ciod:', 'Error', 'loading', '<*>', 'invalid', 'or', 'missing', 'program', 'image,', 'Permission', 'denied')",43040
+E172,"('enabled', 'exception', 'summary..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E173,"('minus', 'denormalized', 'number..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E174,"('plus', 'denormalized', 'number..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E175,"('enable', 'inexact', 'exceptions..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E176,"('Power', 'Good', 'signal', 'deactivated:', '<*>', 'A', 'service', 'action', 'may', 'be', 'required.')",94
+E177,"('ciod:', 'for', 'node', '<*>', 'incomplete', 'data', 'written', 'to', 'core', 'file', '<*>')",38
+E178,"('CE', 'sym', '<*>', 'at', '<*>', 'mask', '<*>')",201206
+E179,"('d-cache', 'search', 'parity', 'error..', '..', '..', '<*>')",294
+E180,"('instruction', 'address', 'space..', '..', '..', '..', '<*>')",6506
+E181,"('ciod:', 'LOGIN', 'chdir(', '<*>', 'failed:', 'Permission', 'denied')",440
+E182,"('max', 'number', 'of', 'outstanding', 'prefetches..', '..', '<*>')",48
+E183,"('capture', 'first', '<*>', '<*>', 'error', 'address..', '<*>')",283
+E184,"('<*>', '<*>', '<*>', '<*>', 'external', 'DDR..', '<*>')",47
+E185,"('<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",47
+E186,"('miscompare..', '..', '..', '..', '..', '..', '<*>')",47
+E187,"('EndServiceAction', '<*>', 'performed', 'upon', '<*>', 'by', '<*>')",233
+E188,"('program', 'interrupt:', 'illegal', 'instruction..', '..', '..', '<*>')",13920
+E189,"('program', 'interrupt:', 'imprecise', 'exception..', '..', '..', '<*>')",8102
+E190,"('SerialNumber(', '<*>', 'IpAddress(', '<*>', 'Status(', 'A)', '')",64
+E191,"('<*>', 'power', 'module', '<*>', 'is', 'not', 'accessible')",549
+E192,"('Target=', '<*>', 'Message=', 'Pll', 'failed', 'to', 'lock')",3
+E193,"('Target=', '<*>', 'Message=', 'Invalid', 'JtagId', '=', 'ffffffff')",63
+E194,"('<*>', 'exited', 'normally', 'with', 'exit', 'code', '<*>')",12
+E195,"('e', 'error', 'threshold,', 'consider', 'replacing', 'the', 'card')",1
+E196,"('this', 'link', 'card', 'is', 'not', 'fully', 'functional')",22
+E197,"('<*>', 'exited', 'abnormally', 'due', 'to', 'signal:', 'Aborted')",34
+E198,"('ciod:', 'LOGIN', 'open(', '/bgl/apps/scaletest/performance/linpack-64x512/)', 'failed:', 'Permission', 'denied')",32
+E199,"('ddr:', 'redundant', 'bit', 'steering', 'failed,', 'sequencer', 'timeout')",1
+E200,"('<*>', 'PGOOD', 'error', 'latched', 'on', 'link', 'card')",353
+E201,"('Floating', 'Point', 'Status', 'and', 'Control', 'Register:', '<*>')",68
+E202,"('invalid', 'operation', 'exception', '<*>', '<*>', '<*>', '<*>')",136
+E203,"('enable', 'invalid', 'operation', 'exceptions..', '..', '..', '<*>')",68
+E204,"('enable', 'divide-by-zero', 'exceptions..', '..', '..', '..', '<*>')",68
+E205,"('ciod:', 'LOGIN', 'chdir(', '<*>', 'failed:', 'Input/output', 'error')",816
+E206,"('total', 'of', '<*>', 'ddr', 'error(', 's)', 'detected', 'and', 'corrected')",28485
+E207,"('ddr:', 'activating', 'redundant', 'bit', 'steering:', 'rank=', '<*>', 'symbol=', '<*>')",1314
+E208,"('instruction', 'plb', 'error..', '..', '..', '..', '..', '..', '<*>')",298
+E209,"('floating', 'pt', 'ex', 'mode', '<*>', 'enable..', '..', '..', '<*>')",13044
+E210,"('debug', 'interrupt', 'enable..', '..', '..', '..', '..', '..', '<*>')",6521
+E211,"('guaranteed', 'data', 'cache', 'block', 'touch..', '..', '..', '..', '<*>')",2389
+E212,"('ciod:', 'Message', 'code', '<*>', 'is', 'not', '<*>', 'or', '<*>')",2278
+E213,"('close', 'EDRAM', 'pages', 'as', 'soon', 'as', 'possible..', '..', '<*>')",48
+E214,"('disable', 'flagging', 'of', 'DDR', ""UE's"", 'as', 'major', 'internal', '<*>')",47
+E215,"('correctable', 'error', 'detected', 'in', 'directory', '<*>', '..', '..', '<*>')",94
+E216,"('correctable', 'error', 'detected', 'in', 'EDRAM', 'bank', '<*>', '..', '<*>')",94
+E217,"('number', 'of', 'correctable', 'errors', 'detected', 'in', '<*>', 'directories..', '<*>')",47
+E218,"('symbol..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E219,"('Controlling', 'BG/L', 'rows', '[', '<*>', '<*>', '<*>', '<*>', ']')",20
+E220,"('MailboxMonitor::serviceMailboxes(', ')', 'lib_ido_error:', '<*>', 'unexpected', 'socket', 'error:', 'Broken', 'pipe')",1
+E221,"('Lustre', 'mount', 'FAILED', ':', '<*>', ':', 'block_id', ':', 'location')",5105
+E222,"('data', 'cache', '<*>', 'parity', 'error', 'detected.', 'attempting', 'to', 'correct')",14006
+E223,"('ddrSize', '=', '=', '<*>', '||', 'ddrSize', '=', '=', '<*>')",1
+E224,"('No', 'power', 'module', '<*>', 'found', 'found', 'on', 'link', 'card')",6
+E225,"('ciod:', 'generated', '<*>', 'core', 'files', 'for', 'program', '..', '<*>')",28
+E226,"('machine', 'check', 'summary..', '..', '..', '..', '..', '..', '<*>')",56
+E227,"('DDR', 'failing', 'info', 'register:', 'DDR', 'Fail', 'Info', 'Register:', '<*>')",29
+E228,"('invalid', 'operation', 'exception', '(', 'sqrt)', '..', '..', '..', '<*>')",68
+E229,"('Hardware', 'monitor', 'caught', 'java.net.SocketException:', 'Broken', 'pipe', 'and', 'is', 'stopping')",77
+E230,"('idoproxy', 'communication', 'failure:', 'BGLERR_IDO_PKT_TIMEOUT', 'connection', 'lost', 'to', 'node/link/service', 'card')",2
+E231,"('ciod:', 'Error', 'loading', '/p/gb1/light3/sppm_chkpt/sppm:', 'not', 'a', 'CNK', 'program', 'image')",1024
+E232,"('<*>', 'double-hummer', 'alignment', 'exceptions')",295764
+E233,"('ciodb', 'has', 'been', 'restarted.')",129
+E234,"('data', 'TLB', 'error', 'interrupt')",152734
+E235,"('machine', 'state', 'register:', '<*>')",8454
+E236,"('core', 'configuration', 'register:', '<*>')",6431
+E237,"('<*>', '<*>', '<*>', '<*>')",20841
+E238,"('4:ffffffe0', '<*>', '<*>', '<*>')",6
+E239,"('0:afffffff', '<*>', '<*>', '<*>')",1
+E240,"('20:fffffff4', '<*>', '<*>', '<*>')",2
+E241,"('20:ffffffff', '<*>', '<*>', '<*>')",2
+E242,"('8:ffffffc0', '<*>', '<*>', '<*>')",2
+E243,"('12:fffffefa', '<*>', '<*>', '<*>')",1
+E244,"('address', 'parity', 'error..', '<*>')",47
+E245,"('correctable', 'error..', '..', '<*>')",47
+E246,"('<*>', '<*>', 'internal', 'error')",3
+E247,"('Running', 'as', 'background', 'command')",70
+E248,"('exception', 'syndrome', 'register:', '<*>')",18013
+E249,"('NodeCard', 'VPD', 'is', 'corrupt')",10
+E250,"('Target=', '<*>', 'Message=', 'ScomError')",3
+E251,"('DCR', '<*>', ':', '<*>')",130
+E252,"('20:ffffffe0', '<*>', '<*>', '<*>')",2
+E253,"('iar', '<*>', 'dear', '<*>')",442966
+E254,"('floating', 'point', 'unavailable', 'interrupt')",3
+E255,"('Machine', 'State', 'Register:', '<*>')",69
+E256,"('Exception', 'Syndrome', 'Register:', '<*>')",4
+E257,"('instruction', 'TLB', 'error', 'interrupt')",1
+E258,"('<*>', 'tree', 'receiver', '<*>', 'in', 're-synch', 'state', 'event(', 's)', '(', 'dcr', '<*>', 'detected')",7847
+E259,"('idoproxydb', 'has', 'been', 'started:', '$Name:', '<*>', '$', 'Input', 'parameters:', '-enableflush', '-loguserinfo', 'db.properties', '<*>')",114
+E260,"('mmcs_db_server', 'has', 'been', 'started:', '<*>', '--useDatabase', 'BGL', '--dbproperties', '<*>', '--iolog', '/bgl/BlueLight/logs/BGL', '--reconnect-blocks', 'all')",63
+E261,"('icache', 'prefetch', 'depth..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",2389
+E262,"('machine', 'check', 'interrupt', '(', 'bit=', '<*>', ':', '<*>', 'dcache', 'unit', 'data', 'parity', 'error')",49
+E263,"('size', 'of', 'scratchpad', 'portion', 'of', 'L3..', '..', '..', '..', '<*>', '(', '<*>', '')",48
+E264,"('prefetch', 'depth', 'for', 'core', '<*>', '..', '..', '..', '..', '..', '..', '..', '<*>')",96
+E265,"('disable', 'write', 'lines', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",48
+E266,"('memory', 'manager', 'RMW', 'buffer', 'parity..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E267,"('<*>', 'torus', '<*>', '<*>', '<*>', 'error(', 's)', '(', 'dcr', '<*>', 'detected', 'and', 'corrected')",1217
+E268,"('floating', 'point', 'operation..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",9824
+E269,"('byte', 'ordering', 'exception..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",8102
+E270,"('BglIdoChip', 'table', 'has', '<*>', 'IDOs', 'with', 'the', 'same', 'IP', 'address', '(', '<*>', '')",9
+E271,"('ciod:', 'Missing', 'or', 'invalid', 'fields', 'on', 'line', '<*>', 'of', 'node', 'map', 'file', '<*>')",2048
+E272,"('ciod:', 'Error', 'opening', 'node', 'map', 'file', '<*>', '<*>', 'No', 'such', 'file', 'or', 'directory')",256
+E273,"('ciod:', 'Error', 'creating', 'node', 'map', 'from', 'file', '<*>', '/..', '<*>', 'Bad', 'file', 'descriptor')",128
+E274,"('Controlling', 'BG/L', 'rows', '[', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', ']')",50
+E275,"('BGLMaster', 'has', 'been', 'started:', './BGLMaster', '--consoleip', '<*>', '--consoleport', '<*>', '--configfile', 'bglmaster.init', '--autorestart', 'y')",59
+E276,"('Error', 'sending', 'packet', 'on', 'tree', 'network,', 'packet', 'at', 'address', '<*>', 'is', 'not', 'aligned')",5
+E277,"('overflow', 'exception..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E278,"('underflow', 'exception..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E279,"('enable', 'non-IEEE', 'mode..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E280,"('While', 'reading', 'FanModule', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.net.SocketException:', 'Broken', 'pipe')",8
+E281,"('MACHINE', 'CHECK', '<*>', '<*>', '<*>', '(', 'mc=', '<*>', 'iar', '<*>', 'lr', '<*>', '')",14482
+E282,"('ciod:', 'Error', 'reading', 'message', 'prefix', 'on', 'CioStream', 'socket', 'to', '<*>', 'Connection', 'timed', 'out')",1991
+E283,"('ciod:', 'Error', 'creating', 'node', 'map', 'from', 'file', 'my_map.txt:', 'No', 'such', 'file', 'or', 'directory')",24
+E284,"('ciod:', 'LOGIN', 'chdir(', '<*>', 'failed:', 'No', 'such', 'file', 'or', 'directory')",43647
+E285,"('i-cache', 'parity', 'error..', '..', '..', '..', '..', '..', '..', '<*>')",296
+E286,"('machine', 'check', 'enable..', '..', '..', '..', '..', '..', '..', '<*>')",6538
+E287,"('force', 'load/store', 'alignment..', '..', '..', '..', '..', '..', '..', '<*>')",2389
+E288,"('ciod:', 'cpu', '<*>', 'at', 'treeaddr', '<*>', 'sent', 'unrecognized', 'message', '0xffffffff')",2569
+E289,"('disable', 'speculative', 'access..', '..', '..', '..', '..', '..', '..', '<*>')",48
+E290,"('write', 'buffer', 'commit', 'threshold..', '..', '..', '..', '..', '..', '<*>')",48
+E291,"('memory', 'manager', 'refresh', 'counter', 'timeout..', '..', '..', '..', '..', '<*>')",47
+E292,"('mask..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E293,"('data', 'store', 'interrupt', 'caused', 'by', '<*>', '..', '..', '..', '<*>')",19646
+E294,"('ciod:', 'Error', 'creating', 'node', 'map', 'from', 'file', '<*>', '<*>', '<*>')",2328
+E295,"('MailboxMonitor::serviceMailboxes(', ')', 'lib_ido_error:', '<*>', 'BGLERR_IDO_PKT_TIMEOUT', 'connection', 'lost', 'to', 'node/link/service', 'card')",14
+E296,"('DeclareServiceNetworkCharacteristics', 'has', 'been', 'run', 'but', 'the', 'DB', 'is', 'not', 'empty')",1
+E297,"('divide-by-zero', 'exception..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E298,"('enable', '<*>', 'exceptions..', '..', '..', '..', '..', '..', '..', '<*>')",136
+E299,"('ciod:', 'Received', 'signal', '<*>', 'code=', '<*>', 'errno=', '<*>', 'address=', '<*>')",39457
+E300,"('instruction', 'address:', '<*>')",51227
+E301,"('machine', '<*>', '<*>')",162
+E302,"('<*>', 'purpose', 'registers:')",4634
+E303,"('data', '<*>', '<*>')",77992
+E304,"('rts', 'internal', 'error')",2187
+E305,"('interrupt', 'threshold..', '<*>')",94
+E306,"('uncorrectable', 'error..', '<*>')",47
+E307,"('no', 'ethernet', 'link')",14
+E308,"('Power', 'deactivated:', '<*>')",192
+E309,"('<*>', 'max=', '<*>')",103
+E310,"(',', 'max=', '<*>')",13
+E311,"('Ido', 'packet', 'timeout')",4276
+E312,"('General', 'Purpose', 'Registers:')",69
+E313,"('Special', 'Purpose', 'Registers:')",68
+E314,"('Floating', 'Point', 'Registers:')",68
+E315,"('floating', 'point', 'instr.', 'enabled..', '..', '<*>')",6541
+E316,"('ciod:', 'pollControlDescriptors:', 'Detected', 'the', 'debugger', 'died.')",6443
+E317,"('DDR', 'machine', 'check', 'register:', '<*>', '<*>')",47
+E318,"('capture', 'valid..', '..', '..', '..', '<*>')",47
+E319,"('DDR', 'failing', 'data', 'registers:', '<*>', '<*>')",47
+E320,"('DDR', 'failing', 'address', 'register:', '<*>', '<*>')",47
+E321,"('Node', 'card', 'is', 'not', 'fully', 'functional')",17364
+E322,"('suppressing', 'further', 'interrupts', 'of', 'same', 'type')",7694
+E323,"('<*>', 'threshold,', 'consider', 'replacing', 'the', 'card')",45
+E324,"('job', '<*>', 'timed', 'out.', 'Block', 'freed.')",306
+E325,"('NodeCard', 'VPD', 'chip', 'is', 'not', 'accessible')",1
+E326,"('MailboxMonitor::serviceMailboxes(', ')', 'lib_ido_error:', '<*>', 'socket', 'closed')",168
+E327,"('rts:', 'kernel', 'terminated', 'for', 'reason', '<*>')",18587
+E328,"('Temperature', 'Over', 'Limit', 'on', 'link', 'card')",972
+E329,"('dbcr0=', '<*>', 'dbsr=', '<*>', 'ccr0=', '<*>')",68
+E330,"('disable', 'store', 'gathering..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",6495
+E331,"('disable', 'trace', 'broadcast..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",2393
+E332,"('start', 'initialization..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",48
+E333,"('turn', 'on', 'hidden', 'refreshes..', '..', '..', '..', '..', '..', '..', '..', '<*>')",48
+E334,"('number', 'of', 'correctable', 'errors', 'detected', 'in', '<*>', 'EDRAMs..', '..', '..', '..', '<*>')",47
+E335,"('memory', 'manager', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",141
+E336,"('program', 'interrupt:', 'fp', 'cr', 'field', '..', '..', '..', '..', '..', '..', '<*>')",8102
+E337,"('ciod:', 'Error', 'opening', 'node', 'map', 'file', '<*>', 'No', 'such', 'file', 'or', 'directory')",1552
+E338,"('ciod:', 'Error', 'creating', 'node', 'map', 'from', 'file', '/p/gb2/pakin1/sweep3d-5x5x400-10mk-3mmi-1024pes-sweep/sweep.map:', 'Device', 'or', 'resource', 'busy')",512
+E339,"('external', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', 'uncorrectable', 'torus', 'error')",10
+E340,"('ciod:', 'Error', 'loading', '<*>', 'invalid', 'or', 'missing', 'program', 'image,', '<*>', '<*>', '<*>')",22040
+E341,"('ciod:', 'Error', 'creating', 'node', 'map', 'from', 'file', '<*>', '<*>', 'Bad', 'file', 'descriptor')",256
+E342,"('Target=', '<*>', 'Message=', 'JtagId', 'All', 'all', 'zeros,', 'power', 'good', 'may', 'be', 'low')",4
+E343,"('NFS', 'Mount', 'failed', 'on', '<*>', 'slept', '<*>', 'seconds,', 'retrying', '(', '<*>', '')",2670
+E344,"('power', 'module', 'status', 'fault', 'detected', 'on', 'node', 'card.', 'status', 'registers', 'are:', '<*>')",4
+E345,"('ddr:', 'activating', 'redundant', 'bit', 'steering', 'for', 'next', 'allocation:', 'rank=', '<*>', 'symbol=', '<*>')",492
+E346,"('total', 'of', '<*>', 'ddr', 'error(', 's)', 'detected', 'and', 'corrected', 'over', '<*>', 'seconds')",10415
+E347,"('minus', 'normalized', 'number..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E348,"('plus', 'normalized', 'number..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E349,"('round', 'toward', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",136
+E350,"('monitor', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', 'CONTROL', 'Operation', 'caught', 'java.io.EOFException', 'and', 'is', 'stopping')",1
+E351,"('ciod:', 'Error', 'creating', 'node', 'map', 'from', 'file', 'my_map.txt:', 'Argument', 'list', 'too', 'long')",8
+E352,"('start', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",96
+E353,"('parity', 'error', 'in', 'read', 'queue', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",94
+E354,"('memory', 'manager', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",94
+E355,"('regctl', 'scancom', 'interface..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E356,"('ciod:', 'Error', 'loading', '<*>', '<*>', 'invalid', 'or', 'missing', 'program', 'image,', 'No', 'such', 'file', 'or', 'directory')",1056
+E357,"('Node', 'card', 'VPD', 'check:', 'missing', '<*>', 'node,', 'VPD', 'ecid', '<*>', 'in', 'processor', 'card', 'slot', '<*>')",887
+E358,"('mmcs_db_server', 'has', 'been', 'started:', './mmcs_db_server', '--useDatabase', 'BGL', '--dbproperties', '<*>', '--iolog', '/bgl/BlueLight/logs/BGL', '--reconnect-blocks', 'all', '--shutdown-timeout', '<*>')",72
+E359,"('external', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', 'tree', 'header', 'with', 'no', 'target', 'waiting')",1
+E360,"('<*>', 'ddr', 'error(', 's)', 'detected', 'and', 'corrected', 'on', 'rank', '<*>', 'symbol', '<*>', 'over', '<*>', 'seconds')",10436
+E361,"('invalid', '(', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",136
+E362,"('round', 'toward', 'zero..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E363,"('EndServiceAction', 'is', 'restarting', 'the', '<*>', 'cards', 'in', 'Midplane', '<*>', 'as', 'part', 'of', 'Service', 'Action', '<*>')",51
+E364,"('Target=', '<*>', 'Message=', 'Invalid', 'JtagId', '=', 'ffffffff', 'Run', 'environmental', 'monitor', 'to', 'diagnose', 'possible', 'hardware', 'failure.')",2
+E365,"('Hardware', 'monitor', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.net.SocketException:', 'Broken', 'pipe', 'and', 'is', 'stopping')",4
+E366,"('size', 'of', 'DDR', 'we', 'are', 'caching..', '..', '..', '..', '..', '..', '..', '<*>', '(', '<*>', '')",48
+E367,"('memory', 'manager', 'refresh..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E368,"('store', 'operation..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",9824
+E369,"('external', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', 'torus', 'sender', '<*>', 'retransmission', 'error', 'was', 'corrected')",1322
+E370,"('ciod:', '<*>', 'coordinate', '<*>', 'exceeds', 'physical', 'dimension', '<*>', 'at', 'line', '<*>', 'of', 'node', 'map', 'file', '<*>')",3512
+E371,"('PrepareForService', 'is', 'being', 'done', 'on', 'this', 'Midplane', '(', 'mLctn(', '<*>', ',', 'mCardSernum(', '<*>', ')', 'by', '<*>')",201
+E372,"('machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine')",5
+E373,"('gister:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:')",5
+E374,"('ciod:', 'duplicate', 'canonical-rank', '<*>', 'to', 'logical-rank', '<*>', 'mapping', 'at', 'line', '<*>', 'of', 'node', 'map', 'file', '/p/gb2/pakin1/sweep3d-5x5x400-10mk-3mmi-1024pes-sweep/sweep.map')",512
+E375,"('ciod:', 'Error', 'reading', 'message', 'prefix', 'after', '<*>', 'on', 'CioStream', 'socket', 'to', '<*>', 'Link', 'has', 'been', 'severed')",23105
+E376,"('Problem', 'communicating', 'with', 'service', 'card,', 'ido', 'chip:', '<*>', 'java.io.IOException:', 'Could', 'not', 'find', 'EthernetSwitch', 'on', 'port:address', '<*>')",166
+E377,"('ciod:', 'Error', 'reading', 'message', 'prefix', 'after', 'LOAD_MESSAGE', 'on', 'CioStream', 'socket', 'to', '<*>', 'Connection', 'reset', 'by', 'peer')",114
+E378,"('external', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', '<*>', 'tree', 'receiver', '<*>', 'in', 'resynch', 'mode')",1
+E379,"('Error', 'getting', 'detailed', 'hw', 'info', 'for', 'node,', 'caught', 'java.io.IOException:', 'Problems', 'with', 'the', 'chip,', 'clear', 'all', 'resets')",1
+E380,"('<*>', 'tree', 'receiver', '<*>', 'in', 're-synch', 'state', 'event(', 's)', '(', 'dcr', '<*>', 'detected', 'over', '<*>', 'seconds')",3148
+E381,"('invalid', '(', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",204
+E382,"('plus', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E383,"('round', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E384,"('<*>', 'torus', '<*>', '<*>', '<*>', 'error(', 's)', '(', 'dcr', '<*>', 'detected', 'and', 'corrected', 'over', '<*>', 'seconds')",1049
+E385,"('parity', 'error', 'in', 'bank', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",94
+E386,"('memory', 'and', 'bus', 'summary..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E387,"('external', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', 'number', 'of', 'corrected', 'SRAM', 'errors', 'has', 'exceeded', 'threshold')",39
+E388,"('state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 're')",5
+E389,"('ciod:', 'Error', 'loading', '..', '/homme/build.Linux/preqx', '-n', '<*>', 'invalid', 'or', 'missing', 'program', 'image,', 'No', 'such', 'file', 'or', 'directory')",64
+E390,"('Bad', 'cable', 'going', 'into', 'LinkCard', '(', '<*>', 'Jtag', '(', '<*>', 'Port', '(', '<*>', '-', '<*>', 'bad', 'wires')",232
+E391,"('BGLMaster', 'has', 'been', 'started:', './BGLMaster', '--consoleip', '<*>', '--consoleport', '<*>', '--configfile', 'bglmaster.init', '--autorestart', 'y', '--db2profile', '/u/bgdb2cli/sqllib/db2profile', '--dbproperties', 'db.properties')",31
+E392,"('<*>', 'torus', 'receiver', '<*>', 'input', 'pipe', 'error(', 's)', '(', 'dcr', '<*>', 'detected', 'and', 'corrected', 'over', '<*>', 'seconds')",3512
+E393,"('invalid', '(', 'SNAN)', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E394,"('minus', 'zero..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E395,"('reserved..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E396,"('mmcs_db_server', 'has', 'been', 'started:', './mmcs_db_server', '--useDatabase', 'BGL', '--dbproperties', 'db.properties', '--iolog', '/bgl/BlueLight/logs/BGL', '--reconnect-blocks', 'all', '--shutdown-timeout', '<*>', '--shutdown-timeout', '<*>')",18
+E397,"('state', 'machine..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E398,"('rts:', 'kernel', 'terminated', 'for', 'reason', '<*>', 'bad', 'message', 'header:', '<*>', '<*>', '<*>', 'type=', '<*>', 'cpu=', '<*>', 'index=', '<*>', 'total=', '<*>')",1256
+E399,"('Problem', 'communicating', 'with', 'service', 'card,', 'ido', 'chip:', '<*>', 'java.lang.IllegalStateException:', 'IDo', 'is', 'not', 'in', 'functional', 'state', '--', 'currently', 'in', 'state', 'COMMUNICATION_ERROR')",6
+E400,"('Expected', '<*>', 'active', 'FanModules,', 'but', 'found', '<*>', '(', 'Found', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', ')', '.')",11
+E401,"('rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', 'C', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', 'C', '<*>', '<*>', '<*>', '<*>', '<*>')",54
+E402,"('rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', '<*>', 'C', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', '<*>', 'C', '<*>', '<*>', '<*>')",10
+E403,"('critical', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', 'warning', 'for', '<*>', '<*>', 'wire,', 'suppressing', 'further', 'interrupts', 'of', 'same', 'type')",3546
+E404,"('PrepareForService', 'is', 'being', 'done', 'on', 'this', 'card(', 'mLctn(', '<*>', ',', 'mCardSernum(', '<*>', ',', 'mLp(', '<*>', ',', 'mIp(', '<*>', ',', 'mType(', '<*>', ')', 'by', 'root')",5
+E405,"('ddr:', 'Unable', 'to', 'steer', 'rank=', '<*>', 'symbol=', '<*>', '-', 'rank', 'is', 'already', 'steering', 'symbol', '<*>', 'Due', 'to', 'multiple', 'symbols', 'being', 'over', 'the', 'correctable', 'e')",22
+E406,"('ciod:', 'In', 'packet', 'from', 'node', '<*>', '(', '<*>', ',', 'message', 'code', '<*>', 'is', 'not', '<*>', 'or', '<*>', '(', 'softheader=', '<*>', '<*>', '<*>', '<*>', '')",176
+E407,"('rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', 'A', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', 'A', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",171
+E408,"('rts:', 'bad', 'message', 'header:', 'index', '<*>', 'greater', 'than', 'total', '<*>', '(', 'softheader=', '<*>', '<*>', '<*>', '<*>', 'PSR0=', '<*>', 'PSR1=', '<*>', 'PRXF=', '<*>', 'PIXF=', '<*>')",238
+E409,"('<*>', 'total', 'interrupts.', '<*>', 'critical', 'input', 'interrupts.', '<*>', 'microseconds', 'total', 'spent', 'on', 'critical', 'input', 'interrupts,', '<*>', 'microseconds', 'max', 'time', 'in', 'a', 'critical', 'input', 'interrupt.')",135092
+E410,"('PrepareForService', 'shutting', 'down', '<*>', 'mLctn(', '<*>', ',', 'mCardSernum(', '<*>', ',', 'mLp(', '<*>', ',', 'mIp(', '<*>', ',', 'mType(', '<*>', ')', 'as', 'part', 'of', 'Service', 'Action', '<*>')",2316
+E411,"('PrepareForService', 'is', 'being', 'done', 'on', 'this', 'part', '(', 'mLctn(', '<*>', ',', 'mCardSernum(', '<*>', ',', 'mLp(', '<*>', ',', 'mIp(', '<*>', ',', 'mType(', '<*>', ')', 'by', '<*>')",131
+E412,"('rts:', 'bad', 'message', 'header:', 'packet', 'index', '<*>', 'greater', 'than', 'max', '<*>', '(', 'softheader=', '<*>', '<*>', '<*>', '<*>', 'PSR0=', '<*>', 'PSR1=', '<*>', 'PRXF=', '<*>', 'PIXF=', '<*>')",114
+E413,"('rts:', 'bad', 'message', 'header:', 'expecting', 'type', '<*>', 'instead', 'of', 'type', '<*>', '(', 'softheader=', '<*>', '<*>', '<*>', '<*>', 'PSR0=', '<*>', 'PSR1=', '<*>', 'PRXF=', '<*>', 'PIXF=', '<*>')",1146
+E414,"('<*>', 'microseconds', 'spent', 'in', 'the', 'rbs', 'signal', 'handler', 'during', '<*>', 'calls.', '<*>', 'microseconds', 'was', 'the', 'maximum', 'time', 'for', 'a', 'single', 'instance', 'of', 'a', 'correctable', 'ddr.')",135092
+E415,"('Node', 'card', 'status:', 'no', 'ALERTs', 'are', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'IS', 'NOT', 'ASSERTED.', 'PGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'MPGOOD', 'IS', 'NOT', 'OK.', 'MPGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.')",16896
+E416,"('Node', 'card', 'status:', 'no', 'ALERTs', 'are', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'not', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'IS', 'NOT', 'ASSERTED.', 'PGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'MPGOOD', 'is', 'OK.', 'MPGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.')",1
+E417,"('Node', 'card', 'VPD', 'check:', '<*>', 'node', 'in', 'processor', 'card', 'slot', '<*>', 'do', 'not', 'match.', 'VPD', 'ecid', '<*>', 'found', '<*>')",21356
+E418,"('Ido', 'chip', 'status', 'changed:', '<*>', 'ip=', '<*>', 'v=', '<*>', 't=', '<*>', 'status=', 'M', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",11904
+E419,"('rts:', 'kernel', 'terminated', 'for', 'reason', '<*>', 'bad', 'message', 'header:', 'invalid', 'cpu,', 'type=', '<*>', 'cpu=', '<*>', 'index=', '<*>', 'total=', '<*>')",3334
+E420,"('idoproxydb', 'hit', 'ASSERT', 'condition:', 'ASSERT', 'expression=', '<*>', 'Source', 'file=', '<*>', 'Source', 'line=', '<*>', 'Function=', 'int', '<*>', '<*>', '<*>', '')",84250
+E421,"('rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', 'C', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', 'C', '<*>', '<*>', '<*>', '<*>')",18
+E422,"('PrepareForService', 'is', 'being', 'done', 'on', 'this', 'Midplane', '(', 'mLctn(', '<*>', ',', 'mCardSernum(', '<*>', ',', 'iWhichCardsToPwrOff(', '<*>', ')', 'by', 'root')",48
+E423,"('<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'is', 'in', 'state', '=', 'COMMUNICATION_ERROR,', 'sequenceNumberIsOk', '=', 'false,', 'ExpectedSequenceNumber', '=', '<*>', 'Reply', 'Sequence', 'Number', '=', '<*>', 'timedOut', '=', 'true,', 'retries', '=', '<*>', 'timeout', '=', '<*>', 'Expected', 'Op', 'Command', '=', '<*>', 'Actual', 'Op', 'Reply', '=', '<*>', 'Expected', 'Sync', 'Command', '=', '<*>', 'Actual', 'Sync', 'Reply', '=', '<*>', '')",532
+E424,"('While', 'initializing', 'node', 'card,', 'ido', 'with', 'LP', 'of', '<*>', 'caught', 'java.lang.IllegalStateException:', 'IDo', 'is', 'not', 'in', 'functional', 'state', '--', 'currently', 'in', 'state', 'COMMUNICATION_ERROR')",9
+E425,"('rts:', 'kernel', 'terminated', 'for', 'reason', '<*>', 'bad', 'message', 'header:', 'too', 'many', 'packets,', 'type=', '<*>', 'cpu=', '<*>', 'index=', '<*>', 'total=', '<*>', 'max=', '<*>')",6
+E426,"('idoproxydb', 'hit', 'ASSERT', 'condition:', 'ASSERT', 'expression=', '!(', 'RecvMsgHdr.ulLen', '>', '<*>', 'Source', 'file=', 'idomarshalerio.cpp', 'Source', 'line=', '<*>', 'Function=', 'virtual', 'int', 'IdoMarshalerIo::RunRecv(', ')', '')",1
+E427,"('rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', '<*>', 'C', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', '<*>', 'C', '<*>', '<*>', '<*>', '<*>', '<*>')",214
+E428,"('rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', '<*>', '<*>', '<*>', 'X+', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",8
+E429,"('While', 'setting', 'fan', 'speed', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",8
+E430,"('ciod:', 'In', 'packet', 'from', 'node', '<*>', '(', '<*>', ',', 'message', 'still', 'ready', 'for', 'node', '<*>', '(', 'softheader=', '<*>', '<*>', '<*>', '<*>', '')",2
+E431,"('ddr:', 'Unable', 'to', 'steer', 'rank=', '<*>', 'symbol=', '<*>', '-', 'rank', 'is', 'already', 'steering', 'symbol', '<*>', 'Due', 'to', 'multiple', 'symbols', 'being', 'over', 'the', '<*>')",24
+E432,"('rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",46
+E433,"('external', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', 'number', 'of', 'corrected', 'SRAM', 'errors', 'has', 'exceeded', 'threshold,', 'suppressing', 'further', 'interrupts', 'of', 'same', 'type')",57
+E434,"('Problem', 'communicating', 'with', '<*>', '<*>', 'iDo', 'machine', 'with', 'LP', 'of', '<*>', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.RuntimeException:', 'Communication', 'error:', '(', 'DirectIDo', 'for', 'com.ibm.ido.DirectIDo', 'object', '<*>', 'with', 'image', 'version', '<*>', 'and', '<*>', 'type', '<*>', 'is', 'in', 'state', '=', 'COMMUNICATION_ERROR,', 'sequenceNumberIsOk', '=', 'false,', 'ExpectedSequenceNumber', '=', '<*>', 'Reply', 'Sequence', 'Number', '=', '<*>', 'timedOut', '=', 'true,', 'retries', '=', '<*>', 'timeout', '=', '<*>', 'Expected', 'Op', 'Command', '=', '<*>', 'Actual', 'Op', 'Reply', '=', '<*>', 'Expected', 'Sync', 'Command', '=', '<*>', 'Actual', 'Sync', 'Reply', '=', '<*>', '')",21
+E435,"('Node', 'card', 'status:', 'no', 'ALERTs', 'are', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'IS', 'NOT', 'ASSERTED.', 'PGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'MPGOOD', 'IS', 'NOT', 'OK.', 'MPGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'THE', '<*>', 'VOLT', 'RAIL', 'IS', 'NOT', 'OK.', 'THE', '<*>', 'VOLT', 'RAIL', 'IS', 'NOT', 'OK.')",116
+E436,"('Node', 'card', 'status:', 'no', 'ALERTs', 'are', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'not', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'IS', 'NOT', 'ASSERTED.', 'PGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'MPGOOD', 'IS', 'NOT', 'OK.', 'MPGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.', 'THE', '<*>', 'VOLT', 'RAIL', 'IS', 'NOT', 'OK.')",3
+E437,"('Node', 'card', 'status:', 'ALERT', '<*>', 'ALERT', '<*>', 'ALERT', '<*>', 'ALERT', '<*>', 'is', '(', 'are)', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'not', 'asserted.', 'TEMPERATURE', 'MASK', 'IS', 'ACTIVE.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'is', 'asserted.', 'PGOOD', 'error', 'latch', 'is', 'clear.', 'MPGOOD', 'is', 'OK.', 'MPGOOD', 'error', 'latch', 'is', 'clear.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.')",1
+E438,"('Node', 'card', 'status:', 'no', 'ALERTs', 'are', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'IS', 'NOT', 'ASSERTED.', 'PGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'MPGOOD', 'is', 'OK.', 'MPGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.')",49
+E439,"('rts:', 'kernel', 'terminated', 'for', 'reason', '<*>', 'bad', 'message', 'header:', 'too', 'many', 'packets,', 'type=', '<*>', 'cpu=', '<*>', 'index=', '<*>', 'total=', '<*>', '<*>')",155
+E440,"('idoproxydb', 'hit', 'ASSERT', 'condition:', 'ASSERT', 'expression=', '!(', 'nMsgLen', '>', '<*>', 'Source', 'file=', 'idomarshalerio.cpp', 'Source', 'line=', '<*>', 'Function=', 'int', 'IdoMarshalerRecvBuffer::ReadBlock(', 'IdoMsg::IdoMsgHdr*&)', '')",2
+E441,"('rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', '<*>', 'C', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', '<*>', 'C', '<*>', '<*>', '<*>', '<*>')",82
+E442,"('rts:', 'bad', 'message', 'header:', 'cpu', '<*>', 'invalid', '(', 'softheader=', '<*>', '<*>', '<*>', '<*>', 'PSR0=', '<*>', 'PSR1=', '<*>', 'PRXF=', '<*>', 'PIXF=', '<*>')",619
+E443,"('rts', 'assertion', 'failed:', '`vaddr', '%', 'PAGE_SIZE_1M', '=', '=', '<*>', 'in', '`int', 'initializeAppMemory(', 'int,', 'TLBEntry&,', 'unsigned', 'int,', 'unsigned', 'int)', ""'"", 'at', '<*>')",1
+E444,"('<*>',)",856
+E445,"('VALIDATE_LOAD_IMAGE_CRC_IN_DRAM',)",8
+E446,"('CHECK_INITIAL_GLOBAL_INTERRUPT_VALUES',)",544
+E447,"('pro',)",1
+E448,"('program',)",1
+E449,"('While', 'initializing', 'service', 'card', 'iDo', 'with', 'LP', 'of', '<*>', 'caught', 'java.io.IOException:', 'Could', 'not', 'contact', 'iDo', 'with', 'LP=', '<*>', 'and', 'IP=', '<*>', 'because', 'java.lang.RuntimeException:', 'Communication', 'error:', '(', 'DirectIDo', 'for', 'Uninitialized', 'DirectIDo', 'for', '<*>', 'is', 'in', 'state', '=', 'COMMUNICATION_ERROR,', 'sequenceNumberIsOk', '=', 'false,', 'ExpectedSequenceNumber', '=', '<*>', 'Reply', 'Sequence', 'Number', '=', '<*>', 'timedOut', '=', 'true,', 'retries', '=', '<*>', 'timeout', '=', '<*>', 'Expected', 'Op', 'Command', '=', '<*>', 'Actual', 'Op', 'Reply', '=', '<*>', 'Expected', 'Sync', 'Command', '=', '<*>', 'Actual', 'Sync', 'Reply', '=', '<*>', '')",197
+E450,"('Node', 'card', 'status:', 'ALERT', '<*>', 'ALERT', '<*>', 'ALERT', '<*>', 'ALERT', '<*>', 'is', '(', 'are)', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'not', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'is', 'asserted.', 'PGOOD', 'error', 'latch', 'is', 'clear.', 'MPGOOD', 'is', 'OK.', 'MPGOOD', 'error', 'latch', 'is', 'clear.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.')",171
+E451,"('Missing', 'reverse', 'cable:', 'Cable', '<*>', '<*>', '<*>', '(', '<*>', '-->', '<*>', '<*>', '<*>', '(', '<*>', 'is', 'present', 'BUT', 'the', 'reverse', 'cable', '<*>', '<*>', '<*>', '(', '<*>', '-->', '<*>', '<*>', '<*>', '(', '<*>', 'is', 'missing')",522
+E452,"('Problem', 'communicating', 'with', 'service', 'card,', 'ido', 'chip:', '<*>', 'java.lang.IllegalStateException:', 'while', 'executing', 'CONTROL', 'Operation', 'caught', 'java.lang.RuntimeException:', 'Communication', 'error:', '(', 'DirectIDo', 'for', 'com.ibm.ido.DirectIDo', 'object', '<*>', 'with', 'image', 'version', '<*>', 'and', 'card', 'type', '<*>', 'is', 'in', 'state', '=', 'COMMUNICATION_ERROR,', 'sequenceNumberIsOk', '=', 'false,', 'ExpectedSequenceNumber', '=', '<*>', 'Reply', 'Sequence', 'Number', '=', '<*>', 'timedOut', '=', 'true,', 'retries', '=', '<*>', 'timeout', '=', '<*>', 'Expected', 'Op', 'Command', '=', '<*>', 'Actual', 'Op', 'Reply', '=', '<*>', 'Expected', 'Sync', 'Command', '=', '<*>', 'Actual', 'Sync', 'Reply', '=', '<*>', '')",2
+E453,"('While', 'reading', 'FanModule', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",5
+E454,"('rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', 'C', 'X+', 'X-', 'Y+', 'Y-', 'Z+', 'Z-', 'got:', 'C', 'X+', 'Y-', 'Z-')",2
+E455,"('Error', 'getting', 'detailed', 'hw', 'info', 'for', 'node,', 'caught', 'java.io.IOException:', 'Problems', 'with', 'the', 'chip,', 'could', 'not', '<*>', '<*>', '<*>')",35
+E456,"('quiet', 'NaN..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E457,"('minus', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E458,"('plus', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E459,"('ddr:', 'Unable', 'to', 'steer', 'rank=', '<*>', 'symbol=', '<*>', '-', 'rank', 'is', 'already', 'steering', 'symbol', '<*>', 'Due', 'to', 'multiple', 'symbols', 'being', 'over', 'the', 'correctable', 'error', 'threshold,', 'consider', 'replacing', 'the', 'card')",197
+E460,"('While', 'reading', 'FanModule', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",8
+E461,"('Node', 'card', 'status:', 'no', 'ALERTs', 'are', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'not', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'IS', 'NOT', 'ASSERTED.', 'PGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'MPGOOD', 'IS', 'NOT', 'OK.', 'MPGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.')",227
+E462,"('While', 'setting', 'fan', 'speed', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",5
+E463,"('Node', 'card', 'status:', 'no', 'ALERTs', 'are', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'not', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'IS', 'NOT', 'ASSERTED.', 'PGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'MPGOOD', 'IS', 'NOT', 'OK.', 'MPGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'THE', '<*>', 'VOLT', 'RAIL', 'IS', 'NOT', 'OK.', 'THE', '<*>', 'VOLT', 'RAIL', 'IS', 'NOT', 'OK.')",49
+E464,"('Error', 'receiving', '<*>', 'on', 'tree', 'network,', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '(', 'softheader=', '<*>', '<*>', '<*>', '<*>', 'PSR0=', '<*>', 'PSR1=', '<*>', 'PRXF=', '<*>', 'PIXF=', '<*>')",6145
+E465,"('PrepareForService', 'shutting', 'down', '<*>', 'card(', 'mLctn(', '<*>', ',', 'mCardSernum(', '<*>', ',', 'mLp(', '<*>', ',', 'mIp(', '<*>', ',', 'mType(', '<*>', ')', 'as', 'part', 'of', 'Service', 'Action', '<*>')",715
+E466,"('com.ibm.bgldevices.BulkPowerModule', 'with', 'VPD', 'of', 'com.ibm.bgldevices.BulkPowerModule$VpdReply:', 'IBM', 'Part', 'Number:', '<*>', 'Vendor:', 'Cherokee', 'International,', 'Vendor', 'Serial', 'Number:', '<*>', 'Assembly', 'Revision:', '\x00.A,', 'Code', 'Revision:', '<*>', 'Manufacture', 'Date:', 'during', 'week', '<*>', 'of', '<*>', 'Manufacture', 'Location:', 'Tustin,', 'CA,', 'USA', 'is', 'usable', 'but', 'not', 'a', 'supported', 'version')",4
+E467,"('While', 'setting', 'fan', 'speed', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",8
+E468,"('While', 'reading', 'FanModule', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",8
+E469,"('While', 'setting', 'fan', 'speed', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",7
+E470,"('Kernel', 'detected', '<*>', 'integer', 'alignment', 'exceptions', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>')",22175
+E471,"('While', 'reading', 'FanModule', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",7
+E472,"('dear', '<*>', '(', '<*>', 'RAS', 'KERNEL', 'INFO', 'Kernel', 'detected', '<*>', 'integer', 'alignment', 'exceptions', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>')",2
+E473,"('While', 'setting', 'fan', 'speed', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",3
+E474,"('While', 'reading', 'FanModule', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",3
+E475,"('instance', 'of', 'a', 'correctable', 'ddr.', 'RAS', 'KERNEL', 'INFO', '<*>', 'microseconds', 'spent', 'in', 'the', 'rbs', 'signal', 'handler', 'during', '<*>', 'calls.', '<*>', 'microseconds', 'was', 'the', 'maximum', 'time', 'for', 'a', 'single', 'instance', 'of', 'a', 'correctable', 'ddr.')",4
+E476,"('max', 'time', 'in', 'a', 'cr', 'RAS', 'KERNEL', 'INFO', '<*>', 'total', 'interrupts.', '<*>', 'critical', 'input', 'interrupts.', '<*>', 'microseconds', 'total', 'spent', 'on', 'critical', 'input', 'interrupts,', '<*>', 'microseconds', 'max', 'time', 'in', 'a', 'critical', 'input', 'interrupt.')",4
