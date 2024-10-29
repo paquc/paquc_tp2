@@ -78,14 +78,14 @@ def find_event(df_logs, current_index, time_gap_seconds, direction='future'):
 
 def GenMatrices():
 
-    real_data = True
-    #real_data = False
+    #real_data = True
+    real_data = False
 
     if real_data:
         suffix = "10M"
         logs_file = f"./Thunderbird_Brain_results/Thunderbird_{suffix}.log_structured.csv"
-        time_window_epoch = 3600 * 2  
-        prediction_window_epoch = 3600  
+        time_window_epoch = 30
+        prediction_window_epoch = 30  
         moving_window_epoch = -1         # -1 to diable
         moving_windows_index = 100      # -1 to diable
         log_index=False
