@@ -10,13 +10,15 @@ dataset    = 'THUNDERBIRD'  # The log file name
 input_dir = '../../data/Thunderbird/'  # Path to the directory containing the log file
 
 # Define the directory where the parsing results will be saved
-output_dir = '../../data/Thunderbird/Thunderbird_Brain_results/Thunderbird_Brain_results_V4/'  # Output directory for the parsed results
+output_dir = '../../data/Thunderbird/Thunderbird_Brain_results/Thunderbird_Brain_results/'  # Output directory for the parsed results
 
 # Specify the log file to be parsed
-log_file = 'Thunderbird_5M.log'  # The name of the input log file
+log_file = 'Thunderbird_10M.log'
+
+# <Content> = <NodeFull> <Process>: <Content>
 log_format = '<AlertFlagLabel> <EpochTime> <Date> <Noeud> <Month> <Day> <Hour> <Content>'
+
 #log_format = '<AlertFlagLabel> <EpochTime> <Date> <Noeud> <Month> <Day> <Hour> <NodeFull> <Process>: <Content>'
-#log_format = '<AlertFlagLabel> <EpochTime> <Date> <NodeLoc> <FullDateTime> <NodeLocSecond> <Type> <SubSys> <Severity> <Content>'
 
 # Regular expression list for optional preprocessing (default: [])
 regex = [

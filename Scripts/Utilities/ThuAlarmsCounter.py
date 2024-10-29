@@ -1,7 +1,10 @@
+import sys
+sys.path.append('../../')
+
 import pandas as pd
 
 # Load the CSV file, assuming comma-separated values with no header
-input_file = './Thunderbird_Brain_results/Thunderbird_5M.log_structured.csv'  # Replace with the path to your input file
+input_file = '../../data/Thunderbird/Thunderbird_Brain_results/Thunderbird_10M.log_structured.csv'  # Replace with the path to your input file
 
 df = pd.read_csv(input_file, header=None, names=["LineID", "AlertFlagLabel", "EpochTime", "Date", "Noeud", "Month", "Day", "Hour", "Content", "EventId", "EventTemplate"])
 

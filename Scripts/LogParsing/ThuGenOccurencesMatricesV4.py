@@ -20,7 +20,7 @@ def remove_duplicates(file_path, output_path=None):
 
 
 def GenMatrices():
-    logs_file = './Thunderbird_Brain_results/Thunderbird_5M.log_structured.csv'
+    logs_file = './Thunderbird_Brain_results/Thunderbird_10M.log_structured.csv'
     #logs_file = './BGL_Brain_results/BGL.Alarms_Samples.csv'
     df_logs = pd.read_csv(logs_file)
 

@@ -32,18 +32,19 @@ Exécuter `Root/Scripts/LogParsing/BGLGenOccurencesMatricesV4.py` pour générer
 
 3. Entreinement des modèles et génération des métriques
 
-Pour entreiner les modèles pour BGL, exécuter `Root/Scripts/ModelsTraining/BGL_Train_KERNDTLB_Alarms_RF_LR_BootStrap_Full_Param.py V4`.
+Pour entreiner les modèles pour BGL, exécuter `Root/Scripts/ModelsTraining/BGL_Train_KERNDTLB_Alarms.py V4`.
 Le fichier `BGL_KERNDTLB_Training_V4_Output.log` est généré avec les métriques et la classification.
+
 
 ## Prédictions d'alarmes pour Thunderbird
 
 1. Génération des logs structurés et templates
 
-Un log de 5,000,000 de lignes a été utilisé afin de comparer correctement avec BGL.
+Un log de 10,000,000 de lignes a été utilisé.
 
 Pour générer le log structuré et les templates, il faut exécuter le script `Root/Scripts/LogParsing/ThuBrainParseV4.py`.
-Ce script prend en entrée le fichier Thunderbird_5M.log qui contient plus de 5,000,000 d'événements.
-Ce qui générera les fichiers `Thunderbird_5M.log_structured.csv` et `Thunderbird_5M.log_templates.csv`.
+Ce script prend en entrée le fichier Thunderbird_5M.log qui contient plus de 10,000,000 d'événements.
+Ce qui générera les fichiers `Thunderbird_10M.log_structured.csv` et `Thunderbird_10M.log_templates.csv` (pas dans git étant donné la taille).
 
 2. Générations des séquences, matrices d'occurences et élimination de diplicatas
 
@@ -56,7 +57,7 @@ Exécuter `Root/Scripts/LogParsing/ThuGenOccurencesMatricesV4.py` pour générer
 
 3. Entreinement des modèles et génération des métriques
 
-Pour entreiner les modèles pour Thunderbird, exécuter `Root/Scripts/ModelsTraining/Thu_Train_VAPI_Alarms_RF_LR_BootStrap_Full_Param V4`.
+Pour entreiner les modèles pour Thunderbird, exécuter `Root/Scripts/ModelsTraining/Thu_Train_VAPI_Alarms.py V4`.
 Le fichier `Thu_VAPI_Training_V4_Output.log` est généré avec les métriques et la classification.
 
 
