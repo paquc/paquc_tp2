@@ -45,19 +45,7 @@ def remove_duplicates(file_path, output_path=None):
 #     return None
 
 def find_event(df_logs, current_index, time_gap_seconds, direction='future'):
-    """
-    Find a future or past event within a specified time gap from the current index.
-    
-    Args:
-    - df_logs (DataFrame): The log DataFrame.
-    - current_index (int): The index from which to start searching.
-    - time_gap_seconds (int): The time gap in seconds.
-    - direction (str): The direction to search ('future' or 'past').
-
-    Returns:
-    - list: A list containing the found log row and its index.
-    - None: If no matching event is found.
-    """
+   
     current_time_epoch = df_logs.iloc[current_index]['EpochTime']
 
     if direction == 'future':
@@ -69,7 +57,7 @@ def find_event(df_logs, current_index, time_gap_seconds, direction='future'):
 
         # Find the first event that occurs after the target_time_epoch
         for i in range(current_index + 1, len(df_logs), 1):
-            if df_logs.iloc[i]['EpochTime'] - df_logs.iloc[current_index]['EpochTime'] > time_gap_seconds:
+            if df_logs.iloc[i]['EpochTime'] - df_logs.iloc[current_index]['EpochTime'] >= time_gap_seconds:
                 return [df_logs.iloc[i], i]
 
     elif direction == 'past':
@@ -81,7 +69,7 @@ def find_event(df_logs, current_index, time_gap_seconds, direction='future'):
 
         # Find the first event that occurs before the target_time_epoch
         for i in range(current_index - 1, -1, -1):
-           if df_logs.iloc[current_index]['EpochTime'] - df_logs.iloc[i]['EpochTime'] > time_gap_seconds:
+           if df_logs.iloc[current_index]['EpochTime'] - df_logs.iloc[i]['EpochTime'] >= time_gap_seconds:
                 return [df_logs.iloc[i], i]
 
     # If no event is found within the time gap, return None
@@ -90,22 +78,24 @@ def find_event(df_logs, current_index, time_gap_seconds, direction='future'):
 
 def GenMatrices():
 
-    #real_data = True
-    real_data = False
+    real_data = True
+    #real_data = False
 
     if real_data:
-        logs_file = './Thunderbird_Brain_results/Thunderbird_10M.log_structured.csv'
-        time_window_epoch = 3600 * 1  
-        prediction_window = 1800 * 1  
-        moving_window = 500 * 1
         suffix = "10M"
+        logs_file = f"./Thunderbird_Brain_results/Thunderbird_{suffix}.log_structured.csv"
+        time_window_epoch = 3600 * 2  
+        prediction_window_epoch = 3600  
+        moving_window_epoch = -1         # -1 to diable
+        moving_windows_index = 100      # -1 to diable
         log_index=False
     else:   
-        logs_file = './Thunderbird_Brain_results/Thunderbird.log_structured_Samples.csv'
-        time_window_epoch = 1000  
-        prediction_window = 500 
-        moving_window = 250
         suffix = "Samples"
+        logs_file = f"./Thunderbird_Brain_results/Thunderbird.log_structured_{suffix}.csv"
+        time_window_epoch = 3600  
+        prediction_window_epoch = 60 * 5
+        moving_window_epoch = -1        # -1 to diable
+        moving_windows_index = 5        # -1 to diable
         log_index=True
 
 
@@ -123,31 +113,38 @@ def GenMatrices():
        
         init = True
         current_tail_wnd_event_index = 0
-        start_wnd_event_index = 0
+        current_start_wnd_event_index = 0
 
         while True:
             
             if(init):
                 # Get the first event and index
                 init = False
-                start_wnd_event_index = 0
-                next_tail_event_data = find_event(df_logs, start_wnd_event_index, time_window_epoch, 'future')
+                current_start_wnd_event_index = 0
+                next_tail_event_data = find_event(df_logs, current_start_wnd_event_index, time_window_epoch, 'future')
                 if next_tail_event_data is None:
                     break
             else:
                 # Find the next event to start the sequence
-                next_head_event_data = find_event(df_logs, start_wnd_event_index, moving_window, 'future')
-                if next_head_event_data is None:
-                    break   # Stop if no future event is found within the moving window
-                start_wnd_event_index = next_head_event_data[1]
-                next_tail_event_data = find_event(df_logs, start_wnd_event_index, time_window_epoch, 'future')
+                if moving_window_epoch > 0:
+                    next_start_event_data = find_event(df_logs, current_start_wnd_event_index, moving_window_epoch, 'future')
+                    if next_start_event_data is None:
+                        break   # Stop if no future event is found within the moving window
+                    current_start_wnd_event_index = next_start_event_data[1]
+                
+                if moving_windows_index > 0:
+                    current_start_wnd_event_index = current_start_wnd_event_index + moving_windows_index
+                    
+                # Find the next event to end the sequence    
+                next_tail_event_data = find_event(df_logs, current_start_wnd_event_index, time_window_epoch, 'future')
                 if next_tail_event_data is None:
                     break   # Stop if no future event is found within the moving window
+
 
             current_tail_wnd_event_index = next_tail_event_data[1]
 
             # Get the window of events using an index interval
-            log_entries_window = df_logs.iloc[start_wnd_event_index : current_tail_wnd_event_index]
+            log_entries_window = df_logs.iloc[current_start_wnd_event_index : current_tail_wnd_event_index]
 
             # Generate a sequence of EventIds within the time window
             sequence = ','.join(log_entries_window['EventId'].tolist())
@@ -155,7 +152,7 @@ def GenMatrices():
             # Check if the sequence is not empty
             if sequence:
                 # Find the next event within the prediction window
-                prediction_event = find_event(df_logs, current_tail_wnd_event_index, prediction_window, 'future')
+                prediction_event = find_event(df_logs, current_tail_wnd_event_index, prediction_window_epoch, 'future')
                 if prediction_event is None:
                     break   # Stop if no future event is found within the prediction window
 
@@ -163,7 +160,7 @@ def GenMatrices():
                 is_alarm = int('VAPI' in prediction_event[0]['AlertFlagLabel'])
                 # Write the sequence and label to the file (ensure to insert "" around the sequence!!)
                 if log_index:
-                    sequences_output_file.write(f'{start_wnd_event_index}:{current_tail_wnd_event_index},"{sequence}",{is_alarm}\n')
+                    sequences_output_file.write(f'{current_start_wnd_event_index}:{current_tail_wnd_event_index},"{sequence}",{is_alarm}\n')
                 else:
                     sequences_output_file.write(f'"{sequence}",{is_alarm}\n')
                 print(f"Sequence: {sequence} - IsAlarm: {is_alarm}")
