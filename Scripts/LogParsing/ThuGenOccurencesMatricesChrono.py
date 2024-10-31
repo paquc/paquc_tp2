@@ -89,8 +89,8 @@ def GenMatrices():
     else:   
         node_name = 'bn257' 
         suffix = "Samples"
-        time_window_epoch = 60*1 
-        prediction_window_epoch = 60*20
+        time_window_epoch = 60*20 
+        prediction_window_epoch = 60*10
         moving_window_epoch = 60*1
         logs_file = f"./Thunderbird_Brain_results/Thunderbird.log_structured_{suffix}.csv"
 
@@ -153,6 +153,7 @@ def GenMatrices():
                 if search_counter == 0:
                     print(f"NO ALARM: alarms detected: {num_VAPI_node_alarms} alarms. Searching...")
                 search_counter += 1
+                print(f"ALARMS searching --> {search_counter}..... ")
                 if search_counter > 10:
                     search_counter = 0
 
