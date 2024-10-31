@@ -26,112 +26,116 @@ def remove_duplicates(file_path, output_path=None):
     print(f"Duplicates removed. Deduplicated file saved to {output_path}")
     return df_dedup
 
-
-def find_event(df_logs, current_index, time_gap_seconds, direction='future'):
-    # Get the EpochTime value at index 0
-    start_epoch_time = df_logs.iloc[current_index]['EpochTime']
-
-    # Calculate the end epoch time for the desired time interval
-    end_epoch_time = start_epoch_time + time_gap_seconds
-
-    # Filter the DataFrame to include only rows from index start until the specified time interval
-    sequence_df = df_logs[(df_logs['EpochTime'] >= start_epoch_time) & (df_logs['EpochTime'] <= end_epoch_time)]
+# Function to find the event sequence within a specified time window
+def find_event(df_logs, window_box_start_time_epoch, window_box_time_width_epoch, direction='future'):
     
-    end_epoch_time_df = df_logs[(df_logs['EpochTime'] >= end_epoch_time) & (df_logs['EpochTime'] <= end_epoch_time + 60)]
-    if end_epoch_time_df.empty:
+    # Calculate the end epoch time for the desired time interval
+    end_epoch_time = window_box_start_time_epoch + window_box_time_width_epoch
+
+    # Filter the DataFrame to include only rows from start until the specified time interval
+    sequence_df = df_logs[(df_logs['EpochTime'] >= window_box_start_time_epoch) & (df_logs['EpochTime'] <= end_epoch_time)]
+    if sequence_df.empty:
         return None
 
-    end_index = end_epoch_time_df.index[0]
+    # Get the last row of the sequence to get the end time of the sequence
+    window_box_last_row_epochtime = sequence_df.iloc[-1]['EpochTime']
 
-    return [sequence_df, end_index]
-
+    return [sequence_df, window_box_last_row_epochtime]
 
 def GenMatrices():
 
     real_data = True
     #real_data = False
 
-
     if real_data:
         suffix = "10M"
-        time_window_epoch = 60*10
-        prediction_window_epoch = 60*5   
-        moving_window_epoch = 60+5
+        time_window_epoch = 60*30
+        prediction_window_epoch = 60*10   
+        moving_window_epoch = 60*15
         logs_file = f"./Thunderbird_Brain_results/Thunderbird_{suffix}.log_structured.csv"
     else:   
         suffix = "Samples"
-        time_window_epoch = 60 * 30  
-        prediction_window_epoch = 60 + 10
-        moving_window_epoch = 60 + 60
+        time_window_epoch = 60*1 
+        prediction_window_epoch = 60*20
+        moving_window_epoch = 60*1
         logs_file = f"./Thunderbird_Brain_results/Thunderbird.log_structured_{suffix}.csv"
 
-
+    # Load the log data from the CSV file
     print(f"Processing log file: {logs_file}")
     df_logs = pd.read_csv(logs_file)
-
-    next_start_log_time_epoch = df_logs.iloc[0]['EpochTime']
-
+    
     # Open the output file in write mode
     with open(f"./Thunderbird_Brain_results/VAPI_alarm_sequences_{suffix}_chrono.csv", "w") as sequences_output_file:
 
         print(f"Generating sequences of events within {time_window_epoch} seconds for each entry...")
-        # Write the header to the CSV file
         sequences_output_file.write("EventSequence,IsAlarm\n")
        
+        VAPI_bn257_df = df_logs.loc[(df_logs['AlertFlagLabel'] == 'VAPI') & (df_logs['Noeud'] == 'bn257')]
+        print(VAPI_bn257_df.head(10))
+        print(f"Number of VAPI alarms for node 'bn257' in full log file: {VAPI_bn257_df.shape[0]}")
+        #sys.exit(0)
+
         aggregated_alarms_TH = 5
-        window_box_start_index = 0
-        counter = 0
+        print_zeros = 1
+        
+        window_box_sequence_start_time_epoch = df_logs.iloc[0]['EpochTime']
 
         while True:
                       
             # Get the window box
-            window_box_event_data = find_event(df_logs, window_box_start_index, time_window_epoch, 'future')
-            if window_box_event_data is None:
+            window_box_sequence_data = find_event(df_logs, window_box_sequence_start_time_epoch, time_window_epoch, 'future')
+            if window_box_sequence_data is None:
                 break
-            window_box_sequences_events_df = window_box_event_data[0]
-            window_box_tail_event_index = window_box_event_data[1]
-            #print(f"Window box start index: {window_box_start_index}, tail index: {window_box_tail_event_index}")
+            #print(f"Window box start time: {window_box_sequence_start_time_epoch}, tail time: {window_box_sequence_data[1]}, Nb rows: {window_box_sequence_data[0].shape[0]}, Total time: {window_box_sequence_data[0].iloc[-1]['EpochTime'] - window_box_sequence_start_time_epoch}")
 
-            # Get the window after for prediction
-            prediction_box_data = find_event(df_logs, window_box_tail_event_index + 1, prediction_window_epoch, 'future')
+            # Get the prediction window
+            window_box_sequence_tail_time_epoch = window_box_sequence_data[1]
+            prediction_box_data = find_event(df_logs, window_box_sequence_tail_time_epoch, prediction_window_epoch, 'future')
             if prediction_box_data is None:
                 break
             prediction_df = prediction_box_data[0]
-            #print(f"Prediction box start index: {window_box_tail_event_index + 1}, tail index: {prediction_box_data[1]}")
+            #print(prediction_df.head(10))
+            #print(f"Prediction box start time: {window_box_sequence_tail_time_epoch + 1}, tail time: {prediction_box_data[1]}, Total time: {prediction_df.iloc[-1]['EpochTime'] - window_box_sequence_tail_time_epoch}")
 
-            # Filter the prediction DataFrame to keep only rows where 'AlertFlagLabel' is 'VAPI'
-            prediction_VAPI_df = prediction_df.loc[prediction_df['AlertFlagLabel'] == 'VAPI']
-            prediction_VAPI_bn257_df = prediction_VAPI_df.loc[prediction_VAPI_df['Noeud'] == 'bn257']
+            # Filter the prediction DataFrame to keep only rows where 'AlertFlagLabel' is 'VAPI' for node 'bn257'
+            prediction_VAPI_bn257_df = prediction_df.loc[(prediction_df['AlertFlagLabel'] == 'VAPI') & (prediction_df['Noeud'] == 'bn257')]
+            #print(f"Number of VAPI alarms for node 'bn257' in prediction box: {prediction_VAPI_bn257_df.shape[0]}")
 
+            # Count the number of alarms in the prediction window (shape() returns a tuple of (num_rows, num_columns))
             num_VAPI_bn257_alarms = prediction_VAPI_bn257_df.shape[0]
 
+            # There is an alram if the number of alarms is greater than the threshold
             if num_VAPI_bn257_alarms >= aggregated_alarms_TH:
                 is_alarm = 1
-                print(f"Alarm detected at index {window_box_tail_event_index + 1} with {num_VAPI_bn257_alarms} alarms.")
+                print(f"ALARM: Alarms detected: {num_VAPI_bn257_alarms} alarms.")
+                print_zeros = 1
             else:
                 is_alarm = 0
-                print(f"No alarm detected at index {window_box_tail_event_index + 1} with {num_VAPI_bn257_alarms} alarms.")
+                if print_zeros:
+                    print(f"NO ALARM: alarms detected: {num_VAPI_bn257_alarms} alarms. Searching...")
+                    print_zeros = 0
 
-            # Filter the node bn257 in window box for sequence
+            # Filter out all events corresponfig to node 'bn257' in window box for sequence
+            window_box_sequences_events_df = window_box_sequence_data[0]
             window_box_sequences_events_df = window_box_sequences_events_df.loc[window_box_sequences_events_df['Noeud'] == 'bn257']   
 
-            # Generate a sequence of EventIds within the time window
+            # Generate a sequence of EventIds within the sequence window box
             sequence = ','.join(window_box_sequences_events_df['EventId'].tolist())
-            # Check if the sequence is not empty
+
+            # Check if the sequence is not empty and generate the sequence
             if sequence:
                 # Write the sequence and label to the file (*** ensure to insert "" around the sequence ***)
                 sequences_output_file.write(f'"{sequence}",{is_alarm}\n')
-                     
 
-            # Update the start index for the next window box
-             # Get info for NEXT window box
-            next_window_box_event_data = find_event(df_logs, window_box_start_index, moving_window_epoch, 'future')
+            # Get info for NEXT window box
+            next_window_box_event_data = find_event(df_logs, window_box_sequence_start_time_epoch, moving_window_epoch, 'future')
             if next_window_box_event_data is None:
                 break
             
-            # Move the window box start index to the next window box
-            window_box_start_index = next_window_box_event_data[1]
-                       
+            # Get start time of the next window box
+            window_box_sequence_start_time_epoch = next_window_box_event_data[1] + 1
+        
+        # sys.exit(0)
 
     # Remove diplicates from the sequences
     print("Sequences generated successfully!")
