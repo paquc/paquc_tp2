@@ -27,53 +27,23 @@ def remove_duplicates(file_path, output_path=None):
     return df_dedup
 
 
-# def find_future_event(df_logs, current_index, time_gap_seconds):
-#     #print(f"Finding future event within {time_gap_seconds} seconds from index {current_index}...")
-#     current_time_epoch = df_logs.iloc[current_index]['EpochTime']
-#     future_time_epoch = current_time_epoch + time_gap_seconds
-
-#     # Get the time of the last item in the log
-#     if future_time_epoch >= df_logs.iloc[-1]['EpochTime']:
-#         return None
-
-#     # Find the first event that occurs after the future_time_epoch
-#     for i in range(current_index + 1, len(df_logs)):
-#         if df_logs.iloc[i]['EpochTime'] - df_logs.iloc[current_index]['EpochTime'] >= time_gap_seconds:
-#             return [df_logs.iloc[i], i]
-    
-#     # If no future event is found within the time gap, return None
-#     return None
-
 def find_event(df_logs, current_index, time_gap_seconds, direction='future'):
-   
-    current_time_epoch = df_logs.iloc[current_index]['EpochTime']
+    # Get the EpochTime value at index 0
+    start_epoch_time = df_logs.iloc[current_index]['EpochTime']
 
-    if direction == 'future':
-        target_time_epoch = current_time_epoch + time_gap_seconds
+    # Calculate the end epoch time for the desired time interval
+    end_epoch_time = start_epoch_time + time_gap_seconds
+    
+    end_epoch_time_df = df_logs[df_logs['EpochTime'] >= end_epoch_time]
+    if end_epoch_time_df.empty:
+        return None
 
-        # Ensure the target time is within the log range
-        if target_time_epoch > df_logs.iloc[-1]['EpochTime']:
-            return None
+    end_index = end_epoch_time_df.index[0]
 
-        # Find the first event that occurs after the target_time_epoch
-        for i in range(current_index + 1, len(df_logs), 1):
-            if df_logs.iloc[i]['EpochTime'] - df_logs.iloc[current_index]['EpochTime'] >= time_gap_seconds:
-                return [df_logs.iloc[i], i]
+    # Filter the DataFrame to include only rows from index start until the specified time interval
+    sequence_df = df_logs[(df_logs['EpochTime'] >= start_epoch_time) & (df_logs['EpochTime'] <= end_epoch_time)]
 
-    elif direction == 'past':
-        target_time_epoch = current_time_epoch - time_gap_seconds
-
-        # Ensure the target time is within the log range
-        if target_time_epoch < df_logs.iloc[0]['EpochTime']:
-            return None
-
-        # Find the first event that occurs before the target_time_epoch
-        for i in range(current_index - 1, -1, -1):
-           if df_logs.iloc[current_index]['EpochTime'] - df_logs.iloc[i]['EpochTime'] >= time_gap_seconds:
-                return [df_logs.iloc[i], i]
-
-    # If no event is found within the time gap, return None
-    return None
+    return [sequence_df, end_index]
 
 
 def GenMatrices():
@@ -81,28 +51,25 @@ def GenMatrices():
     #real_data = True
     real_data = False
 
+
     if real_data:
         suffix = "10M"
+        time_window_epoch = 15
+        prediction_window_epoch = 10  
+        moving_window_epoch = 10
         logs_file = f"./Thunderbird_Brain_results/Thunderbird_{suffix}.log_structured.csv"
-        time_window_epoch = 30
-        prediction_window_epoch = 30  
-        moving_window_epoch = -1         # -1 to diable
-        moving_windows_index = 100      # -1 to diable
-        log_index=False
     else:   
         suffix = "Samples"
+        time_window_epoch = 60 * 30  
+        prediction_window_epoch = 60 + 10
+        moving_window_epoch = 60 + 60
         logs_file = f"./Thunderbird_Brain_results/Thunderbird.log_structured_{suffix}.csv"
-        time_window_epoch = 3600  
-        prediction_window_epoch = 60 * 5
-        moving_window_epoch = -1        # -1 to diable
-        moving_windows_index = 5        # -1 to diable
-        log_index=True
 
 
     print(f"Processing log file: {logs_file}")
     df_logs = pd.read_csv(logs_file)
 
-    start_time_epoch = 0
+    next_start_log_time_epoch = df_logs.iloc[0]['EpochTime']
 
     # Open the output file in write mode
     with open(f"./Thunderbird_Brain_results/VAPI_alarm_sequences_{suffix}_chrono.csv", "w") as sequences_output_file:
@@ -111,61 +78,54 @@ def GenMatrices():
         # Write the header to the CSV file
         sequences_output_file.write("EventSequence,IsAlarm\n")
        
-        init = True
-        current_tail_wnd_event_index = 0
-        current_start_wnd_event_index = 0
+        aggregated_alarms_TH = 5
+        window_box_start_index = 0
 
         while True:
-            
-            if(init):
-                # Get the first event and index
-                init = False
-                current_start_wnd_event_index = 0
-                next_tail_event_data = find_event(df_logs, current_start_wnd_event_index, time_window_epoch, 'future')
-                if next_tail_event_data is None:
-                    break
-            else:
-                # Find the next event to start the sequence
-                if moving_window_epoch > 0:
-                    next_start_event_data = find_event(df_logs, current_start_wnd_event_index, moving_window_epoch, 'future')
-                    if next_start_event_data is None:
-                        break   # Stop if no future event is found within the moving window
-                    current_start_wnd_event_index = next_start_event_data[1]
-                
-                if moving_windows_index > 0:
-                    current_start_wnd_event_index = current_start_wnd_event_index + moving_windows_index
-                    
-                # Find the next event to end the sequence    
-                next_tail_event_data = find_event(df_logs, current_start_wnd_event_index, time_window_epoch, 'future')
-                if next_tail_event_data is None:
-                    break   # Stop if no future event is found within the moving window
+                      
+            # Get the window box
+            window_box_event_data = find_event(df_logs, window_box_start_index, time_window_epoch, 'future')
+            if window_box_event_data is None:
+                break
+            window_box_sequences_events_df = window_box_event_data[0]
+            window_box_tail_event_index = window_box_event_data[1]
+            #print(f"Window box start index: {window_box_start_index}, tail index: {window_box_tail_event_index}")
+                 
+            # Get the window after for prediction
+            prediction_box_data = find_event(df_logs, window_box_tail_event_index + 1, prediction_window_epoch, 'future')
+            if prediction_box_data is None:
+                break
+            prediction_df = prediction_box_data[0]
+            #print(f"Prediction box start index: {window_box_tail_event_index + 1}, tail index: {prediction_box_data[1]}")
 
+            # Filter the prediction DataFrame to keep only rows where 'AlertFlagLabel' is 'VAPI'
+            prediction_VAPI_df = prediction_df.loc[prediction_df['AlertFlagLabel'] == 'VAPI']
+            prediction_VAPI_bn257_df = prediction_VAPI_df.loc[prediction_VAPI_df['Noeud'] == 'bn257']
 
-            current_tail_wnd_event_index = next_tail_event_data[1]
+            num_VAPI_bn257_alarms = prediction_VAPI_bn257_df.shape[0]
 
-            # Get the window of events using an index interval
-            log_entries_window = df_logs.iloc[current_start_wnd_event_index : current_tail_wnd_event_index]
-
-            # Generate a sequence of EventIds within the time window
-            sequence = ','.join(log_entries_window['EventId'].tolist())
-
-            # Check if the sequence is not empty
-            if sequence:
-                # Find the next event within the prediction window
-                prediction_event = find_event(df_logs, current_tail_wnd_event_index, prediction_window_epoch, 'future')
-                if prediction_event is None:
-                    break   # Stop if no future event is found within the prediction window
-
-                # Check if there is an alarm ('VAPI') 
-                is_alarm = int('VAPI' in prediction_event[0]['AlertFlagLabel'])
-                # Write the sequence and label to the file (ensure to insert "" around the sequence!!)
-                if log_index:
-                    sequences_output_file.write(f'{current_start_wnd_event_index}:{current_tail_wnd_event_index},"{sequence}",{is_alarm}\n')
-                else:
+            if num_VAPI_bn257_alarms >= aggregated_alarms_TH:
+                is_alarm = 1
+                # Generate a sequence of EventIds within the time window
+                sequence = ','.join(window_box_sequences_events_df['EventId'].tolist())
+                # Check if the sequence is not empty
+                if sequence:
+                    # Write the sequence and label to the file (*** ensure to insert "" around the sequence ***)
                     sequences_output_file.write(f'"{sequence}",{is_alarm}\n')
-                print(f"Sequence: {sequence} - IsAlarm: {is_alarm}")
+                    print(f"ALRM - Number of VAPI alarms in prediction window for bn257: {num_VAPI_bn257_alarms} > {aggregated_alarms_TH})")
 
 
+            # Update the start index for the next window box
+             # Get info for NEXT window box
+            next_window_box_event_data = find_event(df_logs, window_box_start_index, moving_window_epoch, 'future')
+            if next_window_box_event_data is None:
+                break
+            
+            # Move the window box start index to the next window box
+            window_box_start_index = next_window_box_event_data[1]
+                       
+
+    # Remove diplicates from the sequences
     print("Sequences generated successfully!")
     remove_duplicates(f"./Thunderbird_Brain_results/VAPI_alarm_sequences_{suffix}_chrono.csv", f"./Thunderbird_Brain_results/VAPI_alarm_sequences_{suffix}_chrono_dedup.csv")
     print("Deduplicated sequences saved successfully!")
@@ -218,6 +178,7 @@ def GenMatrices():
     remove_duplicates(matrix_output_file_path, matrix_output_file_path.replace(".csv", "_dedup.csv"))
     print(f"Deduplicated occurrence matrix saved successfully at {matrix_output_file_path.replace('.csv', '_dedup.csv')}")
 
-GenMatrices()
 
+
+GenMatrices()
 print("Thunderbird matrices V4 generated successfully!")
