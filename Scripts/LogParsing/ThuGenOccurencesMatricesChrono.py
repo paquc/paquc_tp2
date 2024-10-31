@@ -76,15 +76,15 @@ def print_alarm_types(df_logs, suffix, node_name):
 
 def GenMatrices():
 
-    #real_data = True
-    real_data = False
+    real_data = True
+    #real_data = False
 
     if real_data:
         node_name = 'dn30'  # 236445 alarms!
         suffix = "10M"
-        time_window_epoch = 60*60
-        prediction_window_epoch = 60*20   
-        moving_window_epoch = 60*1
+        time_window_epoch = 60*30
+        prediction_window_epoch = 60*10   
+        moving_window_epoch = 60*5
         logs_file = f"./Thunderbird_Brain_results/Thunderbird_{suffix}.log_structured.csv"
     else:   
         node_name = 'bn257' 
