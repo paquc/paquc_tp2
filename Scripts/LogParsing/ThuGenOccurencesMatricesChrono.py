@@ -162,12 +162,12 @@ def GenMatrices():
             window_box_sequences_node_events_df = window_box_sequences_events_df.loc[window_box_sequences_events_df['Noeud'] == node_name]   
 
             # Generate a sequence of EventIds within the sequence window box
-            sequence_node = ','.join(window_box_sequences_node_events_df['EventId'].tolist())
+            sequence_events = ','.join(window_box_sequences_node_events_df['EventId'].tolist())
 
             # Check if the sequence is not empty and generate the sequence
-            if sequence_node:
+            if sequence_events:
                 # Write the sequence and label to the file (*** ensure to insert "" around the sequence ***)
-                sequences_output_file.write(f'"{sequence_node}",{is_alarm}\n')
+                sequences_output_file.write(f'"{sequence_events}",{is_alarm}\n')
 
             # Get info for NEXT window box
             df_logs_data = find_next_start(df_logs, window_box_sequence_start_time_epoch, moving_window_epoch, 'future')
@@ -197,9 +197,9 @@ def GenMatrices():
     unique_events = set()  # Initialiser un ensemble vide pour collecter tous les événements uniques
 
     # Parcourir chaque séquence d'événements dans la colonne 'EventSequence' du DataFrame
-    for sequence_node in df_sequences['EventSequence']:
-        # Diviser chaque séquence en événements individuels et les ajouter à l'ensemble unique_events
-        unique_events.update(sequence_node.split(','))
+    for sequence_events in df_sequences['EventSequence']:
+        # Diviser chaque séquence en événements individuels et les ajouter à l'ensemble unique_events (set ignore the duplicates!!)
+        unique_events.update(sequence_events.split(','))
 
     # Trier les événements uniques pour garantir un ordre cohérent des colonnes dans la matrice d'occurrences
     unique_events = sorted(unique_events)
@@ -211,19 +211,20 @@ def GenMatrices():
 
     # Ouvrir le fichier de sortie en mode écriture
     with open(matrix_output_file_path, 'w') as matrix_output_file:
+
         print(f"Generating occurrence matrix at {matrix_output_file_path}...")
         # Écrire l'en-tête (les événements uniques comme colonnes et 'IsAlarm' comme dernière colonne)
         header = ','.join(unique_events) + ',IsAlarm\n'
         matrix_output_file.write(header)
 
-        # Parcourir chaque séquence d'événements dans la colonne 'EventSequence' du DataFrame
-        for idx, row in df_sequences.iterrows():
-            # Diviser la séquence en événements individuels
-            events = row['EventSequence'].split(',')
-            # Compter le nombre d'occurrences de chaque événement dans la séquence actuelle
-            event_count = Counter(events)
+        # Parcourir chaque séquence d'événements qui sont en 'ORDRE CHRONOLOGIQUE' dans la colonne 'EventSequence' du DataFrame
+        for row in df_sequences.iterrows():
+            # Diviser la séquence en événements individuels (output ex. = ['E1', 'E2', 'E3'])
+            chronological_sequence_events_array = row['EventSequence'].split(',')
+            # Compter le nombre d'occurrences de chaque événement dans la séquence actuelle (output ex. = {'E1': 2, 'E2': 2, 'E3': 1})
+            event_count = Counter(chronological_sequence_events_array)
             # Créer une ligne pour la matrice d'occurrences, avec chaque colonne représentant un événement unique
-            # La valeur de chaque cellule est le nombre d'occurrences de cet événement dans la séquence actuelle
+            # La valeur de chaque cellule est le nombre d'occurrences de cet événement dans la séquence actuelle (output ex. =  [2, 1, 1, 0])
             matrix_row = [event_count.get(event, 0) for event in unique_events]
             # Ajouter l'étiquette 'IsAlarm' à la fin de la ligne
             matrix_row.append(row['IsAlarm'])
@@ -237,4 +238,4 @@ def GenMatrices():
 
 
 GenMatrices()
-print("Thunderbird matrices V4 generated successfully!")
+print("COMPLETED - Thunderbird matrices CHRONO generated successfully!")

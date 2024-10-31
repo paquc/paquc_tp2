@@ -2,14 +2,9 @@ import fileinput
 import sys
 
 
-if len(sys.argv) > 1:
-    n_data_set_id = int(sys.argv[1])
-else:
-    print("Usage: PartitionDataSet.py <data_set_id>")
-    sys.exit(1)
-
 #input_file = f"./Thunderbird_Brain_results/VAPI_alarm_occurences_matrix_V4_data_set_{n_data_set_id}.csv"
-input_file = f"./Thunderbird_Brain_results/VAPI_alarm_occurences_matrix_V4_dedup.csv"
+#input_file = f"./Thunderbird_Brain_results/VAPI_alarm_occurences_matrix_preprocessed.csv"
+input_file = f"./Thunderbird_Brain_results/VAPI_alarm_occurences_matrix_10M_dn30_chrono_dedup.csv"
 
 def count_lines_ending_with(file_path, ending_string):
     count = 0
