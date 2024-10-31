@@ -33,30 +33,30 @@ def find_event(df_logs, current_index, time_gap_seconds, direction='future'):
 
     # Calculate the end epoch time for the desired time interval
     end_epoch_time = start_epoch_time + time_gap_seconds
+
+    # Filter the DataFrame to include only rows from index start until the specified time interval
+    sequence_df = df_logs[(df_logs['EpochTime'] >= start_epoch_time) & (df_logs['EpochTime'] <= end_epoch_time)]
     
-    end_epoch_time_df = df_logs[df_logs['EpochTime'] >= end_epoch_time]
+    end_epoch_time_df = df_logs[(df_logs['EpochTime'] >= end_epoch_time) & (df_logs['EpochTime'] <= end_epoch_time + 60)]
     if end_epoch_time_df.empty:
         return None
 
     end_index = end_epoch_time_df.index[0]
-
-    # Filter the DataFrame to include only rows from index start until the specified time interval
-    sequence_df = df_logs[(df_logs['EpochTime'] >= start_epoch_time) & (df_logs['EpochTime'] <= end_epoch_time)]
 
     return [sequence_df, end_index]
 
 
 def GenMatrices():
 
-    #real_data = True
-    real_data = False
+    real_data = True
+    #real_data = False
 
 
     if real_data:
         suffix = "10M"
-        time_window_epoch = 15
-        prediction_window_epoch = 10  
-        moving_window_epoch = 10
+        time_window_epoch = 60*10
+        prediction_window_epoch = 60*5   
+        moving_window_epoch = 60+5
         logs_file = f"./Thunderbird_Brain_results/Thunderbird_{suffix}.log_structured.csv"
     else:   
         suffix = "Samples"
@@ -80,6 +80,7 @@ def GenMatrices():
        
         aggregated_alarms_TH = 5
         window_box_start_index = 0
+        counter = 0
 
         while True:
                       
@@ -90,7 +91,7 @@ def GenMatrices():
             window_box_sequences_events_df = window_box_event_data[0]
             window_box_tail_event_index = window_box_event_data[1]
             #print(f"Window box start index: {window_box_start_index}, tail index: {window_box_tail_event_index}")
-                 
+
             # Get the window after for prediction
             prediction_box_data = find_event(df_logs, window_box_tail_event_index + 1, prediction_window_epoch, 'future')
             if prediction_box_data is None:
@@ -106,14 +107,21 @@ def GenMatrices():
 
             if num_VAPI_bn257_alarms >= aggregated_alarms_TH:
                 is_alarm = 1
-                # Generate a sequence of EventIds within the time window
-                sequence = ','.join(window_box_sequences_events_df['EventId'].tolist())
-                # Check if the sequence is not empty
-                if sequence:
-                    # Write the sequence and label to the file (*** ensure to insert "" around the sequence ***)
-                    sequences_output_file.write(f'"{sequence}",{is_alarm}\n')
-                    print(f"ALRM - Number of VAPI alarms in prediction window for bn257: {num_VAPI_bn257_alarms} > {aggregated_alarms_TH})")
+                print(f"Alarm detected at index {window_box_tail_event_index + 1} with {num_VAPI_bn257_alarms} alarms.")
+            else:
+                is_alarm = 0
+                print(f"No alarm detected at index {window_box_tail_event_index + 1} with {num_VAPI_bn257_alarms} alarms.")
 
+            # Filter the node bn257 in window box for sequence
+            window_box_sequences_events_df = window_box_sequences_events_df.loc[window_box_sequences_events_df['Noeud'] == 'bn257']   
+
+            # Generate a sequence of EventIds within the time window
+            sequence = ','.join(window_box_sequences_events_df['EventId'].tolist())
+            # Check if the sequence is not empty
+            if sequence:
+                # Write the sequence and label to the file (*** ensure to insert "" around the sequence ***)
+                sequences_output_file.write(f'"{sequence}",{is_alarm}\n')
+                     
 
             # Update the start index for the next window box
              # Get info for NEXT window box
