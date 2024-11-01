@@ -24,6 +24,8 @@ if len(sys.argv) > 5:
     sliding_window = int(sys.argv[7])
     use_bootstrap = int(sys.argv[8])
     n_bootstrap_samples = int(sys.argv[9])
+    train_data_size = int(sys.argv[10])
+    test_data_size = int(sys.argv[11])
 else:
     print("Usage: Train.py <data_set_id>")
     sys.exit(1)
@@ -108,9 +110,9 @@ def get_model_evaluation(y_test, y_pred, model_name, log_file, estimators, rando
 print("************************************")
 print("Start of script")
 
+sampling_data_desc = f'{train_data_size}_{test_data_size}_{test_data_size}'
 
-
-with open(f"./Thunderbird_Brain_results/Thu_VAPI_Training_Set_RF_60_20_20_{file_suffix}_Output.log", "w") as RF_log_file, open(f"./Thunderbird_Brain_results/Thu_VAPI_Training_Set_LR_60_20_20_{file_suffix}_Output.log", "w") as LR_log_file:
+with open(f"./Thunderbird_Brain_results/Thu_VAPI_Training_Set_RF_{sampling_data_desc}_{file_suffix}_Output.log", "w") as RF_log_file, open(f"./Thunderbird_Brain_results/Thu_VAPI_Training_Set_LR_{sampling_data_desc}_{file_suffix}_Output.log", "w") as LR_log_file:
     for bs_index in range(n_bootstrap_samples):
 
         # data_bootstrap = resample(full_data, replace=True, n_samples=len(full_data))
@@ -126,16 +128,25 @@ with open(f"./Thunderbird_Brain_results/Thu_VAPI_Training_Set_RF_60_20_20_{file_
         #y_data = data['IsAlarm']
         # Simply split the bootstrap without randomness using 80-20 split NO RANDOMNESS to keep chronological order
         #X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, test_size = 0.2, random_state = 0)
-               
+
+        # Split the data into chunks based on bs_index
+        chunk_size = len(data) // n_bootstrap_samples
+        start_index = bs_index * chunk_size
+        end_index = start_index + chunk_size if bs_index < n_bootstrap_samples - 1 else len(data)
+        data_chunk = data.iloc[start_index:end_index]
+        print(f"Bootstrap sample {bs_index} - Start index: {start_index}, End index: {end_index}, Chunk size: {data_chunk.shape[0]}")
+
+        data = data_chunk
+
         # Split the data into 60% training, 20% validation, and 20% testing
-        train_size = int(0.60 * len(data))
-        val_size = int(0.20 * len(data)) - 1
+        train_size = int((train_data_size / 100) * len(data))
+        val_size = int((test_data_size / 100) * len(data)) - 1
         test_size = val_size
         print(f"Train size: {train_size}, Validation size: {val_size}, Test size: {test_size}")
 
         train_df = data.iloc[:train_size]
-        val_df = data.iloc[train_size + 1 : train_size + val_size + 1]
-        test_df = data.iloc[ train_size + val_size + 1 :  train_size + val_size + val_size + 1]
+        test_df = data.iloc[train_size + 1 : train_size + val_size + 1]
+        val_df = data.iloc[ train_size + val_size + 1 :  train_size + val_size + val_size + 1]
         print(f"Train size: {train_df.shape[0]}, Validation size: {val_df.shape[0]}, Test size: {test_df.shape[0]}")
 
         # Separate features and labels
@@ -152,32 +163,43 @@ with open(f"./Thunderbird_Brain_results/Thu_VAPI_Training_Set_RF_60_20_20_{file_
         randomize_val= (bs_index+1)*10
 
         if train_RF == 1:
+            RF_log_file.write(f"Data sample {bs_index} - Start index: {start_index}, End index: {end_index}, Chunk size: {data_chunk.shape[0]}\n\n")
             # Entraîner le modèle Random Forest Classifier
             model = RandomForestClassifier(n_estimators=estimators, random_state=randomize_val)         # class_weight='balanced', n_estimators=(bs_index+1)*2, warm_start=False, random_state=(bs_index+1)*10)
             model.fit(X_train, y_train)
-            y_pred = model.predict(X_test)
+            y_test_pred = model.predict(X_test)
+            y_val_pred = model.predict(X_val)
+            y_train_pred = model.predict(X_train)
 
             # Assume `model` is your trained model
-            with open(f'random_forest_model_{suffix}_{node_name}_{bs_index}.pkl', 'wb') as file:
-                pickle.dump(model, file)
+            #with open(f'random_forest_model_{suffix}_{node_name}_{bs_index}.pkl', 'wb') as file:
+            #    pickle.dump(model, file)
 
-            get_model_evaluation(y_test, y_pred, f'Random Forest Classifier - TEST DATA - {bs_index}', RF_log_file, estimators, randomize_val)
-            get_model_evaluation(y_val, y_pred, f'Random Forest Classifier - VALIDATION DATA - {bs_index}', RF_log_file, estimators, randomize_val)
+            get_model_evaluation(y_train, y_train_pred, f'Random Forest Classifier - TRAIN DATA - {bs_index}', RF_log_file, estimators, randomize_val)
+            get_model_evaluation(y_test, y_test_pred, f'Random Forest Classifier - TEST DATA - {bs_index}', RF_log_file, estimators, randomize_val)
+            get_model_evaluation(y_val, y_val_pred, f'Random Forest Classifier - VALIDATION DATA - {bs_index}', RF_log_file, estimators, randomize_val)
 
         if train_LR == 1:
+            LR_log_file.write(f"Data sample {bs_index} - Start index: {start_index}, End index: {end_index}, Chunk size: {data_chunk.shape[0]}\n\n")
             # Model de regression lineaire
             randomize_val= (bs_index+1)*10
             model = LogisticRegression(random_state=randomize_val)      # random_state=(bs_index+1)*10, solver='liblinear')
             model.fit(X_train, y_train)
-            y_pred = model.predict(X_test)
+            y_test_pred = model.predict(X_test)
+            y_val_pred = model.predict(X_val)
+            y_train_pred = model.predict(X_train)
 
             # Assume `model` is your trained model
-            with open(f'linear_regression_model_{suffix}_{node_name}_{bs_index}.pkl', 'wb') as file:
-                pickle.dump(model, file)
+            #with open(f'linear_regression_model_{suffix}_{node_name}_{bs_index}.pkl', 'wb') as file:
+            #    pickle.dump(model, file)
 
-            get_model_evaluation(y_test, y_pred, f'Linear Regression Classifier - TEST DATA', LR_log_file, -1, randomize_val)
-            get_model_evaluation(y_val, y_pred, f'Linear Regression Classifier - VALIDATION DATA', LR_log_file, -1, randomize_val)
+            get_model_evaluation(y_train, y_train_pred, f'Linear Regression Classifier - TRAIN DATA', LR_log_file, -1, randomize_val)
+            get_model_evaluation(y_test, y_test_pred, f'Linear Regression Classifier - TEST DATA', LR_log_file, -1, randomize_val)
+            get_model_evaluation(y_val, y_val_pred, f'Linear Regression Classifier - VALIDATION DATA', LR_log_file, -1, randomize_val)
 
+
+print(f"RF log file: {RF_log_file.name}")
+print(f"LR log file: {LR_log_file.name}")
 
 print("End of script")
 print("************************************")
