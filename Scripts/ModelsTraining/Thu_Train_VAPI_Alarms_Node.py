@@ -14,17 +14,24 @@ from sklearn.datasets import make_regression
 from sklearn.utils import resample
 
 
-if len(sys.argv) > 2:
+if len(sys.argv) > 5:
     train_LR = int(sys.argv[1])
     train_RF = int(sys.argv[2])
     suffix = sys.argv[3]
     node_name = sys.argv[4]
+    window_size = int(sys.argv[5])
+    prediction_window = int(sys.argv[6])
+    sliding_window = int(sys.argv[7])
+    use_bootstrap = int(sys.argv[8])
+    n_bootstrap_samples = int(sys.argv[9])
 else:
     print("Usage: Train.py <data_set_id>")
     sys.exit(1)
 
+file_suffix = f"{suffix}_{node_name}_{window_size}_{prediction_window}_{sliding_window}"    
+
 # Charger la matrice d'occurrence
-input_file_path = f"./Thunderbird_Brain_results/VAPI_alarm_occurences_matrix_{suffix}_{node_name}_chrono_dedup.csv"
+input_file_path = f"./Thunderbird_Brain_results/VAPI_alarm_occurences_matrix_{file_suffix}_chrono_dedup.csv"
 full_data = pd.read_csv(input_file_path)
 #data = pd.read_csv(f"./Thunderbird_Brain_results/VAPI_alarm_occurences_matrix_preprocessed_5min.csv")
 #data = pd.read_csv('./BGL_Brain_results/KERNDTLB_alarm_occurences_matrix_V1_part1_dedup.csv')  # for testing only!
@@ -41,31 +48,42 @@ def get_model_evaluation(y_test, y_pred, model_name, log_file, estimators, rando
     log_file.write(f"Number of estimators: {estimators}\n")
     log_file.write(f"Randomize value: {randomize_val}\n\n")
 
+    unique_classes_tests = np.unique(y_test)
+    unique_classes_pred = np.unique(y_pred)
+    log_file.write(f"Unique classes in TESTS\VALIDATION set: {unique_classes_tests}\n")
+    log_file.write(f"Unique classes in PREDICTED set: {unique_classes_pred}\n\n")
+
+    compute_AUC = True
+    if len(unique_classes_tests) == 1:
+        log_file.write(f'WARNING - Only 1 class present in the TESTS\VALIDATION set: {unique_classes_tests}\n\n')
+        compute_AUC = False
+
+    if len(unique_classes_pred) == 1:
+        log_file.write(f'WARNING - Only 1 class present in the predicted set: {unique_classes_pred}\n\n')    
+        compute_AUC = False
+
     # Accuracy
     accuracy = accuracy_score(y_test, y_pred)
     msg=f"Accuracy: {accuracy:.4f}"
     print(msg)
     log_file.write(msg+"\n")
-
+        
     # Calculate recall
     recall = recall_score(y_test, y_pred)
     msg=f"Recall: {recall:.2f}"
     print(msg)
     log_file.write(msg+"\n")
-    
-    # Handle invalid data set to compute AUC
-    if recall == 0.0:
-        print("Recall is 0.0, skipping machine learning!!!! Need 2 classes (0, 1)")
-        return
 
-    # AUC score
-    # Get the predicted probabilities for the positive class (class 1)
-    #y_prob = model.predict_proba(X_test)[:, 1]
-    # Compute AUC score
-    AUC = roc_auc_score(y_test, y_pred)
-    msg=f"AUC: {AUC:.2f}"
-    print(msg)
-    log_file.write(msg+"\n")
+    # Calculate AUC    
+    if compute_AUC:
+        AUC = roc_auc_score(y_test, y_pred)
+        msg=f"AUC: {AUC:.2f}"
+        print(msg)
+        log_file.write(msg+"\n")
+    else:
+        msg=f"AUC: N/A"
+        print(msg)
+        log_file.write(msg+"\n")
 
     # Mean Absolute Error (MAE)
     mae = mean_absolute_error(y_test, y_pred)
@@ -90,10 +108,9 @@ def get_model_evaluation(y_test, y_pred, model_name, log_file, estimators, rando
 print("************************************")
 print("Start of script")
 
-n_bootstrap_samples = 10
-use_bootstrap = 0
 
-with open(f"./Thunderbird_Brain_results/Thu_VAPI_Training_Set_RF_60_20_20_{suffix}_{node_name}_Output.log", "w") as RF_log_file, open(f"./Thunderbird_Brain_results/Thu_VAPI_Training_Set_LR_60_20_20_{suffix}_{node_name}_Output.log", "w") as LR_log_file:
+
+with open(f"./Thunderbird_Brain_results/Thu_VAPI_Training_Set_RF_60_20_20_{file_suffix}_Output.log", "w") as RF_log_file, open(f"./Thunderbird_Brain_results/Thu_VAPI_Training_Set_LR_60_20_20_{file_suffix}_Output.log", "w") as LR_log_file:
     for bs_index in range(n_bootstrap_samples):
 
         # data_bootstrap = resample(full_data, replace=True, n_samples=len(full_data))

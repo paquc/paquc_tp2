@@ -3,11 +3,19 @@ from collections import Counter
 import fileinput
 import sys
 
-# if len(sys.argv) >= 1:
-#     hours = int(sys.argv[1])
-# else:
-#     print("Usage: script time_wnd_hours")
-#     sys.exit(1)
+if len(sys.argv) >= 5:
+    node_name = sys.argv[1]
+    suffix = sys.argv[2]
+    time_window_epoch = int(sys.argv[3])
+    prediction_window_epoch = int(sys.argv[4])
+    moving_window_epoch = int(sys.argv[5])
+else:
+    print("Usage: script time_wnd_hours")
+    sys.exit(1)
+
+
+logs_file = f"./Thunderbird_Brain_results/Thunderbird_{suffix}.log_structured.csv"
+
 
 def remove_duplicates(file_path, output_path=None):
     # Load the file
@@ -76,23 +84,23 @@ def print_alarm_types(df_logs, suffix, node_name):
 
 def GenMatrices():
 
-    real_data = True
-    #real_data = False
+    # real_data = True
+    # #real_data = False
 
-    if real_data:
-        node_name = 'dn30'  # 236445 alarms!
-        suffix = "10M"
-        time_window_epoch = 60*30
-        prediction_window_epoch = 60*10   
-        moving_window_epoch = 60*5
-        logs_file = f"./Thunderbird_Brain_results/Thunderbird_{suffix}.log_structured.csv"
-    else:   
-        node_name = 'bn257' 
-        suffix = "Samples"
-        time_window_epoch = 60*20 
-        prediction_window_epoch = 60*10
-        moving_window_epoch = 60*1
-        logs_file = f"./Thunderbird_Brain_results/Thunderbird.log_structured_{suffix}.csv"
+    # if real_data:
+    #     node_name = 'dn30'  # 236445 alarms!
+    #     suffix = "10M"
+    #     time_window_epoch = 60*90
+    #     prediction_window_epoch = 60*45   
+    #     moving_window_epoch = 60*10
+    #     logs_file = f"./Thunderbird_Brain_results/Thunderbird_{suffix}.log_structured.csv"
+    # else:   
+    #     node_name = 'bn257' 
+    #     suffix = "Samples"
+    #     time_window_epoch = 60*20 
+    #     prediction_window_epoch = 60*10
+    #     moving_window_epoch = 60*1
+    #     logs_file = f"./Thunderbird_Brain_results/Thunderbird.log_structured_{suffix}.csv"
 
     # Load the log data from the CSV file
     print(f"Processing log file: {logs_file}")
@@ -103,7 +111,7 @@ def GenMatrices():
 
     
     # Open the output file in write mode
-    with open(f"./Thunderbird_Brain_results/VAPI_alarm_sequences_{suffix}_{node_name}_chrono.csv", "w") as sequences_output_file:
+    with open(f"./Thunderbird_Brain_results/VAPI_alarm_sequences_{suffix}_{node_name}_{time_window_epoch}_{prediction_window_epoch}_{moving_window_epoch}_chrono.csv", "w") as sequences_output_file:
 
         print(f"Generating sequences of events within {time_window_epoch} seconds for each entry...")
         sequences_output_file.write("EventSequence,IsAlarm\n")
@@ -183,12 +191,12 @@ def GenMatrices():
 
     # Remove diplicates from the sequences
     print("Sequences generated successfully!")
-    remove_duplicates(f"./Thunderbird_Brain_results/VAPI_alarm_sequences_{suffix}_{node_name}_chrono.csv", f"./Thunderbird_Brain_results/VAPI_alarm_sequences_{suffix}_{node_name}_chrono_dedup.csv")
+    remove_duplicates(f"./Thunderbird_Brain_results/VAPI_alarm_sequences_{suffix}_{node_name}_{time_window_epoch}_{prediction_window_epoch}_{moving_window_epoch}_chrono.csv", f"./Thunderbird_Brain_results/VAPI_alarm_sequences_{suffix}_{node_name}_{time_window_epoch}_{prediction_window_epoch}_{moving_window_epoch}_chrono_dedup.csv")
     print("Deduplicated sequences saved successfully!")
     
     # Charger le fichier de séquences d'événements générées précédemment
     # Ce fichier contient les séquences d'événements et leurs étiquettes (indicateur d'alarme)
-    sequences_file = f"./Thunderbird_Brain_results/VAPI_alarm_sequences_{suffix}_{node_name}_chrono_dedup.csv"
+    sequences_file = f"./Thunderbird_Brain_results/VAPI_alarm_sequences_{suffix}_{node_name}_{time_window_epoch}_{prediction_window_epoch}_{moving_window_epoch}_chrono_dedup.csv"
     df_sequences = pd.read_csv(sequences_file, header=0)
 
     #********************************************************************************************************************
@@ -207,24 +215,23 @@ def GenMatrices():
 
     #********************************************************************************************************************
     # Écrire les données de la matrice d'occurrences ligne par ligne dans le fichier CSV
-    matrix_output_file_path = f"./Thunderbird_Brain_results/VAPI_alarm_occurences_matrix_{suffix}_{node_name}_chrono.csv"
+    matrix_output_file_path = f"./Thunderbird_Brain_results/VAPI_alarm_occurences_matrix_{suffix}_{node_name}_{time_window_epoch}_{prediction_window_epoch}_{moving_window_epoch}_chrono.csv"
 
     # Ouvrir le fichier de sortie en mode écriture
     with open(matrix_output_file_path, 'w') as matrix_output_file:
-
         print(f"Generating occurrence matrix at {matrix_output_file_path}...")
         # Écrire l'en-tête (les événements uniques comme colonnes et 'IsAlarm' comme dernière colonne)
         header = ','.join(unique_events) + ',IsAlarm\n'
         matrix_output_file.write(header)
 
-        # Parcourir chaque séquence d'événements qui sont en 'ORDRE CHRONOLOGIQUE' dans la colonne 'EventSequence' du DataFrame
-        for row in df_sequences.iterrows():
-            # Diviser la séquence en événements individuels (output ex. = ['E1', 'E2', 'E3'])
-            chronological_sequence_events_array = row['EventSequence'].split(',')
-            # Compter le nombre d'occurrences de chaque événement dans la séquence actuelle (output ex. = {'E1': 2, 'E2': 2, 'E3': 1})
-            event_count = Counter(chronological_sequence_events_array)
+        # Parcourir chaque séquence d'événements dans la colonne 'EventSequence' du DataFrame
+        for idx, row in df_sequences.iterrows():
+            # Diviser la séquence en événements individuels
+            events = row['EventSequence'].split(',')
+            # Compter le nombre d'occurrences de chaque événement dans la séquence actuelle
+            event_count = Counter(events)
             # Créer une ligne pour la matrice d'occurrences, avec chaque colonne représentant un événement unique
-            # La valeur de chaque cellule est le nombre d'occurrences de cet événement dans la séquence actuelle (output ex. =  [2, 1, 1, 0])
+            # La valeur de chaque cellule est le nombre d'occurrences de cet événement dans la séquence actuelle
             matrix_row = [event_count.get(event, 0) for event in unique_events]
             # Ajouter l'étiquette 'IsAlarm' à la fin de la ligne
             matrix_row.append(row['IsAlarm'])
