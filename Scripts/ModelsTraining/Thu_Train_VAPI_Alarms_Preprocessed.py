@@ -20,7 +20,7 @@ else:
     sys.exit(1)
 
 # Charger la matrice d'occurrence
-data = pd.read_csv(f"./Thunderbird_Brain_results/VAPI_alarm_occurences_matrix_preprocessed.csv")
+data = pd.read_csv(f"./Thunderbird_Brain_results/VAPI_alarm_occurences_matrix_preprocessed_5min.csv")
 #data = pd.read_csv('./BGL_Brain_results/KERNDTLB_alarm_occurences_matrix_V1_part1_dedup.csv')  # for testing only!
 
 n_bootstrap_samples = 1
