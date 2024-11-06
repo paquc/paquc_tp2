@@ -1,0 +1,60 @@
+Train data size: 80, Validation size: 0, Test size: 20
+
+Data sample 0 - Start index: 0, End index: 793, Chunk size: 793
+
+------------------------------------
+--- Linear Regression Classifier - TEST DATA ---
+
+Size of test set: 158
+Size of predicted set: 158
+
+Number of estimators: -1
+Randomize value: 10
+
+Unique classes in TESTS\VALIDATION set: [0 1]
+Unique classes in PREDICTED set: [0 1]
+
+Accuracy: 0.9494
+Recall: 1.00
+AUC: 0.94
+Mean Absolute Error (MAE): 0.05
+R-squared: 0.79
+              precision    recall  f1-score   support
+
+           0       1.00      0.88      0.93        64
+           1       0.92      1.00      0.96        94
+
+    accuracy                           0.95       158
+   macro avg       0.96      0.94      0.95       158
+weighted avg       0.95      0.95      0.95       158
+
+------------------------------------
+
+------------------------------------
+--- Linear Regression Classifier - TRAIN DATA ---
+
+Size of test set: 634
+Size of predicted set: 634
+
+Number of estimators: -1
+Randomize value: 10
+
+Unique classes in TESTS\VALIDATION set: [0 1]
+Unique classes in PREDICTED set: [0 1]
+
+Accuracy: 0.9921
+Recall: 0.99
+AUC: 0.99
+Mean Absolute Error (MAE): 0.01
+R-squared: 0.93
+              precision    recall  f1-score   support
+
+           0       0.95      0.99      0.97        85
+           1       1.00      0.99      1.00       549
+
+    accuracy                           0.99       634
+   macro avg       0.98      0.99      0.98       634
+weighted avg       0.99      0.99      0.99       634
+
+------------------------------------
+

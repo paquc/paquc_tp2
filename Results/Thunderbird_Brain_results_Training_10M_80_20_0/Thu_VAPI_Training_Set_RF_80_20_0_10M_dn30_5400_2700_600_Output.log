@@ -1,0 +1,84 @@
+Train data size: 80, Validation size: 0, Test size: 20
+
+Data sample 0 - Start index: 0, End index: 793, Chunk size: 793
+
+------------------------------------
+--- Random Forest Classifier - TEST DATA - 0 ---
+
+Size of test set: 158
+Size of predicted set: 158
+
+Number of estimators: 10
+Randomize value: 55
+
+Unique classes in TESTS\VALIDATION set: [0 1]
+Unique classes in PREDICTED set: [0 1]
+
+Accuracy: 0.9051
+Recall: 1.00
+AUC: 0.88
+Mean Absolute Error (MAE): 0.09
+R-squared: 0.61
+              precision    recall  f1-score   support
+
+           0       1.00      0.77      0.87        64
+           1       0.86      1.00      0.93        94
+
+    accuracy                           0.91       158
+   macro avg       0.93      0.88      0.90       158
+weighted avg       0.92      0.91      0.90       158
+
+Top 10 des caracteristiques les plus importantes:
+Feature  Importance
+  E1119    0.208286
+  E1278    0.152208
+   E264    0.142868
+   E961    0.061670
+   E818    0.057257
+   E960    0.046389
+   E993    0.040816
+   E989    0.034743
+   E992    0.031824
+   E425    0.026822
+------------------------------------
+
+------------------------------------
+--- Random Forest Classifier - TRAIN DATA - 0 ---
+
+Size of test set: 634
+Size of predicted set: 634
+
+Number of estimators: 10
+Randomize value: 55
+
+Unique classes in TESTS\VALIDATION set: [0 1]
+Unique classes in PREDICTED set: [0 1]
+
+Accuracy: 0.9937
+Recall: 1.00
+AUC: 0.99
+Mean Absolute Error (MAE): 0.01
+R-squared: 0.95
+              precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98        85
+           1       1.00      1.00      1.00       549
+
+    accuracy                           0.99       634
+   macro avg       0.99      0.99      0.99       634
+weighted avg       0.99      0.99      0.99       634
+
+Top 10 des caracteristiques les plus importantes:
+Feature  Importance
+  E1119    0.208286
+  E1278    0.152208
+   E264    0.142868
+   E961    0.061670
+   E818    0.057257
+   E960    0.046389
+   E993    0.040816
+   E989    0.034743
+   E992    0.031824
+   E425    0.026822
+------------------------------------
+
