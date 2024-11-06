@@ -3,7 +3,7 @@ from collections import Counter
 import fileinput
 import sys
 
-if len(sys.argv) >=  5:
+if len(sys.argv) >= 4:
     alarm_name = str(sys.argv[1])
     node_name = str(sys.argv[2])
     time_window_epoch = int(sys.argv[3])
@@ -97,8 +97,7 @@ def print_alarm_types(df_logs, node_name = 'R30-M0-N9-C:J16-U01', alarm_name = '
 def GenMatrices():
 
     #logs_file = f"./BGL_Brain_results/BGL.log_structured_V4.csv"
-    #logs_file = f"./BGL_Brain_results/BGL.log_structured_full_content_filtered.csv"  
-    logs_file = f"./BGL_Brain_results/BGL.log_structured_full_content_cleaned_3.csv"  
+    logs_file = f"./BGL_Brain_results/BGL.log_structured_full_content_filtered.csv"  
 
     # Load the log data from the CSV file
     print(f"Processing log file: {logs_file}")
@@ -139,28 +138,27 @@ def GenMatrices():
                 print("No more events to process (prediction_box_data). Exiting...")
                 break
 
-            prediction_data_df = prediction_box_data[0]
+            prediction_df = prediction_box_data[0]
             #print(prediction_df.head(10))
             #print(f"Prediction box start time: {window_box_sequence_tail_time_epoch + 1}, tail time: {prediction_box_data[1]}, Total time: {prediction_df.iloc[-1]['EpochTime'] - window_box_sequence_tail_time_epoch}")
 
             # Filter the prediction DataFrame to keep only rows where 'AlertFlagLabel' is KERNELDTLB for node 'bn257'
-            # prediction_df['NodeLoc'].str.contains(node_name)
-            prediction_window_df = prediction_data_df.loc[(prediction_data_df['AlertFlagLabel'] != '-') & prediction_data_df['NodeLoc'].str.contains(node_name)]
-            # prediction_KERNEL_node_df = prediction_df.loc[(prediction_df['AlertFlagLabel'] == alarm_name) & (prediction_df['NodeLoc'] == node_name)]
-            #print(f"Number of KERNELDTLB alarms for node {node_name} in prediction box: {prediction_KERNEL_node_df.shape[0]}")
+            # print(prediction_df.head())
+            prediction_KERNEL_node_df = prediction_df.loc[(prediction_df['AlertFlagLabel'] == alarm_name) & (prediction_df['SubSys'] == 'KERNEL')]
+            # print(f"Number of KERNELDTLB alarms for node {node_name} in prediction box: {prediction_KERNEL_node_df.shape[0]}")
 
             # Count the number of alarms in the prediction window (shape() returns a tuple of (num_rows, num_columns))
-            num_found_alarms = prediction_window_df.shape[0]
+            num_KERNEL_node_alarms = prediction_KERNEL_node_df.shape[0]
 
             # There is an alram if the number of alarms is greater than the threshold
-            if num_found_alarms >= aggregated_alarms_TH:
+            if num_KERNEL_node_alarms >= aggregated_alarms_TH:
                 is_alarm = 1
-                print(f"ALARM: Alarms detected: {num_found_alarms} alarms.")
+                print(f"ALARM: Alarms detected: {num_KERNEL_node_alarms} alarms.")
                 search_counter = 0
             else:
                 is_alarm = 0
                 if search_counter == 0:
-                    print(f"NO ALARM: alarms detected: {num_found_alarms} alarms. Searching...")
+                    print(f"NO ALARM: alarms detected: {num_KERNEL_node_alarms} alarms. Searching...")
                 search_counter += 1
                 print(f"ALARMS searching --> {search_counter}..... ")
                 if search_counter > 10:
@@ -168,8 +166,10 @@ def GenMatrices():
 
             # Filter out all events corresponfig to node 'node_name' in window box for sequence
             window_box_sequences_events_df = window_box_sequence_data[0]
-            window_box_sequences_node_events_df = window_box_sequences_events_df.loc[window_box_sequences_events_df['NodeLoc'].str.contains(node_name)]   
-            
+            # window_box_sequences_node_events_df = window_box_sequences_events_df.loc[window_box_sequences_events_df['NodeLoc'] == node_name]   
+            # window_box_sequences_node_events_df = window_box_sequences_events_df.loc[(window_box_sequences_events_df['AlertFlagLabel'] != '-') & (window_box_sequences_events_df['SubSys'] == 'KERNEL')]
+            window_box_sequences_node_events_df = window_box_sequences_events_df.loc[(window_box_sequences_events_df['SubSys'] == 'KERNEL') & (window_box_sequences_events_df['Severity'] == 'FATAL')]
+
             # Generate a sequence of EventIds within the sequence window box
             sequence_events = ','.join(window_box_sequences_node_events_df['EventId'].tolist())
 
