@@ -1,0 +1,86 @@
+Train data size: 80, Validation size: 0, Test size: 20
+
+./BGL_Brain_results/KERNDTLB_ALL_2000_alarm_occurences_matrix_FixWindow_dedup.csv
+
+Data sample 0 - Start index: 0, End index: 181, Chunk size: 181
+
+------------------------------------
+--- Random Forest Classifier - TEST DATA - 0 ---
+
+Size of test set: 36
+Size of predicted set: 36
+
+Number of estimators: 10
+Randomize value: 55
+
+Unique classes in TESTS\VALIDATION set: [0 1]
+Unique classes in PREDICTED set: [0 1]
+
+Accuracy: 0.9722
+Recall: 0.88
+AUC: 0.94
+Mean Absolute Error (MAE): 0.03
+R-squared: 0.84
+              precision    recall  f1-score   support
+
+           0       0.97      1.00      0.98        28
+           1       1.00      0.88      0.93         8
+
+    accuracy                           0.97        36
+   macro avg       0.98      0.94      0.96        36
+weighted avg       0.97      0.97      0.97        36
+
+Top 10 des caracteristiques les plus importantes:
+Feature  Importance
+   E375    0.078659
+   E331    0.061118
+   E172    0.060000
+   E232    0.060000
+   E231    0.060000
+   E171    0.060000
+   E169    0.060000
+   E374    0.060000
+     E4    0.053232
+   E359    0.050000
+------------------------------------
+
+------------------------------------
+--- Random Forest Classifier - TRAIN DATA - 0 ---
+
+Size of test set: 144
+Size of predicted set: 144
+
+Number of estimators: 10
+Randomize value: 55
+
+Unique classes in TESTS\VALIDATION set: [0 1]
+Unique classes in PREDICTED set: [0 1]
+
+Accuracy: 1.0000
+Recall: 1.00
+AUC: 1.00
+Mean Absolute Error (MAE): 0.00
+R-squared: 1.00
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        57
+           1       1.00      1.00      1.00        87
+
+    accuracy                           1.00       144
+   macro avg       1.00      1.00      1.00       144
+weighted avg       1.00      1.00      1.00       144
+
+Top 10 des caracteristiques les plus importantes:
+Feature  Importance
+   E375    0.078659
+   E331    0.061118
+   E172    0.060000
+   E232    0.060000
+   E231    0.060000
+   E171    0.060000
+   E169    0.060000
+   E374    0.060000
+     E4    0.053232
+   E359    0.050000
+------------------------------------
+
