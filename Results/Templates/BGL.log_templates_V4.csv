@@ -1,0 +1,548 @@
+EventId,EventTemplate,Occurrences
+E0,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', '<*>', '<*>', '<*>', '<*>')",65005
+E1,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",20543
+E2,"('<*>', 'RAS', 'KERNEL', '<*>', 'guaranteed', 'instruction', 'cache', 'block', 'touch.0')",2390
+E3,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts', 'panic!', '-', 'stopping', 'execution')",3983
+E4,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '<*>')",5385
+E5,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', 'input', 'interrupt', 'enable..', '<*>')",20
+E6,"('<*>', 'RAS', 'KERNEL', 'INFO', 'instruction', 'cache', 'parity', 'error', 'corrected')",39640
+E7,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', 'global', 'control', 'register:', '<*>')",48
+E8,"('<*>', 'RAS', 'KERNEL', '<*>', 'program', 'interrupt:', 'unimplemented', 'operation..', '<*>')",8102
+E9,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'floating', 'point', 'alignment', 'exceptions')",267719
+E10,"('<*>', 'RAS', 'KERNEL', 'INFO', 'program', 'interrupt:', 'privileged', 'instruction..', '<*>')",480
+E11,"('<*>', 'RAS', 'LINKCARD', 'FATAL', 'MidplaneSwitchController::sendTrain(', ')', 'port', 'disconnected:', '<*>')",24
+E12,"('<*>', 'NULL', 'HARDWARE', 'SEVERE', '<*>', 'is', 'not', 'fully', 'functional')",308
+E13,"('<*>', 'RAS', '<*>', 'FATAL', 'Torus', 'non-recoverable', '<*>', 'DCRs', 'follow.')",10
+E14,"('<*>', 'RAS', '<*>', 'FATAL', '<*>', '<*>', '<*>', '<*>', '<*>')",11
+E15,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Error:', 'unable', 'to', 'mount', 'filesystem')",720
+E16,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'machine', 'check', 'status', 'register:', '<*>')",7
+E17,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'DDR', 'failing', 'info', 'register:', '<*>')",1
+E18,"('\x0f.²ÐFÇi\x98DÝC`\x0f)', 'ÙpDÝCpDÝC@DÝC@', 'RAS', 'KERNEL', 'INFO', 'iar', '<*>', 'dear', '<*>')",2
+E19,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'idoproxy', 'communication', 'failure:', 'socket', 'closed')",41
+E20,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Machine', 'Check', 'Status', 'Register:', '<*>')",56
+E21,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Core', 'Configuration', 'Register', '<*>', '<*>')",69
+E22,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bffac6de', '<*>', '<*>')",1
+E23,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bffcf2e2', '<*>', '<*>')",1
+E24,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'ffffffff', '<*>', '<*>')",201
+E25,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '3fefab3a', '<*>', '<*>')",1
+E26,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bfed5eb3', '<*>', '<*>')",1
+E27,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', 'caeeb4b5', '<*>')",1
+E28,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'c04bbccf', '<*>', '<*>')",1
+E29,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', 'ea6dfa9e', '<*>')",1
+E30,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', 'fffffffe', '<*>')",1
+E31,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'ffffffff', 'fffffffb', '<*>')",1
+E32,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', 'fffffe51', '<*>')",1
+E33,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'b8cac5bd', '<*>', '<*>')",1
+E34,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bc45cceb', '<*>', '<*>')",1
+E35,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bccac03e', '<*>', '<*>')",1
+E36,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', 'ba3feeb9', '<*>')",1
+E37,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', 'cf9aacc6', '<*>')",1
+E38,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bfdc2b6a', '<*>', '<*>')",1
+E39,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'ffffffff', 'cccccccd', '<*>')",1
+E40,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', 'd9d7bdbb', '<*>')",2
+E41,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', 'a7aba2ea', '<*>')",1
+E42,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '3fc7afbd')",1
+E43,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', 'ae4ee1be', 'bfaf15cf')",1
+E44,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', 'f4afcb3f', '<*>')",1
+E45,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'bfc0e6fa')",1
+E46,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '3fdcc0ca')",1
+E47,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bfe0bbc0', '<*>', '<*>')",1
+E48,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bfdab5ea', '<*>', '<*>')",1
+E49,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bfed0fde', '<*>', '<*>')",1
+E50,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'bffee1ae')",1
+E51,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '3ff8ddaf')",1
+E52,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'bffcbf8a')",1
+E53,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bff2dec1', '<*>', '<*>')",1
+E54,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bfbaf6fe', '<*>', '<*>')",1
+E55,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '3fbcbeb6')",1
+E56,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'bfcb7ed6')",1
+E57,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'bfcefc09')",1
+E58,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '0xc8cdfbab', '<*>', '<*>', '<*>')",1
+E59,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bff6fdf9', '<*>', 'bffc2f3a')",1
+E60,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', 'ee00caaa', '<*>')",1
+E61,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'bfeb7ad4')",1
+E62,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'bfeb7b2e')",1
+E63,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bfe3cfc7', '<*>', '<*>')",1
+E64,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bdecab74', '<*>', '3df3ddff')",1
+E65,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'be3beda6')",1
+E66,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'be3ba3ec')",1
+E67,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', 'd6dbe0ae', '<*>')",1
+E68,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'aaecab24')",1
+E69,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '0xfcffd0ad', '<*>', '<*>', '<*>')",1
+E70,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '3fbdc5fe', '<*>', '<*>')",1
+E71,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '3fdffffe')",1
+E72,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'bfcbd0a0', '<*>', '<*>')",1
+E73,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '3f2dfdac')",1
+E74,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '3fefcf0c')",1
+E75,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '0xfffffef0', '<*>', '<*>', '<*>')",1
+E76,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'fdbdf4a6')",1
+E77,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '3fefabb7', '<*>', '<*>')",1
+E78,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'fffffffc')",1
+E79,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'bfd7fac0')",1
+E80,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'bfd7fba9')",1
+E81,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'bfe83feb')",2
+E82,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '3fdd0fef')",1
+E83,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '7f7fffff', '7f7fffff')",2
+E84,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '0xffffffff', 'ffffffff', '<*>', '<*>')",18
+E85,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '0xffffffff', 'ffffffff', '<*>', '3feff9db')",9
+E86,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'fpr1=', '<*>', '<*>', '<*>', '<*>')",7
+E87,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', 'fffffe7a', '<*>')",1
+E88,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'bfe4dfed')",3
+E89,"('<*>', 'RAS', '<*>', 'FATAL', 'MidplaneSwitchController::clearPort(', '<*>', 'bll_clear_port', '<*>', '<*>')",2
+E90,"('<*>', 'RAS', '<*>', 'FATAL', 'fpr1=', '<*>', '<*>', '<*>', '<*>')",1
+E91,"('<*>', 'RAS', '<*>', 'FATAL', 'fpr9=', '<*>', '<*>', '<*>', '<*>')",1
+E92,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ddr:', 'Suppressing', 'further', 'CE', 'interrupts')",302
+E93,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '3f4fffff', 'fffffe7a', '3f4fffff')",2
+E94,"('<*>', 'RAS', 'LINKCARD', 'INFO', 'MidplaneSwitchController', 'performing', 'bit', 'sparing', 'on', '<*>', 'bit', '<*>')",964
+E95,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ddr:', 'excessive', 'soft', 'failures,', 'consider', 'replacing', 'the', 'card')",41
+E96,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', '<*>', '..', '..', '..', '<*>')",4189
+E97,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'imprecise', 'machine', 'check..', '..', '..', '..', '..', '<*>')",289
+E98,"('<*>', 'RAS', 'KERNEL', '<*>', 'disable', 'apu', 'instruction', 'broadcast..', '..', '..', '..', '<*>')",2396
+E99,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",616
+E100,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'disable', 'all', 'access', 'to', 'cache', 'directory..', '..', '<*>')",48
+E101,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'uncorrectable', 'error', 'detected', 'in', 'EDRAM', 'bank', '<*>', '<*>')",94
+E102,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'uncorrectable', 'error', 'detected', 'in', 'directory', '<*>', '<*>', '<*>')",2
+E103,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'memory', 'manager', '/', 'command', 'manager', 'address', 'parity..', '<*>')",47
+E104,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'qw', 'trapped..', '..', '..', '..', '..', '..', '<*>')",47
+E105,"('<*>', 'NULL', 'DISCOVERY', 'SEVERE', 'Can', 'not', 'get', 'assembly', 'information', 'for', 'node', 'card')",17305
+E106,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'sendMsgToDebugger:', 'error', 'sending', 'PROGRAM_EXITED', 'message', 'to', 'debugger.')",3
+E107,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'd-cache', 'flush', 'parity', 'error..', '..', '..', '..', '<*>')",26
+E108,"('<*>', 'RAS', 'KERNEL', '<*>', 'program', 'interrupt:', 'trap', 'instruction..', '..', '..', '..', '<*>')",2087
+E109,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'program', 'interrupt:', 'trap', 'instruction..', '..', '..', '..', '<*>')",1240
+E110,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '..', '..', '..', '<*>')",1250
+E111,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",145
+E112,"('<*>', 'RAS', 'KERNEL', 'INFO', 'program', 'interrupt:', 'trap', 'instruction..', '..', '..', '..', '<*>')",1136
+E113,"('UNKNOWN_LOCATION', 'NULL', 'HARDWARE', 'SEVERE', 'NodeCard', 'temperature', 'sensor', 'chip', '<*>', 'is', 'not', 'accessible')",5
+E114,"('<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",2
+E115,"('<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'upon', '<*>', 'by', 'root')",3
+E116,"('<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'upon', '<*>', 'by', 'pjmccart')",1
+E117,"('<*>', 'RAS', 'LINKCARD', 'FATAL', 'MidplaneSwitchController::parityAlignment(', ')', 'pap', 'failed:', '<*>', 'status=', '<*>', '<*>')",6
+E118,"('NULL', 'RAS', 'BGLMASTER', 'FAILURE', 'mmcs_server', 'exited', 'abnormally', 'due', 'to', 'signal:', 'Segmentation', 'fault')",3
+E119,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'While', 'inserting', 'monitor', 'info', 'into', 'DB', 'caught', 'java.lang.NullPointerException')",2
+E120,"('UNKNOWN_LOCATION', 'NULL', 'SERV_NET', 'INFO', 'Added', '<*>', 'subnets', 'and', '<*>', 'addresses', 'to', 'DB')",1
+E121,"('<*>', 'RAS', 'LINKCARD', 'FATAL', 'MidplaneSwitchController::parityAlignment(', ')', 'pap', 'failed:', '<*>', 'status=', 'ffffffff', 'ffffff80')",4
+E122,"('<*>', 'RAS', 'LINKCARD', 'FATAL', 'MidplaneSwitchController::receiveTrain(', ')', 'iap', 'failed:', '<*>', 'status=', 'beeaabff', '<*>')",6
+E123,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'generated', '<*>', 'core', 'files', 'for', 'program', '<*>')",62456
+E124,"('<*>', 'RAS', 'LINKCARD', 'FATAL', 'MidplaneSwitchController::receiveTrain(', ')', 'iap', 'failed:', '<*>', 'status=', 'ffbffbff', '<*>')",160
+E125,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Lustre', 'mount', 'FAILED', ':', '<*>', ':', 'point', '/p/gb1')",26426
+E126,"('<*>', 'RAS', 'LINKCARD', 'FATAL', 'MidplaneSwitchController::parityAlignment(', ')', 'pap', 'failed:', '<*>', 'status=', 'ff7ffffc', '<*>')",2
+E127,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '0x1eeeeeee', '<*>', '<*>', '<*>', '<*>')",68
+E128,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'lr=', '<*>', 'cr=', '<*>', 'xer=', '<*>', 'ctr=', '<*>')",68
+E129,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'msr=', '<*>', 'dear=', '<*>', 'esr=', '<*>', 'fpscr=', '<*>')",68
+E130,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'invalid', 'operation', 'exception', '(', 'int', 'cnvt)', '..', '<*>')",68
+E131,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>')",1019678
+E132,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', '<*>')",541505
+E133,"('<*>', 'RAS', 'KERNEL', 'INFO', 'generating', '<*>')",149240
+E134,"('<*>', 'RAS', 'KERNEL', 'INFO', 'generating', 'core.67')",13
+E135,"('<*>', 'RAS', 'KERNEL', 'INFO', 'generating', 'core.21')",12
+E136,"('<*>', 'RAS', 'KERNEL', 'INFO', 'generating', 'core.77')",13
+E137,"('<*>', 'RAS', 'KERNEL', 'INFO', 'generating', 'core.73')",20
+E138,"('<*>', 'RAS', 'KERNEL', 'INFO', 'generating', 'core.88')",26
+E139,"('<*>', 'RAS', 'KERNEL', 'INFO', 'generating', 'core.69')",11
+E140,"('<*>', 'RAS', 'KERNEL', 'INFO', 'generating', 'core.91')",12
+E141,"('<*>', 'RAS', 'KERNEL', 'INFO', 'generating', 'core.23')",10
+E142,"('<*>', 'RAS', 'KERNEL', 'INFO', 'generating', 'core.47')",20
+E143,"('<*>', 'RAS', 'KERNEL', 'INFO', 'generating', 'core.42')",20
+E144,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'complete')",99
+E145,"('<*>', '<*>', '<*>', 'INFO', '<*>', '<*>')",42
+E146,"('UNKNOWN_LOCATION', '<*>', '<*>', 'INFO', '<*>', 'SystemController')",71
+E147,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>')",64
+E148,"('<*>', 'RAS', 'KERNEL', 'INFO', 'generating', 'core.58')",17
+E149,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'max=', '<*>')",1
+E150,"('<*>', 'RAS', 'KERNEL', '<*>', 'Microloader', 'Assertion')",1504
+E151,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'kernel', 'panic')",18
+E152,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'ddr', 'errors(', 's)', 'detected', 'and', 'corrected', 'on', 'rank', '<*>', 'symbol', '<*>', 'bit', '<*>')",33939
+E153,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'loading', '<*>', 'invalid', 'or', 'missing', 'program', 'image,', 'No', 'such', 'file', 'or', 'directory')",46384
+E154,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'failed', 'to', 'read', 'message', 'prefix', 'on', 'control', 'stream', '(', 'CioStream', 'socket', 'to', '<*>')",5983
+E155,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",826
+E156,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'torus', 'receiver', '<*>', 'input', 'pipe', 'error(', 's)', '(', 'dcr', '<*>', 'detected', 'and', 'corrected')",10487
+E157,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'command', 'manager', 'unit', 'summary..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E158,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'memory', 'manager', 'address', 'error..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E159,"('<*>', 'NULL', 'HARDWARE', 'WARNING', 'EndServiceAction', 'is', 'restarting', 'the', '<*>', 'in', 'midplane', '<*>', 'as', 'part', 'of', 'Service', 'Action', '<*>')",537
+E160,"('<*>', 'RAS', 'KERNEL', '<*>', 'machine', 'check:', 'i-fetch..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",18017
+E161,"('<*>', 'RAS', 'KERNEL', '<*>', 'auxiliary', 'processor..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",8419
+E162,"('<*>', 'RAS', 'KERNEL', 'INFO', 'critical', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', 'warning', 'for', '<*>', '<*>', 'wire')",7682
+E163,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', 'INFO', 'New', 'ido', 'chip', 'inserted', 'into', 'the', 'database:', '<*>', 'ip=', '<*>', 'v=', '<*>', 't=', '<*>')",3455
+E164,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'Error', 'opening', 'node', 'map', 'file', '/home/williams/miranda/src/res-apc-strong2-bgl-8192-8Kmap-15:16:17Tue19Jul05/..', '/..', '/sles_9_ppc64/mapfile/8k_64x128x1_8x4x2.map,', 'No', 'such', 'file', 'or', 'directory')",128
+E165,"('UNKNOWN_LOCATION', 'NULL', 'SERV_NET', 'ERROR', 'DeclareServiceNetworkCharacteristics', 'has', 'been', 'run', 'with', 'the', 'force', 'option', 'but', 'the', 'DB', 'is', 'not', 'empty')",1
+E166,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'summary..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",4
+E167,"('NULL', 'RAS', 'MMCS', 'INFO', 'mmcs_db_server', 'has', 'been', 'started:', './mmcs_db_server', '--useDatabase', 'BGL', '--dbproperties', 'serverdb.properties', '--iolog', '/bgl/BlueLight/logs/BGL', '--reconnect-blocks', 'all', '--no-reconnect-blocks')",2
+E168,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts', 'assertion', 'failed:', '`personality->version', '=', '=', ""BGLPERSONALITY_VERSION'"", 'in', '`void', 'start(', ')', ""'"", 'at', 'start.cc:131')",2
+E169,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'DCACHE', 'summary', 'averages:', '#ofDirtyLines:', '<*>', 'out', 'of', '<*>', '#ofDirtyDblWord:', '<*>', 'out', 'of', '<*>')",3149
+E170,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', '<*>', '<*>', 'error(', 's)', '(', 'dcr', '<*>', 'detected', 'and', 'corrected', 'over', '<*>', 'seconds')",1515
+E171,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'reading', 'message', 'prefix', 'on', 'CioStream', 'socket', 'to', '<*>', 'Link', 'has', 'been', 'severed')",26546
+E172,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'reading', 'message', 'prefix', 'on', 'CioStream', 'socket', 'to', '<*>', 'Connection', 'reset', 'by', 'peer')",2256
+E173,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'monitor', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.net.SocketException:', 'Broken', 'pipe', 'and', 'is', 'stopping')",190
+E174,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",124
+E175,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'machine', 'check', 'interrupt', '(', 'bit=', '<*>', ':', '<*>', 'dcache', 'unit', '<*>', '<*>', 'parity', 'error')",23
+E176,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', '<*>', '<*>', 'error(', 's)', '(', 'dcr', '<*>', 'detected', 'and', 'corrected')",5040
+E177,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",17630
+E178,"('<*>', 'RAS', 'KERNEL', '<*>', 'problem', 'state', '(', '<*>', 'sup,', '<*>', 'usr)', '..', '..', '..', '<*>')",6546
+E179,"('<*>', 'RAS', 'KERNEL', '<*>', 'data', 'address', 'space..', '..', '..', '..', '..', '..', '..', '..', '<*>')",6503
+E180,"('<*>', 'RAS', 'KERNEL', '<*>', 'icache', 'prefetch', 'threshold..', '..', '..', '..', '..', '..', '..', '..', '<*>')",2388
+E181,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",11516
+E182,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'enable..', '..', '..', '..', '..', '..', '..', '..', '<*>')",26
+E183,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'for', 'node', '<*>', 'read', 'continuation', 'request', 'but', 'ioState', 'is', '<*>')",395
+E184,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'machine', 'check', 'interrupt', '(', 'bit=', '<*>', ':', '<*>', 'major', 'internal', 'error')",57
+E185,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'prefetch', 'depth', 'for', 'PLB', 'slave..', '..', '..', '..', '..', '..', '<*>')",48
+E186,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'number', 'of', 'lines', 'with', 'parity', 'errors', 'written', 'to', '<*>', 'EDRAMs..', '<*>')",47
+E187,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'memory', 'manager', 'uncorrectable', 'error..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E188,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'machine', 'check', 'interrupt', '(', 'bit=', '<*>', ':', '<*>', 'DCU', 'read', 'error')",3
+E189,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'correctable', 'errors', 'exceeds', 'threshold', '(', 'iar', '<*>', 'lr', '<*>', '')",26
+E190,"('NULL', 'RAS', 'BGLMASTER', 'INFO', 'BGLMaster', 'has', 'been', 'started:', './BGLMaster', '--consoleip', '<*>', '--consoleport', '<*>', '--configfile', 'bglmaster.init')",6
+E191,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'Unexpected', 'eof', 'at', 'line', '<*>', 'of', 'node', 'map', 'file', '<*>')",327
+E192,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'creating', 'node', 'map', 'from', '<*>', '<*>', '<*>', '<*>', '<*>')",5080
+E193,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'loading', '<*>', 'program', 'image', 'too', 'big,', '<*>', '>', '<*>')",1512
+E194,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",393
+E195,"('<*>', 'RAS', 'KERNEL', 'INFO', 'program', 'interrupt:', 'fp', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",528
+E196,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', 'SEVERE', 'While', 'initializing', 'node', 'card,', 'ido', 'with', 'LP', 'of', '<*>', 'caught', 'java.lang.NullPointerException')",1
+E197,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'machine', 'check', 'interrupt', '(', 'bit=', '<*>', ':', 'Torus/Tree/GI', 'read', 'error', '<*>')",2
+E198,"('<*>', 'NULL', 'HARDWARE', 'WARNING', 'PrepareForService', 'is', 'being', 'done', 'on', 'this', 'rack', '(', '<*>', 'by', '<*>')",30
+E199,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'monitor', 'caught', 'java.lang.UnsupportedOperationException:', 'power', 'module', '<*>', 'not', 'present', 'and', 'is', 'stopping')",2
+E200,"('<*>', 'NULL', 'DISCOVERY', 'ERROR', 'Found', 'invalid', 'node', 'ecid', 'in', 'processor', 'card', 'slot', '<*>', 'ecid', '<*>')",5558
+E201,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'data', 'read', 'plb', 'error..', '..', '..', '..', '..', '..', '..', '<*>')",1
+E202,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'data', '<*>', 'plb', 'error..', '..', '..', '..', '..', '..', '..', '<*>')",10
+E203,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'loading', '<*>', 'invalid', 'or', 'missing', 'program', 'image,', 'Permission', 'denied')",43040
+E204,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'Unexpected', 'eof', 'at', 'line', '<*>', 'of', 'node', 'map', 'file', 'map.dat')",1
+E205,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'enabled', 'exception', 'summary..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E206,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'minus', 'denormalized', 'number..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E207,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'plus', 'denormalized', 'number..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E208,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Power', 'Good', 'signal', 'deactivated:', '<*>', 'A', 'service', 'action', 'may', 'be', 'required.')",94
+E209,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '..', '..', '..', '..', '..', '..', '..', '<*>')",30
+E210,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'for', 'node', '<*>', 'incomplete', 'data', 'written', 'to', 'core', 'file', '<*>')",38
+E211,"('<*>', 'RAS', 'KERNEL', 'INFO', 'CE', 'sym', '<*>', 'at', '<*>', 'mask', '<*>')",201206
+E212,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', '<*>', '..', '..', '<*>')",4990
+E213,"('<*>', 'RAS', 'KERNEL', '<*>', 'instruction', 'address', 'space..', '..', '..', '..', '<*>')",6506
+E214,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'LOGIN', 'chdir(', '<*>', 'failed:', 'Permission', 'denied')",440
+E215,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",811
+E216,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'max', 'number', 'of', 'outstanding', 'prefetches..', '..', '<*>')",48
+E217,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'capture', 'first', '<*>', '<*>', 'error', 'address..', '<*>')",283
+E218,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', 'external', 'DDR..', '<*>')",47
+E219,"('<*>', 'NULL', 'HARDWARE', 'WARNING', 'EndServiceAction', '<*>', 'performed', 'upon', '<*>', 'by', '<*>')",231
+E220,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'd-cache', 'search', 'parity', 'error..', '..', '..', '<*>')",27
+E221,"('<*>', 'RAS', 'KERNEL', '<*>', 'program', 'interrupt:', 'illegal', 'instruction..', '..', '..', '<*>')",3270
+E222,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'program', 'interrupt:', 'illegal', 'instruction..', '..', '..', '<*>')",2014
+E223,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '..', '..', '<*>')",1364
+E224,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",691
+E225,"('<*>', 'RAS', 'KERNEL', '<*>', 'program', 'interrupt:', 'imprecise', 'exception..', '..', '..', '<*>')",8102
+E226,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', 'SEVERE', 'SerialNumber(', '<*>', 'IpAddress(', '<*>', 'Status(', 'A)', '')",64
+E227,"('<*>', 'RAS', 'KERNEL', 'INFO', 'program', 'interrupt:', 'illegal', 'instruction..', '..', '..', '<*>')",1199
+E228,"('<*>', 'NULL', 'HARDWARE', 'SEVERE', '<*>', 'power', 'module', '<*>', 'is', 'not', 'accessible')",549
+E229,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Target=', '<*>', 'Message=', 'Pll', 'failed', 'to', 'lock')",3
+E230,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Target=', '<*>', 'Message=', 'Invalid', 'JtagId', '=', 'ffffffff')",63
+E231,"('NULL', 'RAS', 'BGLMASTER', 'FAILURE', '<*>', 'exited', 'normally', 'with', 'exit', 'code', '<*>')",12
+E232,"('<*>', 'RAS', 'KERNEL', 'INFO', 'e', 'error', 'threshold,', 'consider', 'replacing', 'the', 'card')",1
+E233,"('<*>', 'NULL', 'DISCOVERY', 'WARNING', 'this', 'link', 'card', 'is', 'not', 'fully', 'functional')",22
+E234,"('NULL', 'RAS', 'BGLMASTER', 'FAILURE', '<*>', 'exited', 'abnormally', 'due', 'to', 'signal:', 'Aborted')",34
+E235,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'LOGIN', 'open(', '/bgl/apps/scaletest/performance/linpack-64x512/)', 'failed:', 'Permission', 'denied')",32
+E236,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'ddr:', 'redundant', 'bit', 'steering', 'failed,', 'sequencer', 'timeout')",1
+E237,"('<*>', 'NULL', 'HARDWARE', 'WARNING', 'EndServiceAction', '<*>', 'performed', 'upon', '<*>', 'by', 'cupps')",1
+E238,"('<*>', 'NULL', 'HARDWARE', 'WARNING', 'EndServiceAction', '<*>', 'performed', 'upon', '<*>', 'by', 'bertsch2')",1
+E239,"('<*>', 'NULL', 'MONITOR', 'FAILURE', '<*>', 'PGOOD', 'error', 'latched', 'on', 'link', 'card')",353
+E240,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Floating', 'Point', 'Status', 'and', 'Control', 'Register:', '<*>')",68
+E241,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'invalid', 'operation', 'exception', '<*>', '<*>', '<*>', '<*>')",136
+E242,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'enable', 'invalid', 'operation', 'exceptions..', '..', '..', '<*>')",68
+E243,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'enable', 'divide-by-zero', 'exceptions..', '..', '..', '..', '<*>')",10
+E244,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'LOGIN', 'chdir(', '/p/gb1/stella/RAPTOR/2183)', 'failed:', 'Input/output', 'error')",816
+E245,"('<*>', 'RAS', 'KERNEL', 'INFO', 'total', 'of', '<*>', 'ddr', 'error(', 's)', 'detected', 'and', 'corrected')",28485
+E246,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ddr:', 'activating', 'redundant', 'bit', 'steering:', 'rank=', '<*>', 'symbol=', '<*>')",1314
+E247,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '..', '..', '..', '..', '..', '<*>')",3518
+E248,"('<*>', 'RAS', 'KERNEL', '<*>', 'floating', 'pt', 'ex', 'mode', '<*>', 'enable..', '..', '..', '<*>')",13044
+E249,"('<*>', 'RAS', 'KERNEL', '<*>', 'guaranteed', 'data', 'cache', 'block', 'touch..', '..', '..', '..', '<*>')",2389
+E250,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",406
+E251,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'debug', 'interrupt', 'enable..', '..', '..', '..', '..', '..', '<*>')",3059
+E252,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'Message', 'code', '<*>', 'is', 'not', '<*>', 'or', '<*>')",2278
+E253,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'close', 'EDRAM', 'pages', 'as', 'soon', 'as', 'possible..', '..', '<*>')",48
+E254,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'disable', 'flagging', 'of', 'DDR', ""UE's"", 'as', 'major', 'internal', 'error.0')",47
+E255,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'correctable', 'error', 'detected', 'in', 'EDRAM', 'bank', '<*>', '<*>', '<*>')",92
+E256,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'correctable', 'error', 'detected', 'in', 'directory', '<*>', '<*>', '<*>', '<*>')",2
+E257,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'number', 'of', 'correctable', 'errors', 'detected', 'in', '<*>', 'directories..', '<*>')",47
+E258,"('UNKNOWN_LOCATION', 'NULL', 'CMCS', 'INFO', 'Controlling', 'BG/L', 'rows', '[', '<*>', '<*>', '<*>', '<*>', ']')",20
+E259,"('<*>', 'RAS', 'KERNEL', 'INFO', 'debug', 'interrupt', 'enable..', '..', '..', '..', '..', '..', '<*>')",3
+E260,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'MailboxMonitor::serviceMailboxes(', ')', 'lib_ido_error:', '<*>', 'unexpected', 'socket', 'error:', 'Broken', 'pipe')",1
+E261,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Lustre', 'mount', 'FAILED', ':', '<*>', ':', 'block_id', ':', 'location')",5105
+E262,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'instruction', 'plb', 'error..', '..', '..', '..', '..', '..', '<*>')",28
+E263,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'correctable', 'error', 'detected', 'in', 'EDRAM', 'bank', '<*>', '..', '<*>')",2
+E264,"('<*>', 'RAS', 'KERNEL', 'INFO', 'data', 'cache', '<*>', 'parity', 'error', 'detected.', 'attempting', 'to', 'correct')",14006
+E265,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'ddrSize', '=', '=', '<*>', '||', 'ddrSize', '=', '=', '<*>')",1
+E266,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'No', 'power', 'module', '<*>', 'found', 'found', 'on', 'link', 'card')",6
+E267,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'generated', '<*>', 'core', 'files', 'for', 'program', '..', '<*>')",28
+E268,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'DDR', 'failing', 'info', 'register:', 'DDR', 'Fail', 'Info', 'Register:', '<*>')",29
+E269,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'invalid', 'operation', 'exception', '(', 'sqrt)', '..', '..', '..', '<*>')",68
+E270,"('<*>', 'NULL', 'MONITOR', '<*>', 'Hardware', 'monitor', 'caught', 'java.net.SocketException:', 'Broken', 'pipe', 'and', 'is', 'stopping')",77
+E271,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'idoproxy', 'communication', 'failure:', 'BGLERR_IDO_PKT_TIMEOUT', 'connection', 'lost', 'to', 'node/link/service', 'card')",2
+E272,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'loading', '/p/gb1/light3/sppm_chkpt/sppm:', 'not', 'a', 'CNK', 'program', 'image')",1024
+E273,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'double-hummer', 'alignment', 'exceptions')",295764
+E274,"('NULL', 'RAS', 'MMCS', 'INFO', 'ciodb', 'has', 'been', 'restarted.')",129
+E275,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>')",175284
+E276,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', '<*>')",21175
+E277,"('<*>', 'RAS', 'KERNEL', '<*>', 'core', 'configuration', 'register:', '<*>')",6431
+E278,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '13:1eeeeeee', '<*>', '<*>')",89
+E279,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '2:1eeeeeee', '<*>')",44
+E280,"('<*>', 'RAS', 'KERNEL', '<*>', '12:fffffefa', '13:1eeeeeee', '<*>', '<*>')",1
+E281,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '18:ffffffff', '<*>')",1
+E282,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '25:fffffff8', '<*>', '<*>')",1
+E283,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '22:ffffffff', '<*>')",1
+E284,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '18:fffffff8', '<*>')",1
+E285,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '10:ffffffe8', '<*>')",1
+E286,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '9:afffffff', '<*>', '<*>')",1
+E287,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '21:ffffffff', '<*>', '<*>')",2
+E288,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '25:ffffffff', '<*>', '<*>')",1
+E289,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', 'ctr:0fdfdf1e')",1
+E290,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', 'ctr:1fdfa09e')",1
+E291,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', 'ctr:1fdfdb3e')",1
+E292,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', 'ctr:1fdff99e')",1
+E293,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', 'ctr:0fdf8c5e')",1
+E294,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', 'ctr:0fdfac9e')",1
+E295,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '9:ffffffe0', '<*>', '<*>')",1
+E296,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', 'ctr:0fdff51e')",1
+E297,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', 'ctr:0fdffcbe')",1
+E298,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', '3:ffffffff')",1
+E299,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '13:1eeeeeee', '14:ffffffff', '15:ffffffff')",1
+E300,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'data', 'TLB', 'error', 'interrupt')",5
+E301,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '6:fffbccf0', '<*>')",1
+E302,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', 'ctr:1fdfae1e')",1
+E303,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', 'ctr:1fdf8a1e')",1
+E304,"('<*>', 'RAS', 'KERNEL', '<*>', '20:ffffffff', '<*>', '<*>', '<*>')",2
+E305,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '13:1eeeeeee', '<*>', '<*>')",8
+E306,"('<*>', 'RAS', '<*>', 'FATAL', '<*>', '<*>', '<*>', '<*>')",25
+E307,"('<*>', 'RAS', '<*>', 'FATAL', '<*>', 'major', '<*>', 'error')",3
+E308,"('UNKNOWN_LOCATION', 'NULL', 'CMCS', 'INFO', 'Running', 'as', 'background', 'command')",70
+E309,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'register:', '<*>')",196
+E310,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', 'register:', '<*>')",446
+E311,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '5:ffffffff', '<*>', '<*>')",2048
+E312,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'machine', 'state', 'register:', '<*>')",19
+E313,"('UNKNOWN_LOCATION', 'NULL', 'HARDWARE', 'SEVERE', 'NodeCard', 'VPD', 'is', 'corrupt')",10
+E314,"('<*>', 'RAS', 'KERNEL', '<*>', 'iar', '<*>', '<*>', '<*>')",71
+E315,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', '<*>', '<*>', '<*>')",27
+E316,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', '<*>', 'register:', '<*>')",825
+E317,"('<*>', 'RAS', 'KERNEL', 'INFO', 'exception', 'syndrome', 'register:', '<*>')",33
+E318,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Target=', '<*>', 'Message=', 'ScomError')",3
+E319,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', 'Syndrome', '<*>', '<*>')",4
+E320,"('<*>', 'RAS', 'APP', 'FATAL', 'DCR', '<*>', ':', '<*>')",130
+E321,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '2:1eeeeeee', '<*>')",24
+E322,"('<*>', 'RAS', 'KERNEL', 'FATAL', '20:ffffffe0', '21:ffffffd0', '<*>', '<*>')",2
+E323,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '17:fffffff8', '<*>', '<*>')",2
+E324,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', 'dear', '<*>')",213
+E325,"('<*>', 'RAS', 'KERNEL', 'INFO', 'iar', '<*>', 'dear', '<*>')",442626
+E326,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Machine', 'State', 'Register:', '<*>')",1
+E327,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'tree', 'receiver', '<*>', 'in', 're-synch', 'state', 'event(', 's)', '(', 'dcr', '<*>', 'detected')",7847
+E328,"('NULL', 'RAS', 'MMCS', 'INFO', 'idoproxydb', 'has', 'been', 'started:', '$Name:', '<*>', '$', 'Input', 'parameters:', '-enableflush', '-loguserinfo', 'db.properties', 'BlueGene1')",114
+E329,"('NULL', 'RAS', 'MMCS', 'INFO', 'mmcs_db_server', 'has', 'been', 'started:', '<*>', '--useDatabase', 'BGL', '--dbproperties', '<*>', '--iolog', '/bgl/BlueLight/logs/BGL', '--reconnect-blocks', 'all')",63
+E330,"('<*>', 'RAS', 'KERNEL', '<*>', 'icache', 'prefetch', 'depth..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",2389
+E331,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'machine', 'check', 'interrupt', '(', 'bit=', '<*>', ':', '<*>', 'dcache', 'unit', 'data', 'parity', 'error')",49
+E332,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'size', 'of', 'scratchpad', 'portion', 'of', 'L3..', '..', '..', '..', '<*>', '(', '<*>', '')",48
+E333,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'prefetch', 'depth', 'for', 'core', '<*>', '..', '..', '..', '..', '..', '..', '..', '<*>')",96
+E334,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'disable', 'write', 'lines', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",6
+E335,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'memory', 'manager', 'RMW', 'buffer', 'parity..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E336,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'torus', '<*>', '<*>', '<*>', 'error(', 's)', '(', 'dcr', '<*>', 'detected', 'and', 'corrected')",1217
+E337,"('<*>', 'RAS', 'KERNEL', '<*>', 'floating', 'point', 'operation..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",4344
+E338,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'floating', 'point', 'operation..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",2068
+E339,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",499
+E340,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",462
+E341,"('<*>', 'RAS', 'KERNEL', '<*>', 'byte', 'ordering', 'exception..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",8102
+E342,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', 'SEVERE', 'BglIdoChip', 'table', 'has', '<*>', 'IDOs', 'with', 'the', 'same', 'IP', 'address', '(', '<*>', '')",9
+E343,"('<*>', 'RAS', 'KERNEL', 'INFO', 'floating', 'point', 'operation..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",2607
+E344,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'Missing', 'or', 'invalid', 'fields', 'on', 'line', '<*>', 'of', 'node', 'map', 'file', '<*>')",2048
+E345,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'Error', 'opening', 'node', 'map', 'file', '<*>', '/sles_9_ppc64/mapfile/8k_64x128x1_8x4x2.map,', 'No', 'such', 'file', 'or', 'directory')",256
+E346,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'creating', 'node', 'map', 'from', 'file', '/home/williams/miranda/src/res-apc-strong2-bgl-8192-8Kmap-15:16:17Tue19Jul05/..', '/..', '/sles_9_ppc64/mapfile/8k_64x128x1_8x4x2.map:', 'Bad', 'file', 'descriptor')",128
+E347,"('UNKNOWN_LOCATION', 'NULL', 'CMCS', 'INFO', 'Controlling', 'BG/L', 'rows', '[', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', ']')",50
+E348,"('NULL', 'RAS', 'BGLMASTER', 'INFO', 'BGLMaster', 'has', 'been', 'started:', './BGLMaster', '--consoleip', '<*>', '--consoleport', '<*>', '--configfile', 'bglmaster.init', '--autorestart', 'y')",59
+E349,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Error', 'sending', 'packet', 'on', 'tree', 'network,', 'packet', 'at', 'address', '<*>', 'is', 'not', 'aligned')",5
+E350,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'enable', 'non-IEEE', 'mode..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E351,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'While', 'reading', 'FanModule', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.net.SocketException:', 'Broken', 'pipe')",8
+E352,"('<*>', 'RAS', 'KERNEL', 'INFO', 'MACHINE', 'CHECK', '<*>', '<*>', '<*>', '(', 'mc=', '<*>', 'iar', '<*>', 'lr', '<*>', '')",14482
+E353,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'reading', 'message', 'prefix', 'on', 'CioStream', 'socket', 'to', '<*>', 'Connection', 'timed', 'out')",1991
+E354,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', 'exception..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",22
+E355,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'creating', 'node', 'map', 'from', 'file', 'my_map.txt:', 'No', 'such', 'file', 'or', 'directory')",24
+E356,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'LOGIN', 'chdir(', '<*>', 'failed:', 'No', 'such', 'file', 'or', 'directory')",43647
+E357,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '..', '..', '..', '..', '..', '..', '<*>')",2837
+E358,"('<*>', 'RAS', 'KERNEL', '<*>', 'force', 'load/store', 'alignment..', '..', '..', '..', '..', '..', '..', '<*>')",2389
+E359,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",1185
+E360,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'machine', 'check', 'enable..', '..', '..', '..', '..', '..', '..', '<*>')",3043
+E361,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'cpu', '<*>', 'at', 'treeaddr', '<*>', 'sent', 'unrecognized', 'message', '0xffffffff')",2569
+E362,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'disable', 'speculative', 'access..', '..', '..', '..', '..', '..', '..', '<*>')",48
+E363,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'write', 'buffer', 'commit', 'threshold..', '..', '..', '..', '..', '..', '<*>')",48
+E364,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'memory', 'manager', 'refresh', 'counter', 'timeout..', '..', '..', '..', '..', '<*>')",47
+E365,"('<*>', 'RAS', 'KERNEL', '<*>', 'data', 'store', 'interrupt', 'caused', 'by', '<*>', '..', '..', '..', '<*>')",19646
+E366,"('<*>', 'RAS', 'KERNEL', 'INFO', 'machine', 'check', 'enable..', '..', '..', '..', '..', '..', '..', '<*>')",3
+E367,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'creating', 'node', 'map', 'from', 'file', '<*>', '<*>', '<*>')",2328
+E368,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'MailboxMonitor::serviceMailboxes(', ')', 'lib_ido_error:', '<*>', 'BGLERR_IDO_PKT_TIMEOUT', 'connection', 'lost', 'to', 'node/link/service', 'card')",14
+E369,"('UNKNOWN_LOCATION', 'NULL', 'SERV_NET', 'WARNING', 'DeclareServiceNetworkCharacteristics', 'has', 'been', 'run', 'but', 'the', 'DB', 'is', 'not', 'empty')",1
+E370,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'i-cache', 'parity', 'error..', '..', '..', '..', '..', '..', '..', '<*>')",17
+E371,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'Received', 'signal', '<*>', 'code=', '<*>', 'errno=', '<*>', 'address=', '<*>')",39457
+E372,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>')",110246
+E373,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', 'purpose', 'registers:')",4634
+E374,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>')",21474
+E375,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'interrupt', 'threshold..', '<*>')",92
+E376,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'instruction', 'address:', '<*>')",4
+E377,"('<*>', 'RAS', 'KERNEL', 'INFO', 'instruction', 'address:', '<*>')",23
+E378,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'no', 'ethernet', 'link')",14
+E379,"('NULL', 'RAS', 'KERNEL', 'FATAL', 'Power', 'deactivated:', '<*>')",192
+E380,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', 'max=', '<*>')",116
+E381,"('NULL', 'RAS', 'MMCS', 'ERROR', 'Ido', 'packet', 'timeout')",4276
+E382,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', 'address:', '<*>')",5
+E383,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', 'Registers:')",70
+E384,"('<*>', 'RAS', 'KERNEL', '<*>', 'floating', 'point', 'instr.', 'enabled..', '..', '<*>')",6541
+E385,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'pollControlDescriptors:', 'Detected', 'the', 'debugger', 'died.')",6443
+E386,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",92
+E387,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'DDR', 'failing', 'data', 'registers:', '<*>', '<*>')",46
+E388,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'DDR', 'failing', 'address', 'register:', '<*>', '<*>')",46
+E389,"('<*>', 'NULL', 'DISCOVERY', 'WARNING', 'Node', 'card', 'is', 'not', 'fully', 'functional')",17364
+E390,"('<*>', 'RAS', 'KERNEL', 'INFO', 'suppressing', 'further', 'interrupts', 'of', 'same', 'type')",7694
+E391,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'threshold,', 'consider', 'replacing', 'the', 'card')",45
+E392,"('RAS', 'KERNEL', 'FATAL', 'Kill', 'job', '<*>', 'timed', 'out.', 'Block', 'freed.')",306
+E393,"('UNKNOWN_LOCATION', 'NULL', 'HARDWARE', 'SEVERE', 'NodeCard', 'VPD', 'chip', 'is', 'not', 'accessible')",1
+E394,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'MailboxMonitor::serviceMailboxes(', ')', 'lib_ido_error:', '<*>', 'socket', 'closed')",168
+E395,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'DDR', '<*>', '<*>', '<*>', '<*>', '<*>')",3
+E396,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'capture', 'valid..', '..', '..', '..', '<*>')",1
+E397,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts:', 'kernel', 'terminated', 'for', 'reason', '<*>')",18587
+E398,"('\x0f.²Ð\x101}ÐDÝC`\x0f)', 'ÙpDÝCpDÝC@DÝC@', 'RAS', 'KERNEL', 'INFO', '<*>', 'floating', 'point', 'alignment', 'exceptions')",2
+E399,"('\x0f.²ÐM·q8Oïã`\x0f)', 'ÙpOïãpOïã@Oïã@', 'RAS', 'KERNEL', 'INFO', '<*>', 'floating', 'point', 'alignment', 'exceptions')",4
+E400,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'Temperature', 'Over', 'Limit', 'on', 'link', 'card')",972
+E401,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'dbcr0=', '<*>', 'dbsr=', '<*>', 'ccr0=', '<*>')",68
+E402,"('<*>', 'RAS', 'KERNEL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",8279
+E403,"('<*>', 'RAS', 'KERNEL', '<*>', 'disable', 'trace', 'broadcast..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",2393
+E404,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",5709
+E405,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'disable', 'store', 'gathering..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",20
+E406,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'turn', 'on', 'hidden', 'refreshes..', '..', '..', '..', '..', '..', '..', '..', '<*>')",48
+E407,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'number', 'of', 'correctable', 'errors', 'detected', 'in', '<*>', 'EDRAMs..', '..', '..', '..', '<*>')",47
+E408,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'memory', 'manager', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",141
+E409,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",4
+E410,"('<*>', 'RAS', 'KERNEL', 'INFO', 'program', 'interrupt:', 'fp', 'cr', 'field', '..', '..', '..', '..', '..', '..', '<*>')",736
+E411,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'Error', 'opening', 'node', 'map', 'file', '<*>', 'No', 'such', 'file', 'or', 'directory')",1552
+E412,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'creating', 'node', 'map', 'from', 'file', '/p/gb2/pakin1/sweep3d-5x5x400-10mk-3mmi-1024pes-sweep/sweep.map:', 'Device', 'or', 'resource', 'busy')",512
+E413,"('<*>', 'RAS', 'APP', 'FATAL', 'external', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', 'uncorrectable', 'torus', 'error')",10
+E414,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'loading', '<*>', 'invalid', 'or', 'missing', 'program', 'image,', '<*>', '<*>', '<*>')",22040
+E415,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'creating', 'node', 'map', 'from', 'file', '<*>', '/sles_9_ppc64/mapfile/8k_64x128x1_8x4x2.map:', 'Bad', 'file', 'descriptor')",256
+E416,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Target=', '<*>', 'Message=', 'JtagId', 'All', 'all', 'zeros,', 'power', 'good', 'may', 'be', 'low')",4
+E417,"('<*>', 'RAS', 'KERNEL', 'INFO', 'NFS', 'Mount', 'failed', 'on', '<*>', 'slept', '<*>', 'seconds,', 'retrying', '(', '<*>', '')",2670
+E418,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'power', 'module', 'status', 'fault', 'detected', 'on', 'node', 'card.', 'status', 'registers', 'are:', '<*>')",4
+E419,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ddr:', 'activating', 'redundant', 'bit', 'steering', 'for', 'next', 'allocation:', 'rank=', '<*>', 'symbol=', '<*>')",492
+E420,"('<*>', 'RAS', 'KERNEL', 'INFO', 'total', 'of', '<*>', 'ddr', 'error(', 's)', 'detected', 'and', 'corrected', 'over', '<*>', 'seconds')",10415
+E421,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'minus', 'normalized', 'number..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E422,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'plus', 'normalized', 'number..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",68
+E423,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'monitor', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', 'CONTROL', 'Operation', 'caught', 'java.io.EOFException', 'and', 'is', 'stopping')",1
+E424,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",33
+E425,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'creating', 'node', 'map', 'from', 'file', 'my_map.txt:', 'Argument', 'list', 'too', 'long')",8
+E426,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'start', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",30
+E427,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'parity', 'error', 'in', 'read', 'queue', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",94
+E428,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'memory', 'manager', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",94
+E429,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'regctl', 'scancom', 'interface..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E430,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'loading', '<*>', '<*>', 'invalid', 'or', 'missing', 'program', 'image,', 'No', 'such', 'file', 'or', 'directory')",1056
+E431,"('<*>', 'NULL', 'DISCOVERY', 'INFO', 'Node', 'card', 'VPD', 'check:', 'missing', '<*>', 'node,', 'VPD', 'ecid', '<*>', 'in', 'processor', 'card', 'slot', '<*>')",887
+E432,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",159
+E433,"('NULL', 'RAS', 'MMCS', 'INFO', 'mmcs_db_server', 'has', 'been', 'started:', './mmcs_db_server', '--useDatabase', 'BGL', '--dbproperties', '<*>', '--iolog', '/bgl/BlueLight/logs/BGL', '--reconnect-blocks', 'all', '--shutdown-timeout', '<*>')",72
+E434,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'external', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', 'tree', 'header', 'with', 'no', 'target', 'waiting')",1
+E435,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'ddr', 'error(', 's)', 'detected', 'and', 'corrected', 'on', 'rank', '<*>', 'symbol', '<*>', 'over', '<*>', 'seconds')",10436
+E436,"('<*>', 'NULL', 'HARDWARE', 'WARNING', 'EndServiceAction', 'is', 'restarting', 'the', '<*>', 'cards', 'in', 'Midplane', '<*>', 'as', 'part', 'of', 'Service', 'Action', '<*>')",51
+E437,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Target=', '<*>', 'Message=', 'Invalid', 'JtagId', '=', 'ffffffff', 'Run', 'environmental', 'monitor', 'to', 'diagnose', 'possible', 'hardware', 'failure.')",2
+E438,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'Hardware', 'monitor', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.net.SocketException:', 'Broken', 'pipe', 'and', 'is', 'stopping')",4
+E439,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",111
+E440,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'size', 'of', 'DDR', 'we', 'are', 'caching..', '..', '..', '..', '..', '..', '..', '<*>', '(', '<*>', '')",48
+E441,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'memory', 'manager', 'refresh..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E442,"('<*>', 'RAS', 'KERNEL', '<*>', 'store', 'operation..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",9824
+E443,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'external', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', 'torus', 'sender', '<*>', 'retransmission', 'error', 'was', 'corrected')",1322
+E444,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', '<*>', 'coordinate', '<*>', 'exceeds', 'physical', 'dimension', '<*>', 'at', 'line', '<*>', 'of', 'node', 'map', 'file', '<*>')",3512
+E445,"('<*>', 'NULL', 'HARDWARE', 'WARNING', 'PrepareForService', 'is', 'being', 'done', 'on', 'this', 'Midplane', '(', 'mLctn(', '<*>', ',', 'mCardSernum(', '<*>', ')', 'by', '<*>')",196
+E446,"('<*>', 'NULL', 'HARDWARE', 'WARNING', 'PrepareForService', 'is', 'being', 'done', 'on', 'this', 'Midplane', '(', 'mLctn(', '<*>', ',', 'mCardSernum(', '<*>', ')', 'by', 'root')",5
+E447,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine')",5
+E448,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'gister:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:')",5
+E449,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'duplicate', 'canonical-rank', '<*>', 'to', 'logical-rank', '<*>', 'mapping', 'at', 'line', '<*>', 'of', 'node', 'map', 'file', '/p/gb2/pakin1/sweep3d-5x5x400-10mk-3mmi-1024pes-sweep/sweep.map')",512
+E450,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'reading', 'message', 'prefix', 'after', '<*>', 'on', 'CioStream', 'socket', 'to', '<*>', 'Link', 'has', 'been', 'severed')",23105
+E451,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', 'SEVERE', 'Problem', 'communicating', 'with', 'service', 'card,', 'ido', 'chip:', '<*>', 'java.io.IOException:', 'Could', 'not', 'find', 'EthernetSwitch', 'on', 'port:address', '<*>')",166
+E452,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'reading', 'message', 'prefix', 'after', 'LOAD_MESSAGE', 'on', 'CioStream', 'socket', 'to', '<*>', 'Connection', 'reset', 'by', 'peer')",114
+E453,"('<*>', 'RAS', 'KERNEL', 'INFO', 'external', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', '<*>', 'tree', 'receiver', '<*>', 'in', 'resynch', 'mode')",1
+E454,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', 'SEVERE', 'Error', 'getting', 'detailed', 'hw', 'info', 'for', 'node,', 'caught', 'java.io.IOException:', 'Problems', 'with', 'the', 'chip,', 'clear', 'all', 'resets')",1
+E455,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'tree', 'receiver', '<*>', 'in', 're-synch', 'state', 'event(', 's)', '(', 'dcr', '<*>', 'detected', 'over', '<*>', 'seconds')",3148
+E456,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",340
+E457,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'torus', '<*>', '<*>', '<*>', 'error(', 's)', '(', 'dcr', '<*>', 'detected', 'and', 'corrected', 'over', '<*>', 'seconds')",1049
+E458,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'parity', 'error', 'in', 'bank', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",28
+E459,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'memory', 'and', 'bus', 'summary..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E460,"('<*>', 'RAS', 'KERNEL', 'INFO', 'external', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', 'number', 'of', 'corrected', 'SRAM', 'errors', 'has', 'exceeded', 'threshold')",39
+E461,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 'register:', 'machine', 'state', 're')",5
+E462,"('<*>', 'RAS', 'APP', 'FATAL', 'ciod:', 'Error', 'loading', '..', '/homme/build.Linux/preqx', '-n', '<*>', 'invalid', 'or', 'missing', 'program', 'image,', 'No', 'such', 'file', 'or', 'directory')",64
+E463,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', 'ERROR', 'Bad', 'cable', 'going', 'into', 'LinkCard', '(', '<*>', 'Jtag', '(', '<*>', 'Port', '(', '<*>', '-', '<*>', 'bad', 'wires')",232
+E464,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",270
+E465,"('NULL', 'RAS', 'BGLMASTER', 'INFO', 'BGLMaster', 'has', 'been', 'started:', './BGLMaster', '--consoleip', '<*>', '--consoleport', '<*>', '--configfile', 'bglmaster.init', '--autorestart', 'y', '--db2profile', '/u/bgdb2cli/sqllib/db2profile', '--dbproperties', 'db.properties')",31
+E466,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'torus', 'receiver', '<*>', 'input', 'pipe', 'error(', 's)', '(', 'dcr', '<*>', 'detected', 'and', 'corrected', 'over', '<*>', 'seconds')",3512
+E467,"('NULL', 'RAS', 'MMCS', 'INFO', 'mmcs_db_server', 'has', 'been', 'started:', './mmcs_db_server', '--useDatabase', 'BGL', '--dbproperties', 'db.properties', '--iolog', '/bgl/BlueLight/logs/BGL', '--reconnect-blocks', 'all', '--shutdown-timeout', '<*>', '--shutdown-timeout', '<*>')",18
+E468,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'state', 'machine..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",47
+E469,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts:', 'kernel', 'terminated', 'for', 'reason', '<*>', 'bad', 'message', 'header:', '<*>', '<*>', '<*>', 'type=', '<*>', 'cpu=', '<*>', 'index=', '<*>', 'total=', '<*>')",1256
+E470,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', 'WARNING', 'Problem', 'communicating', 'with', 'service', 'card,', 'ido', 'chip:', '<*>', 'java.lang.IllegalStateException:', 'IDo', 'is', 'not', 'in', 'functional', 'state', '--', 'currently', 'in', 'state', 'COMMUNICATION_ERROR')",6
+E471,"('<*>', 'NULL', 'DISCOVERY', 'SEVERE', 'Expected', '<*>', 'active', 'FanModules,', 'but', 'found', '<*>', '(', 'Found', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', ')', '.')",11
+E472,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', 'C', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', 'C', '<*>', '<*>', '<*>', '<*>', '<*>')",54
+E473,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', '<*>', 'C', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', '<*>', 'C', '<*>', '<*>', '<*>')",10
+E474,"('<*>', 'RAS', 'KERNEL', 'INFO', 'critical', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', 'warning', 'for', '<*>', '<*>', 'wire,', 'suppressing', 'further', 'interrupts', 'of', 'same', 'type')",3546
+E475,"('<*>', 'NULL', 'HARDWARE', 'WARNING', 'PrepareForService', 'is', 'being', 'done', 'on', 'this', 'card(', 'mLctn(', '<*>', ',', 'mCardSernum(', '<*>', ',', 'mLp(', '<*>', ',', 'mIp(', '<*>', ',', 'mType(', '<*>', ')', 'by', 'root')",5
+E476,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ddr:', 'Unable', 'to', 'steer', 'rank=', '<*>', 'symbol=', '<*>', '-', 'rank', 'is', 'already', 'steering', 'symbol', '<*>', 'Due', 'to', 'multiple', 'symbols', 'being', 'over', 'the', 'correctable', 'e')",22
+E477,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'In', 'packet', 'from', 'node', '<*>', '(', '<*>', ',', 'message', 'code', '<*>', 'is', 'not', '<*>', 'or', '<*>', '(', 'softheader=', '<*>', '<*>', '<*>', '<*>', '')",176
+E478,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', 'A', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', 'A', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",171
+E479,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts:', 'bad', 'message', 'header:', 'index', '<*>', 'greater', 'than', 'total', '<*>', '(', 'softheader=', '<*>', '<*>', '<*>', '<*>', 'PSR0=', '<*>', 'PSR1=', '<*>', 'PRXF=', '<*>', 'PIXF=', '<*>')",238
+E480,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'total', 'interrupts.', '<*>', 'critical', 'input', 'interrupts.', '<*>', 'microseconds', 'total', 'spent', 'on', 'critical', 'input', 'interrupts,', '<*>', 'microseconds', 'max', 'time', 'in', 'a', 'critical', 'input', 'interrupt.')",135092
+E481,"('<*>', 'NULL', 'HARDWARE', 'WARNING', 'PrepareForService', 'shutting', 'down', '<*>', 'mLctn(', '<*>', ',', 'mCardSernum(', '<*>', ',', 'mLp(', '<*>', ',', 'mIp(', '<*>', ',', 'mType(', '<*>', ')', 'as', 'part', 'of', 'Service', 'Action', '<*>')",2316
+E482,"('<*>', 'NULL', 'HARDWARE', 'WARNING', 'PrepareForService', 'is', 'being', 'done', 'on', 'this', 'part', '(', 'mLctn(', '<*>', ',', 'mCardSernum(', '<*>', ',', 'mLp(', '<*>', ',', 'mIp(', '<*>', ',', 'mType(', '<*>', ')', 'by', '<*>')",131
+E483,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts:', 'bad', 'message', 'header:', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '(', 'softheader=', '<*>', '<*>', '<*>', '<*>', 'PSR0=', '<*>', 'PSR1=', '<*>', 'PRXF=', '<*>', 'PIXF=', '<*>')",1260
+E484,"('<*>', 'RAS', 'KERNEL', 'INFO', '<*>', 'microseconds', 'spent', 'in', 'the', 'rbs', 'signal', 'handler', 'during', '<*>', 'calls.', '<*>', 'microseconds', 'was', 'the', 'maximum', 'time', 'for', 'a', 'single', 'instance', 'of', 'a', 'correctable', 'ddr.')",135092
+E485,"('<*>', 'NULL', 'DISCOVERY', 'ERROR', 'Node', 'card', 'status:', 'no', 'ALERTs', 'are', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'IS', 'NOT', 'ASSERTED.', 'PGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'MPGOOD', 'IS', 'NOT', 'OK.', 'MPGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.')",16896
+E486,"('<*>', 'NULL', 'DISCOVERY', 'ERROR', 'Node', 'card', 'status:', 'no', 'ALERTs', 'are', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'not', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'IS', 'NOT', 'ASSERTED.', 'PGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'MPGOOD', 'is', 'OK.', 'MPGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.')",1
+E487,"('<*>', 'NULL', 'DISCOVERY', '<*>', 'Node', 'card', 'VPD', 'check:', '<*>', 'node', 'in', 'processor', 'card', 'slot', '<*>', 'do', 'not', 'match.', 'VPD', 'ecid', '<*>', 'found', '<*>')",21356
+E488,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', 'INFO', 'Ido', 'chip', 'status', 'changed:', '<*>', 'ip=', '<*>', 'v=', '<*>', 't=', '<*>', 'status=', 'M', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",11904
+E489,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts:', 'kernel', 'terminated', 'for', 'reason', '<*>', 'bad', 'message', 'header:', 'invalid', 'cpu,', 'type=', '<*>', 'cpu=', '<*>', 'index=', '<*>', 'total=', '<*>')",3334
+E490,"('NULL', 'RAS', 'MMCS', 'ERROR', 'idoproxydb', 'hit', 'ASSERT', 'condition:', 'ASSERT', 'expression=', '<*>', 'Source', 'file=', '<*>', 'Source', 'line=', '<*>', 'Function=', 'int', '<*>', '<*>', '<*>', '')",84250
+E491,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', 'C', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', 'C', '<*>', '<*>', '<*>', '<*>')",18
+E492,"('<*>', 'NULL', 'HARDWARE', 'WARNING', 'PrepareForService', 'is', 'being', 'done', 'on', 'this', 'Midplane', '(', 'mLctn(', '<*>', ',', 'mCardSernum(', '<*>', ',', 'iWhichCardsToPwrOff(', '<*>', ')', 'by', 'root')",48
+E493,"('<*>', 'NULL', 'DISCOVERY', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'is', 'in', 'state', '=', 'COMMUNICATION_ERROR,', 'sequenceNumberIsOk', '=', 'false,', 'ExpectedSequenceNumber', '=', '<*>', 'Reply', 'Sequence', 'Number', '=', '<*>', 'timedOut', '=', 'true,', 'retries', '=', '<*>', 'timeout', '=', '<*>', 'Expected', 'Op', 'Command', '=', '<*>', 'Actual', 'Op', 'Reply', '=', '<*>', 'Expected', 'Sync', 'Command', '=', '<*>', 'Actual', 'Sync', 'Reply', '=', '<*>', '')",532
+E494,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', '<*>', 'While', 'initializing', 'node', 'card,', 'ido', 'with', 'LP', 'of', '<*>', 'caught', 'java.lang.IllegalStateException:', 'IDo', 'is', 'not', 'in', 'functional', 'state', '--', 'currently', 'in', 'state', 'COMMUNICATION_ERROR')",9
+E495,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts:', 'kernel', 'terminated', 'for', 'reason', '<*>', 'bad', 'message', 'header:', 'too', 'many', 'packets,', 'type=', '<*>', 'cpu=', '<*>', 'index=', '<*>', 'total=', '<*>', 'max=', '<*>')",6
+E496,"('NULL', 'RAS', 'MMCS', 'ERROR', 'idoproxydb', 'hit', 'ASSERT', 'condition:', 'ASSERT', 'expression=', '!(', 'RecvMsgHdr.ulLen', '>', '<*>', 'Source', 'file=', 'idomarshalerio.cpp', 'Source', 'line=', '<*>', 'Function=', 'virtual', 'int', 'IdoMarshalerIo::RunRecv(', ')', '')",1
+E497,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', '<*>', 'C', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', '<*>', 'C', '<*>', '<*>', '<*>', '<*>', '<*>')",214
+E498,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', '<*>', '<*>', '<*>', 'X+', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",8
+E499,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'While', 'setting', 'fan', 'speed', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",8
+E500,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ciod:', 'In', 'packet', 'from', 'node', '<*>', '(', '<*>', ',', 'message', 'still', 'ready', 'for', 'node', '<*>', '(', 'softheader=', '<*>', '<*>', '<*>', '<*>', '')",2
+E501,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ddr:', 'Unable', 'to', 'steer', 'rank=', '<*>', 'symbol=', '<*>', '-', 'rank', 'is', 'already', 'steering', 'symbol', '<*>', 'Due', 'to', 'multiple', 'symbols', 'being', 'over', 'the', '<*>')",24
+E502,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>')",46
+E503,"('<*>', 'RAS', 'KERNEL', 'INFO', 'external', 'input', 'interrupt', '(', 'unit=', '<*>', 'bit=', '<*>', ':', 'number', 'of', 'corrected', 'SRAM', 'errors', 'has', 'exceeded', 'threshold,', 'suppressing', 'further', 'interrupts', 'of', 'same', 'type')",57
+E504,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', '<*>', 'Problem', 'communicating', 'with', '<*>', '<*>', 'iDo', 'machine', 'with', 'LP', 'of', '<*>', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.RuntimeException:', 'Communication', 'error:', '(', 'DirectIDo', 'for', 'com.ibm.ido.DirectIDo', 'object', '<*>', 'with', 'image', 'version', '<*>', 'and', '<*>', 'type', '<*>', 'is', 'in', 'state', '=', 'COMMUNICATION_ERROR,', 'sequenceNumberIsOk', '=', 'false,', 'ExpectedSequenceNumber', '=', '<*>', 'Reply', 'Sequence', 'Number', '=', '<*>', 'timedOut', '=', 'true,', 'retries', '=', '<*>', 'timeout', '=', '<*>', 'Expected', 'Op', 'Command', '=', '<*>', 'Actual', 'Op', 'Reply', '=', '<*>', 'Expected', 'Sync', 'Command', '=', '<*>', 'Actual', 'Sync', 'Reply', '=', '<*>', '')",21
+E505,"('<*>', 'NULL', 'DISCOVERY', 'ERROR', 'Node', 'card', 'status:', 'no', 'ALERTs', 'are', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'IS', 'NOT', 'ASSERTED.', 'PGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'MPGOOD', 'IS', 'NOT', 'OK.', 'MPGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'THE', '<*>', 'VOLT', 'RAIL', 'IS', 'NOT', 'OK.', 'THE', '<*>', 'VOLT', 'RAIL', 'IS', 'NOT', 'OK.')",116
+E506,"('<*>', 'NULL', 'DISCOVERY', 'ERROR', 'Node', 'card', 'status:', 'no', 'ALERTs', 'are', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'not', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'IS', 'NOT', 'ASSERTED.', 'PGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'MPGOOD', 'IS', 'NOT', 'OK.', 'MPGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.', 'THE', '<*>', 'VOLT', 'RAIL', 'IS', 'NOT', 'OK.')",3
+E507,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', 'ERROR', 'Node', 'card', 'status:', 'ALERT', '<*>', 'ALERT', '<*>', 'ALERT', '<*>', 'ALERT', '<*>', 'is', '(', 'are)', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'not', 'asserted.', 'TEMPERATURE', 'MASK', 'IS', 'ACTIVE.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'is', 'asserted.', 'PGOOD', 'error', 'latch', 'is', 'clear.', 'MPGOOD', 'is', 'OK.', 'MPGOOD', 'error', 'latch', 'is', 'clear.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.')",1
+E508,"('<*>', 'NULL', 'DISCOVERY', 'ERROR', 'Node', 'card', 'status:', 'no', 'ALERTs', 'are', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'IS', 'NOT', 'ASSERTED.', 'PGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'MPGOOD', 'is', 'OK.', 'MPGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.')",49
+E509,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts:', 'kernel', 'terminated', 'for', 'reason', '<*>', 'bad', 'message', 'header:', 'too', 'many', 'packets,', 'type=', '<*>', 'cpu=', '<*>', 'index=', '<*>', 'total=', '<*>', '<*>')",155
+E510,"('NULL', 'RAS', 'MMCS', 'ERROR', 'idoproxydb', 'hit', 'ASSERT', 'condition:', 'ASSERT', 'expression=', '!(', 'nMsgLen', '>', '<*>', 'Source', 'file=', 'idomarshalerio.cpp', 'Source', 'line=', '<*>', 'Function=', 'int', 'IdoMarshalerRecvBuffer::ReadBlock(', 'IdoMsg::IdoMsgHdr*&)', '')",2
+E511,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', '<*>', 'C', '<*>', '<*>', '<*>', '<*>', '<*>', '<*>', 'got:', '<*>', 'C', '<*>', '<*>', '<*>', '<*>')",82
+E512,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts:', 'bad', 'message', 'header:', 'cpu', '<*>', 'invalid', '(', 'softheader=', '<*>', '<*>', '<*>', '<*>', 'PSR0=', '<*>', 'PSR1=', '<*>', 'PRXF=', '<*>', 'PIXF=', '<*>')",619
+E513,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts', 'assertion', 'failed:', '`vaddr', '%', 'PAGE_SIZE_1M', '=', '=', '<*>', 'in', '`int', 'initializeAppMemory(', 'int,', 'TLBEntry&,', 'unsigned', 'int,', 'unsigned', 'int)', ""'"", 'at', '<*>')",1
+E514,"('<*>', 'RAS', 'KERNEL', '<*>')",6366
+E515,"('<*>', 'RAS', 'KERNEL', 'FATAL')",234
+E516,"('<*>', 'RAS', 'KERNEL', 'INFO')",27870
+E517,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>')",909
+E518,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'CHECK_INITIAL_GLOBAL_INTERRUPT_VALUES')",501
+E519,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', 'SEVERE', 'While', 'initializing', 'service', 'card', 'iDo', 'with', 'LP', 'of', '<*>', 'caught', 'java.io.IOException:', 'Could', 'not', 'contact', 'iDo', 'with', 'LP=', '<*>', 'and', 'IP=', '<*>', 'because', 'java.lang.RuntimeException:', 'Communication', 'error:', '(', 'DirectIDo', 'for', 'Uninitialized', 'DirectIDo', 'for', '<*>', 'is', 'in', 'state', '=', 'COMMUNICATION_ERROR,', 'sequenceNumberIsOk', '=', 'false,', 'ExpectedSequenceNumber', '=', '<*>', 'Reply', 'Sequence', 'Number', '=', '<*>', 'timedOut', '=', 'true,', 'retries', '=', '<*>', 'timeout', '=', '<*>', 'Expected', 'Op', 'Command', '=', '<*>', 'Actual', 'Op', 'Reply', '=', '<*>', 'Expected', 'Sync', 'Command', '=', '<*>', 'Actual', 'Sync', 'Reply', '=', '<*>', '')",197
+E520,"('<*>', 'NULL', 'DISCOVERY', 'ERROR', 'Node', 'card', 'status:', 'ALERT', '<*>', 'ALERT', '<*>', 'ALERT', '<*>', 'ALERT', '<*>', 'is', '(', 'are)', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'not', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'is', 'asserted.', 'PGOOD', 'error', 'latch', 'is', 'clear.', 'MPGOOD', 'is', 'OK.', 'MPGOOD', 'error', 'latch', 'is', 'clear.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.')",171
+E521,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', 'ERROR', 'Missing', 'reverse', 'cable:', 'Cable', '<*>', '<*>', '<*>', '(', '<*>', '-->', '<*>', '<*>', '<*>', '(', '<*>', 'is', 'present', 'BUT', 'the', 'reverse', 'cable', '<*>', '<*>', '<*>', '(', '<*>', '-->', '<*>', '<*>', '<*>', '(', '<*>', 'is', 'missing')",522
+E522,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', 'WARNING', 'Problem', 'communicating', 'with', 'service', 'card,', 'ido', 'chip:', '<*>', 'java.lang.IllegalStateException:', 'while', 'executing', 'CONTROL', 'Operation', 'caught', 'java.lang.RuntimeException:', 'Communication', 'error:', '(', 'DirectIDo', 'for', 'com.ibm.ido.DirectIDo', 'object', '<*>', 'with', 'image', 'version', '<*>', 'and', 'card', 'type', '<*>', 'is', 'in', 'state', '=', 'COMMUNICATION_ERROR,', 'sequenceNumberIsOk', '=', 'false,', 'ExpectedSequenceNumber', '=', '<*>', 'Reply', 'Sequence', 'Number', '=', '<*>', 'timedOut', '=', 'true,', 'retries', '=', '<*>', 'timeout', '=', '<*>', 'Expected', 'Op', 'Command', '=', '<*>', 'Actual', 'Op', 'Reply', '=', '<*>', 'Expected', 'Sync', 'Command', '=', '<*>', 'Actual', 'Sync', 'Reply', '=', '<*>', '')",2
+E523,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'While', 'reading', 'FanModule', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",5
+E524,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'rts', 'tree/torus', 'link', 'training', 'failed:', 'wanted:', 'C', 'X+', 'X-', 'Y+', 'Y-', 'Z+', 'Z-', 'got:', 'C', 'X+', 'Y-', 'Z-')",2
+E525,"('UNKNOWN_LOCATION', 'NULL', 'DISCOVERY', 'SEVERE', 'Error', 'getting', 'detailed', 'hw', 'info', 'for', 'node,', 'caught', 'java.io.IOException:', 'Problems', 'with', 'the', 'chip,', 'could', 'not', '<*>', '<*>', '<*>')",35
+E526,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'quiet', 'NaN..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",67
+E527,"('<*>', 'RAS', 'KERNEL', 'FATAL', '<*>', '<*>', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '..', '<*>')",137
+E528,"('<*>', 'RAS', 'KERNEL', 'INFO', 'ddr:', 'Unable', 'to', 'steer', 'rank=', '<*>', 'symbol=', '<*>', '-', 'rank', 'is', 'already', 'steering', 'symbol', '<*>', 'Due', 'to', 'multiple', 'symbols', 'being', 'over', 'the', 'correctable', 'error', 'threshold,', 'consider', 'replacing', 'the', 'card')",197
+E529,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'While', 'reading', 'FanModule', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",8
+E530,"('<*>', 'NULL', 'DISCOVERY', 'ERROR', 'Node', 'card', 'status:', 'no', 'ALERTs', 'are', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'not', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'IS', 'NOT', 'ASSERTED.', 'PGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'MPGOOD', 'IS', 'NOT', 'OK.', 'MPGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.', 'The', '<*>', 'volt', 'rail', 'is', 'OK.')",227
+E531,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'While', 'setting', 'fan', 'speed', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",5
+E532,"('<*>', 'NULL', 'DISCOVERY', 'ERROR', 'Node', 'card', 'status:', 'no', 'ALERTs', 'are', 'active.', 'Clock', 'Mode', 'is', 'Low.', 'Clock', 'Select', 'is', 'Midplane.', 'Phy', 'JTAG', 'Reset', 'is', 'asserted.', 'ASIC', 'JTAG', 'Reset', 'is', 'not', 'asserted.', 'Temperature', 'Mask', 'is', 'not', 'active.', 'No', 'temperature', 'error.', 'Temperature', 'Limit', 'Error', 'Latch', 'is', 'clear.', 'PGOOD', 'IS', 'NOT', 'ASSERTED.', 'PGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'MPGOOD', 'IS', 'NOT', 'OK.', 'MPGOOD', 'ERROR', 'LATCH', 'IS', 'ACTIVE.', 'THE', '<*>', 'VOLT', 'RAIL', 'IS', 'NOT', 'OK.', 'THE', '<*>', 'VOLT', 'RAIL', 'IS', 'NOT', 'OK.')",49
+E533,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Error', 'receiving', 'packet', 'on', 'tree', 'network,', 'expecting', 'type', '<*>', 'instead', 'of', 'type', '<*>', '(', 'softheader=', '<*>', '<*>', '<*>', '<*>', 'PSR0=', '<*>', 'PSR1=', '<*>', 'PRXF=', '<*>', 'PIXF=', '<*>')",6144
+E534,"('<*>', 'RAS', 'KERNEL', 'FATAL', 'Error', 'receiving', 'packet', 'on', 'tree', 'network,', 'packet', 'index', '<*>', 'greater', 'than', 'max', '<*>', '(', 'softheader=', '<*>', '<*>', '<*>', '<*>', 'PSR0=', '<*>', 'PSR1=', '<*>', 'PRXF=', '<*>', 'PIXF=', '<*>')",1
+E535,"('<*>', 'NULL', 'HARDWARE', 'WARNING', 'PrepareForService', 'shutting', 'down', '<*>', 'card(', 'mLctn(', '<*>', ',', 'mCardSernum(', '<*>', ',', 'mLp(', '<*>', ',', 'mIp(', '<*>', ',', 'mType(', '<*>', ')', 'as', 'part', 'of', 'Service', 'Action', '<*>')",715
+E536,"('UNKNOWN_LOCATION', 'NULL', 'HARDWARE', 'WARNING', 'com.ibm.bgldevices.BulkPowerModule', 'with', 'VPD', 'of', 'com.ibm.bgldevices.BulkPowerModule$VpdReply:', 'IBM', 'Part', 'Number:', '<*>', 'Vendor:', 'Cherokee', 'International,', 'Vendor', 'Serial', 'Number:', '<*>', 'Assembly', 'Revision:', '\x00.A,', 'Code', 'Revision:', 'B.1,', 'Manufacture', 'Date:', 'during', 'week', '<*>', 'of', '<*>', 'Manufacture', 'Location:', 'Tustin,', 'CA,', 'USA', 'is', 'usable', 'but', 'not', 'a', 'supported', 'version')",4
+E537,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'While', 'setting', 'fan', 'speed', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",8
+E538,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'While', 'reading', 'FanModule', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",8
+E539,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'While', 'setting', 'fan', 'speed', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",7
+E540,"('<*>', 'RAS', 'KERNEL', 'INFO', 'Kernel', 'detected', '<*>', 'integer', 'alignment', 'exceptions', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>')",22175
+E541,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'While', 'reading', 'FanModule', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",7
+E542,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'While', 'setting', 'fan', 'speed', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",3
+E543,"('<*>', 'NULL', 'MONITOR', 'FAILURE', 'While', 'reading', 'FanModule', 'caught', 'java.lang.IllegalStateException:', 'while', 'executing', '<*>', 'Operation', 'caught', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.lang.IllegalStateException:', 'client', 'not', 'in', 'a', 'usable', 'state', 'because', 'java.net.SocketException:', 'Broken', 'pipe')",3
+E544,"('time', 'for', 'a', 'single', 'instance', 'of', 'a', 'correctable', 'ddr.', 'RAS', 'KERNEL', 'INFO', '<*>', 'microseconds', 'spent', 'in', 'the', 'rbs', 'signal', 'handler', 'during', '<*>', 'calls.', '<*>', 'microseconds', 'was', 'the', 'maximum', 'time', 'for', 'a', 'single', 'instance', 'of', 'a', 'correctable', 'ddr.')",4
+E545,"('nput', 'interrupts,', '<*>', 'microseconds', 'max', 'time', 'in', 'a', 'cr', 'RAS', 'KERNEL', 'INFO', '<*>', 'total', 'interrupts.', '<*>', 'critical', 'input', 'interrupts.', '<*>', 'microseconds', 'total', 'spent', 'on', 'critical', 'input', 'interrupts,', '<*>', 'microseconds', 'max', 'time', 'in', 'a', 'critical', 'input', 'interrupt.')",4
+E546,"('<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'RAS', 'KERNEL', 'INFO', 'Kernel', 'detected', '<*>', 'integer', 'alignment', 'exceptions', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>', '(', '<*>', 'iar', '<*>', 'dear', '<*>')",2
