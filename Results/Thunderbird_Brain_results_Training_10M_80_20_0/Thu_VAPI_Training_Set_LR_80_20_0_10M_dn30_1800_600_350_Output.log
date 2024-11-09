@@ -9,7 +9,7 @@ Size of test set: 151
 Size of predicted set: 151
 
 Number of estimators: -1
-Randomize value: 10
+Randomize value: 55
 
 Unique classes in TESTS\VALIDATION set: [0 1]
 Unique classes in PREDICTED set: [0 1]
@@ -28,6 +28,280 @@ R-squared: 0.85
    macro avg       0.98      0.94      0.96       151
 weighted avg       0.97      0.97      0.97       151
 
+Feature 0 (E1049): Coefficient = -0.1158
+Feature 1 (E1098): Coefficient = -0.0398
+Feature 2 (E1100): Coefficient = -0.0521
+Feature 3 (E1101): Coefficient = -0.0025
+Feature 4 (E1102): Coefficient = -0.0025
+Feature 5 (E1103): Coefficient = -0.0025
+Feature 6 (E1104): Coefficient = -0.0025
+Feature 7 (E1105): Coefficient = -0.0025
+Feature 8 (E1106): Coefficient = -0.0025
+Feature 9 (E1107): Coefficient = -0.0053
+Feature 10 (E1108): Coefficient = -0.0025
+Feature 11 (E1119): Coefficient = 0.0264
+Feature 12 (E1120): Coefficient = 0.0007
+Feature 13 (E1132): Coefficient = -0.0103
+Feature 14 (E1197): Coefficient = -0.1263
+Feature 15 (E1268): Coefficient = -0.0025
+Feature 16 (E1269): Coefficient = -0.0046
+Feature 17 (E1278): Coefficient = -0.0354
+Feature 18 (E1279): Coefficient = 0.0076
+Feature 19 (E128): Coefficient = -0.0174
+Feature 20 (E129): Coefficient = -0.0053
+Feature 21 (E1291): Coefficient = -0.0398
+Feature 22 (E1292): Coefficient = -0.0074
+Feature 23 (E13): Coefficient = 0.0000
+Feature 24 (E130): Coefficient = -0.0025
+Feature 25 (E1302): Coefficient = -0.0050
+Feature 26 (E131): Coefficient = -0.0025
+Feature 27 (E1312): Coefficient = -0.0025
+Feature 28 (E1313): Coefficient = -0.0050
+Feature 29 (E1314): Coefficient = -0.0025
+Feature 30 (E1315): Coefficient = -0.0025
+Feature 31 (E1316): Coefficient = -0.0025
+Feature 32 (E1317): Coefficient = -0.0099
+Feature 33 (E1318): Coefficient = -0.0025
+Feature 34 (E1319): Coefficient = -0.0025
+Feature 35 (E132): Coefficient = -0.0025
+Feature 36 (E1320): Coefficient = -0.0025
+Feature 37 (E1321): Coefficient = -0.0025
+Feature 38 (E1322): Coefficient = -0.0025
+Feature 39 (E1323): Coefficient = -0.0025
+Feature 40 (E1324): Coefficient = -0.0025
+Feature 41 (E1325): Coefficient = -0.0025
+Feature 42 (E1326): Coefficient = -0.0046
+Feature 43 (E133): Coefficient = -0.0025
+Feature 44 (E134): Coefficient = -0.0025
+Feature 45 (E1347): Coefficient = -0.1162
+Feature 46 (E135): Coefficient = -0.0025
+Feature 47 (E1352): Coefficient = -0.0025
+Feature 48 (E136): Coefficient = -0.0025
+Feature 49 (E1366): Coefficient = -0.0050
+Feature 50 (E1367): Coefficient = -0.0025
+Feature 51 (E1368): Coefficient = -0.0050
+Feature 52 (E1369): Coefficient = -0.0662
+Feature 53 (E1370): Coefficient = -0.0046
+Feature 54 (E1384): Coefficient = -0.1713
+Feature 55 (E1385): Coefficient = -0.0025
+Feature 56 (E1386): Coefficient = -0.0637
+Feature 57 (E14): Coefficient = -0.0025
+Feature 58 (E1452): Coefficient = 0.0076
+Feature 59 (E1461): Coefficient = -0.0025
+Feature 60 (E1472): Coefficient = 0.0007
+Feature 61 (E1474): Coefficient = 0.0004
+Feature 62 (E1489): Coefficient = 0.0000
+Feature 63 (E1492): Coefficient = 0.0000
+Feature 64 (E15): Coefficient = -0.0074
+Feature 65 (E16): Coefficient = -0.0050
+Feature 66 (E17): Coefficient = -0.0025
+Feature 67 (E175): Coefficient = -0.0025
+Feature 68 (E176): Coefficient = -0.0025
+Feature 69 (E177): Coefficient = -0.0025
+Feature 70 (E178): Coefficient = -0.0025
+Feature 71 (E179): Coefficient = -0.0053
+Feature 72 (E18): Coefficient = -0.0025
+Feature 73 (E180): Coefficient = -0.0050
+Feature 74 (E181): Coefficient = -0.0025
+Feature 75 (E182): Coefficient = -0.0078
+Feature 76 (E183): Coefficient = -0.0022
+Feature 77 (E184): Coefficient = -0.0046
+Feature 78 (E185): Coefficient = -0.1207
+Feature 79 (E186): Coefficient = -0.0046
+Feature 80 (E187): Coefficient = -0.0046
+Feature 81 (E19): Coefficient = -0.0099
+Feature 82 (E20): Coefficient = -0.0248
+Feature 83 (E21): Coefficient = -0.0025
+Feature 84 (E22): Coefficient = -0.0025
+Feature 85 (E23): Coefficient = -0.0050
+Feature 86 (E231): Coefficient = 0.2705
+Feature 87 (E232): Coefficient = 0.0085
+Feature 88 (E233): Coefficient = 0.0076
+Feature 89 (E24): Coefficient = -0.0099
+Feature 90 (E25): Coefficient = -0.0025
+Feature 91 (E253): Coefficient = -0.0440
+Feature 92 (E255): Coefficient = -0.0025
+Feature 93 (E258): Coefficient = -0.0025
+Feature 94 (E259): Coefficient = -0.0025
+Feature 95 (E26): Coefficient = -0.0025
+Feature 96 (E260): Coefficient = -0.0074
+Feature 97 (E261): Coefficient = -0.0099
+Feature 98 (E262): Coefficient = -0.0074
+Feature 99 (E263): Coefficient = -0.0025
+Feature 100 (E264): Coefficient = -0.7758
+Feature 101 (E265): Coefficient = -0.0025
+Feature 102 (E266): Coefficient = -0.0025
+Feature 103 (E267): Coefficient = -0.0025
+Feature 104 (E268): Coefficient = -0.0025
+Feature 105 (E269): Coefficient = -0.0025
+Feature 106 (E27): Coefficient = -0.0025
+Feature 107 (E270): Coefficient = -0.0050
+Feature 108 (E271): Coefficient = -0.0025
+Feature 109 (E272): Coefficient = -0.0053
+Feature 110 (E273): Coefficient = -0.0025
+Feature 111 (E274): Coefficient = -0.0022
+Feature 112 (E28): Coefficient = -0.0025
+Feature 113 (E29): Coefficient = -0.0050
+Feature 114 (E30): Coefficient = -0.0025
+Feature 115 (E31): Coefficient = -0.0099
+Feature 116 (E32): Coefficient = -0.0099
+Feature 117 (E33): Coefficient = -0.0025
+Feature 118 (E34): Coefficient = -0.0025
+Feature 119 (E35): Coefficient = -0.0053
+Feature 120 (E36): Coefficient = -0.0025
+Feature 121 (E361): Coefficient = -0.1161
+Feature 122 (E367): Coefficient = 0.0085
+Feature 123 (E37): Coefficient = -0.0025
+Feature 124 (E38): Coefficient = -0.0025
+Feature 125 (E39): Coefficient = -0.0025
+Feature 126 (E394): Coefficient = 0.3365
+Feature 127 (E40): Coefficient = -0.0127
+Feature 128 (E400): Coefficient = -0.1235
+Feature 129 (E41): Coefficient = -0.0053
+Feature 130 (E414): Coefficient = 0.7184
+Feature 131 (E42): Coefficient = -0.0053
+Feature 132 (E425): Coefficient = -0.1508
+Feature 133 (E426): Coefficient = 0.0000
+Feature 134 (E427): Coefficient = -0.0074
+Feature 135 (E428): Coefficient = -0.0025
+Feature 136 (E429): Coefficient = -0.0025
+Feature 137 (E43): Coefficient = -0.0025
+Feature 138 (E430): Coefficient = -0.0050
+Feature 139 (E431): Coefficient = -0.0074
+Feature 140 (E432): Coefficient = -0.0025
+Feature 141 (E433): Coefficient = -0.0025
+Feature 142 (E434): Coefficient = -0.0050
+Feature 143 (E435): Coefficient = -0.0025
+Feature 144 (E436): Coefficient = -0.0025
+Feature 145 (E437): Coefficient = -0.0053
+Feature 146 (E438): Coefficient = -0.0025
+Feature 147 (E439): Coefficient = -0.0149
+Feature 148 (E44): Coefficient = -0.0634
+Feature 149 (E440): Coefficient = -0.0025
+Feature 150 (E441): Coefficient = -0.0025
+Feature 151 (E442): Coefficient = -0.0025
+Feature 152 (E443): Coefficient = -0.0025
+Feature 153 (E444): Coefficient = -0.0025
+Feature 154 (E445): Coefficient = -0.0025
+Feature 155 (E446): Coefficient = -0.0025
+Feature 156 (E447): Coefficient = -0.0025
+Feature 157 (E448): Coefficient = -0.0025
+Feature 158 (E449): Coefficient = -0.0025
+Feature 159 (E450): Coefficient = -0.0099
+Feature 160 (E451): Coefficient = -0.0025
+Feature 161 (E452): Coefficient = -0.0025
+Feature 162 (E453): Coefficient = -0.0248
+Feature 163 (E454): Coefficient = -0.0025
+Feature 164 (E455): Coefficient = -0.0025
+Feature 165 (E456): Coefficient = -0.0025
+Feature 166 (E457): Coefficient = -0.0025
+Feature 167 (E458): Coefficient = -0.0025
+Feature 168 (E459): Coefficient = -0.0025
+Feature 169 (E460): Coefficient = -0.0025
+Feature 170 (E461): Coefficient = -0.0025
+Feature 171 (E462): Coefficient = -0.0025
+Feature 172 (E463): Coefficient = -0.0025
+Feature 173 (E464): Coefficient = -0.0053
+Feature 174 (E465): Coefficient = -0.0025
+Feature 175 (E466): Coefficient = -0.0025
+Feature 176 (E473): Coefficient = -0.0046
+Feature 177 (E51): Coefficient = -0.0046
+Feature 178 (E518): Coefficient = -0.0074
+Feature 179 (E52): Coefficient = -0.0046
+Feature 180 (E521): Coefficient = 0.0000
+Feature 181 (E528): Coefficient = 0.0000
+Feature 182 (E584): Coefficient = 0.0085
+Feature 183 (E607): Coefficient = -0.0025
+Feature 184 (E608): Coefficient = 0.4729
+Feature 185 (E610): Coefficient = -0.1508
+Feature 186 (E612): Coefficient = -0.0025
+Feature 187 (E613): Coefficient = -0.0025
+Feature 188 (E614): Coefficient = -0.0025
+Feature 189 (E615): Coefficient = -0.0074
+Feature 190 (E616): Coefficient = -0.0025
+Feature 191 (E617): Coefficient = -0.0025
+Feature 192 (E618): Coefficient = -0.0025
+Feature 193 (E619): Coefficient = -0.0078
+Feature 194 (E620): Coefficient = -0.0025
+Feature 195 (E621): Coefficient = -0.0025
+Feature 196 (E622): Coefficient = -0.0025
+Feature 197 (E623): Coefficient = -0.0053
+Feature 198 (E624): Coefficient = -0.0025
+Feature 199 (E625): Coefficient = -0.0025
+Feature 200 (E626): Coefficient = -0.0025
+Feature 201 (E627): Coefficient = -0.0025
+Feature 202 (E628): Coefficient = -0.0053
+Feature 203 (E629): Coefficient = -0.0025
+Feature 204 (E630): Coefficient = -0.0025
+Feature 205 (E701): Coefficient = 0.0000
+Feature 206 (E726): Coefficient = -0.1161
+Feature 207 (E727): Coefficient = -0.1161
+Feature 208 (E728): Coefficient = -0.1164
+Feature 209 (E761): Coefficient = 0.0076
+Feature 210 (E784): Coefficient = -0.0025
+Feature 211 (E79): Coefficient = 0.0085
+Feature 212 (E793): Coefficient = -0.0398
+Feature 213 (E797): Coefficient = -0.0025
+Feature 214 (E798): Coefficient = -0.0025
+Feature 215 (E799): Coefficient = -0.0025
+Feature 216 (E800): Coefficient = -0.0025
+Feature 217 (E801): Coefficient = -0.0025
+Feature 218 (E802): Coefficient = -0.0099
+Feature 219 (E803): Coefficient = -0.0025
+Feature 220 (E804): Coefficient = -0.0053
+Feature 221 (E805): Coefficient = -0.0025
+Feature 222 (E806): Coefficient = -0.0025
+Feature 223 (E807): Coefficient = -0.0025
+Feature 224 (E808): Coefficient = -0.0025
+Feature 225 (E809): Coefficient = -0.0025
+Feature 226 (E81): Coefficient = 0.0000
+Feature 227 (E810): Coefficient = -0.0050
+Feature 228 (E811): Coefficient = -0.0025
+Feature 229 (E812): Coefficient = -0.0025
+Feature 230 (E813): Coefficient = -0.0025
+Feature 231 (E814): Coefficient = -0.0074
+Feature 232 (E815): Coefficient = -0.0127
+Feature 233 (E816): Coefficient = -0.0025
+Feature 234 (E817): Coefficient = -0.0481
+Feature 235 (E818): Coefficient = 0.0229
+Feature 236 (E823): Coefficient = -0.0022
+Feature 237 (E824): Coefficient = -0.0046
+Feature 238 (E825): Coefficient = -0.0046
+Feature 239 (E856): Coefficient = -0.0612
+Feature 240 (E884): Coefficient = -0.0398
+Feature 241 (E9): Coefficient = -0.0025
+Feature 242 (E90): Coefficient = -0.1161
+Feature 243 (E925): Coefficient = 0.0085
+Feature 244 (E926): Coefficient = 0.0085
+Feature 245 (E960): Coefficient = -0.8933
+Feature 246 (E961): Coefficient = -0.0782
+Feature 247 (E969): Coefficient = 0.0000
+Feature 248 (E970): Coefficient = -0.0025
+Feature 249 (E971): Coefficient = -0.0025
+Feature 250 (E972): Coefficient = -0.0025
+Feature 251 (E973): Coefficient = -0.0025
+Feature 252 (E974): Coefficient = -0.0025
+Feature 253 (E975): Coefficient = -0.0025
+Feature 254 (E976): Coefficient = -0.0025
+Feature 255 (E977): Coefficient = -0.0025
+Feature 256 (E978): Coefficient = -0.0025
+Feature 257 (E979): Coefficient = -0.0025
+Feature 258 (E980): Coefficient = -0.0053
+Feature 259 (E981): Coefficient = -0.0025
+Feature 260 (E982): Coefficient = -0.0103
+Feature 261 (E983): Coefficient = -0.0025
+Feature 262 (E984): Coefficient = -0.0053
+Feature 263 (E985): Coefficient = -0.0025
+Feature 264 (E986): Coefficient = -0.0025
+Feature 265 (E987): Coefficient = -0.0025
+Feature 266 (E988): Coefficient = -0.1249
+Feature 267 (E989): Coefficient = -0.0344
+Feature 268 (E99): Coefficient = 0.0004
+Feature 269 (E990): Coefficient = -0.0025
+Feature 270 (E991): Coefficient = -0.1533
+Feature 271 (E992): Coefficient = -0.1725
+Feature 272 (E993): Coefficient = -0.0782
+Feature 273 (E999): Coefficient = -0.0046
 ------------------------------------
 
 ------------------------------------
@@ -37,7 +311,7 @@ Size of test set: 607
 Size of predicted set: 607
 
 Number of estimators: -1
-Randomize value: 10
+Randomize value: 55
 
 Unique classes in TESTS\VALIDATION set: [0 1]
 Unique classes in PREDICTED set: [0 1]
@@ -56,279 +330,279 @@ R-squared: 0.95
    macro avg       0.99      0.99      0.99       607
 weighted avg       1.00      1.00      1.00       607
 
+Feature 0 (E1049): Coefficient = -0.1158
+Feature 1 (E1098): Coefficient = -0.0398
+Feature 2 (E1100): Coefficient = -0.0521
+Feature 3 (E1101): Coefficient = -0.0025
+Feature 4 (E1102): Coefficient = -0.0025
+Feature 5 (E1103): Coefficient = -0.0025
+Feature 6 (E1104): Coefficient = -0.0025
+Feature 7 (E1105): Coefficient = -0.0025
+Feature 8 (E1106): Coefficient = -0.0025
+Feature 9 (E1107): Coefficient = -0.0053
+Feature 10 (E1108): Coefficient = -0.0025
+Feature 11 (E1119): Coefficient = 0.0264
+Feature 12 (E1120): Coefficient = 0.0007
+Feature 13 (E1132): Coefficient = -0.0103
+Feature 14 (E1197): Coefficient = -0.1263
+Feature 15 (E1268): Coefficient = -0.0025
+Feature 16 (E1269): Coefficient = -0.0046
+Feature 17 (E1278): Coefficient = -0.0354
+Feature 18 (E1279): Coefficient = 0.0076
+Feature 19 (E128): Coefficient = -0.0174
+Feature 20 (E129): Coefficient = -0.0053
+Feature 21 (E1291): Coefficient = -0.0398
+Feature 22 (E1292): Coefficient = -0.0074
+Feature 23 (E13): Coefficient = 0.0000
+Feature 24 (E130): Coefficient = -0.0025
+Feature 25 (E1302): Coefficient = -0.0050
+Feature 26 (E131): Coefficient = -0.0025
+Feature 27 (E1312): Coefficient = -0.0025
+Feature 28 (E1313): Coefficient = -0.0050
+Feature 29 (E1314): Coefficient = -0.0025
+Feature 30 (E1315): Coefficient = -0.0025
+Feature 31 (E1316): Coefficient = -0.0025
+Feature 32 (E1317): Coefficient = -0.0099
+Feature 33 (E1318): Coefficient = -0.0025
+Feature 34 (E1319): Coefficient = -0.0025
+Feature 35 (E132): Coefficient = -0.0025
+Feature 36 (E1320): Coefficient = -0.0025
+Feature 37 (E1321): Coefficient = -0.0025
+Feature 38 (E1322): Coefficient = -0.0025
+Feature 39 (E1323): Coefficient = -0.0025
+Feature 40 (E1324): Coefficient = -0.0025
+Feature 41 (E1325): Coefficient = -0.0025
+Feature 42 (E1326): Coefficient = -0.0046
+Feature 43 (E133): Coefficient = -0.0025
+Feature 44 (E134): Coefficient = -0.0025
+Feature 45 (E1347): Coefficient = -0.1162
+Feature 46 (E135): Coefficient = -0.0025
+Feature 47 (E1352): Coefficient = -0.0025
+Feature 48 (E136): Coefficient = -0.0025
+Feature 49 (E1366): Coefficient = -0.0050
+Feature 50 (E1367): Coefficient = -0.0025
+Feature 51 (E1368): Coefficient = -0.0050
+Feature 52 (E1369): Coefficient = -0.0662
+Feature 53 (E1370): Coefficient = -0.0046
+Feature 54 (E1384): Coefficient = -0.1713
+Feature 55 (E1385): Coefficient = -0.0025
+Feature 56 (E1386): Coefficient = -0.0637
+Feature 57 (E14): Coefficient = -0.0025
+Feature 58 (E1452): Coefficient = 0.0076
+Feature 59 (E1461): Coefficient = -0.0025
+Feature 60 (E1472): Coefficient = 0.0007
+Feature 61 (E1474): Coefficient = 0.0004
+Feature 62 (E1489): Coefficient = 0.0000
+Feature 63 (E1492): Coefficient = 0.0000
+Feature 64 (E15): Coefficient = -0.0074
+Feature 65 (E16): Coefficient = -0.0050
+Feature 66 (E17): Coefficient = -0.0025
+Feature 67 (E175): Coefficient = -0.0025
+Feature 68 (E176): Coefficient = -0.0025
+Feature 69 (E177): Coefficient = -0.0025
+Feature 70 (E178): Coefficient = -0.0025
+Feature 71 (E179): Coefficient = -0.0053
+Feature 72 (E18): Coefficient = -0.0025
+Feature 73 (E180): Coefficient = -0.0050
+Feature 74 (E181): Coefficient = -0.0025
+Feature 75 (E182): Coefficient = -0.0078
+Feature 76 (E183): Coefficient = -0.0022
+Feature 77 (E184): Coefficient = -0.0046
+Feature 78 (E185): Coefficient = -0.1207
+Feature 79 (E186): Coefficient = -0.0046
+Feature 80 (E187): Coefficient = -0.0046
+Feature 81 (E19): Coefficient = -0.0099
+Feature 82 (E20): Coefficient = -0.0248
+Feature 83 (E21): Coefficient = -0.0025
+Feature 84 (E22): Coefficient = -0.0025
+Feature 85 (E23): Coefficient = -0.0050
+Feature 86 (E231): Coefficient = 0.2705
+Feature 87 (E232): Coefficient = 0.0085
+Feature 88 (E233): Coefficient = 0.0076
+Feature 89 (E24): Coefficient = -0.0099
+Feature 90 (E25): Coefficient = -0.0025
+Feature 91 (E253): Coefficient = -0.0440
+Feature 92 (E255): Coefficient = -0.0025
+Feature 93 (E258): Coefficient = -0.0025
+Feature 94 (E259): Coefficient = -0.0025
+Feature 95 (E26): Coefficient = -0.0025
+Feature 96 (E260): Coefficient = -0.0074
+Feature 97 (E261): Coefficient = -0.0099
+Feature 98 (E262): Coefficient = -0.0074
+Feature 99 (E263): Coefficient = -0.0025
+Feature 100 (E264): Coefficient = -0.7758
+Feature 101 (E265): Coefficient = -0.0025
+Feature 102 (E266): Coefficient = -0.0025
+Feature 103 (E267): Coefficient = -0.0025
+Feature 104 (E268): Coefficient = -0.0025
+Feature 105 (E269): Coefficient = -0.0025
+Feature 106 (E27): Coefficient = -0.0025
+Feature 107 (E270): Coefficient = -0.0050
+Feature 108 (E271): Coefficient = -0.0025
+Feature 109 (E272): Coefficient = -0.0053
+Feature 110 (E273): Coefficient = -0.0025
+Feature 111 (E274): Coefficient = -0.0022
+Feature 112 (E28): Coefficient = -0.0025
+Feature 113 (E29): Coefficient = -0.0050
+Feature 114 (E30): Coefficient = -0.0025
+Feature 115 (E31): Coefficient = -0.0099
+Feature 116 (E32): Coefficient = -0.0099
+Feature 117 (E33): Coefficient = -0.0025
+Feature 118 (E34): Coefficient = -0.0025
+Feature 119 (E35): Coefficient = -0.0053
+Feature 120 (E36): Coefficient = -0.0025
+Feature 121 (E361): Coefficient = -0.1161
+Feature 122 (E367): Coefficient = 0.0085
+Feature 123 (E37): Coefficient = -0.0025
+Feature 124 (E38): Coefficient = -0.0025
+Feature 125 (E39): Coefficient = -0.0025
+Feature 126 (E394): Coefficient = 0.3365
+Feature 127 (E40): Coefficient = -0.0127
+Feature 128 (E400): Coefficient = -0.1235
+Feature 129 (E41): Coefficient = -0.0053
+Feature 130 (E414): Coefficient = 0.7184
+Feature 131 (E42): Coefficient = -0.0053
+Feature 132 (E425): Coefficient = -0.1508
+Feature 133 (E426): Coefficient = 0.0000
+Feature 134 (E427): Coefficient = -0.0074
+Feature 135 (E428): Coefficient = -0.0025
+Feature 136 (E429): Coefficient = -0.0025
+Feature 137 (E43): Coefficient = -0.0025
+Feature 138 (E430): Coefficient = -0.0050
+Feature 139 (E431): Coefficient = -0.0074
+Feature 140 (E432): Coefficient = -0.0025
+Feature 141 (E433): Coefficient = -0.0025
+Feature 142 (E434): Coefficient = -0.0050
+Feature 143 (E435): Coefficient = -0.0025
+Feature 144 (E436): Coefficient = -0.0025
+Feature 145 (E437): Coefficient = -0.0053
+Feature 146 (E438): Coefficient = -0.0025
+Feature 147 (E439): Coefficient = -0.0149
+Feature 148 (E44): Coefficient = -0.0634
+Feature 149 (E440): Coefficient = -0.0025
+Feature 150 (E441): Coefficient = -0.0025
+Feature 151 (E442): Coefficient = -0.0025
+Feature 152 (E443): Coefficient = -0.0025
+Feature 153 (E444): Coefficient = -0.0025
+Feature 154 (E445): Coefficient = -0.0025
+Feature 155 (E446): Coefficient = -0.0025
+Feature 156 (E447): Coefficient = -0.0025
+Feature 157 (E448): Coefficient = -0.0025
+Feature 158 (E449): Coefficient = -0.0025
+Feature 159 (E450): Coefficient = -0.0099
+Feature 160 (E451): Coefficient = -0.0025
+Feature 161 (E452): Coefficient = -0.0025
+Feature 162 (E453): Coefficient = -0.0248
+Feature 163 (E454): Coefficient = -0.0025
+Feature 164 (E455): Coefficient = -0.0025
+Feature 165 (E456): Coefficient = -0.0025
+Feature 166 (E457): Coefficient = -0.0025
+Feature 167 (E458): Coefficient = -0.0025
+Feature 168 (E459): Coefficient = -0.0025
+Feature 169 (E460): Coefficient = -0.0025
+Feature 170 (E461): Coefficient = -0.0025
+Feature 171 (E462): Coefficient = -0.0025
+Feature 172 (E463): Coefficient = -0.0025
+Feature 173 (E464): Coefficient = -0.0053
+Feature 174 (E465): Coefficient = -0.0025
+Feature 175 (E466): Coefficient = -0.0025
+Feature 176 (E473): Coefficient = -0.0046
+Feature 177 (E51): Coefficient = -0.0046
+Feature 178 (E518): Coefficient = -0.0074
+Feature 179 (E52): Coefficient = -0.0046
+Feature 180 (E521): Coefficient = 0.0000
+Feature 181 (E528): Coefficient = 0.0000
+Feature 182 (E584): Coefficient = 0.0085
+Feature 183 (E607): Coefficient = -0.0025
+Feature 184 (E608): Coefficient = 0.4729
+Feature 185 (E610): Coefficient = -0.1508
+Feature 186 (E612): Coefficient = -0.0025
+Feature 187 (E613): Coefficient = -0.0025
+Feature 188 (E614): Coefficient = -0.0025
+Feature 189 (E615): Coefficient = -0.0074
+Feature 190 (E616): Coefficient = -0.0025
+Feature 191 (E617): Coefficient = -0.0025
+Feature 192 (E618): Coefficient = -0.0025
+Feature 193 (E619): Coefficient = -0.0078
+Feature 194 (E620): Coefficient = -0.0025
+Feature 195 (E621): Coefficient = -0.0025
+Feature 196 (E622): Coefficient = -0.0025
+Feature 197 (E623): Coefficient = -0.0053
+Feature 198 (E624): Coefficient = -0.0025
+Feature 199 (E625): Coefficient = -0.0025
+Feature 200 (E626): Coefficient = -0.0025
+Feature 201 (E627): Coefficient = -0.0025
+Feature 202 (E628): Coefficient = -0.0053
+Feature 203 (E629): Coefficient = -0.0025
+Feature 204 (E630): Coefficient = -0.0025
+Feature 205 (E701): Coefficient = 0.0000
+Feature 206 (E726): Coefficient = -0.1161
+Feature 207 (E727): Coefficient = -0.1161
+Feature 208 (E728): Coefficient = -0.1164
+Feature 209 (E761): Coefficient = 0.0076
+Feature 210 (E784): Coefficient = -0.0025
+Feature 211 (E79): Coefficient = 0.0085
+Feature 212 (E793): Coefficient = -0.0398
+Feature 213 (E797): Coefficient = -0.0025
+Feature 214 (E798): Coefficient = -0.0025
+Feature 215 (E799): Coefficient = -0.0025
+Feature 216 (E800): Coefficient = -0.0025
+Feature 217 (E801): Coefficient = -0.0025
+Feature 218 (E802): Coefficient = -0.0099
+Feature 219 (E803): Coefficient = -0.0025
+Feature 220 (E804): Coefficient = -0.0053
+Feature 221 (E805): Coefficient = -0.0025
+Feature 222 (E806): Coefficient = -0.0025
+Feature 223 (E807): Coefficient = -0.0025
+Feature 224 (E808): Coefficient = -0.0025
+Feature 225 (E809): Coefficient = -0.0025
+Feature 226 (E81): Coefficient = 0.0000
+Feature 227 (E810): Coefficient = -0.0050
+Feature 228 (E811): Coefficient = -0.0025
+Feature 229 (E812): Coefficient = -0.0025
+Feature 230 (E813): Coefficient = -0.0025
+Feature 231 (E814): Coefficient = -0.0074
+Feature 232 (E815): Coefficient = -0.0127
+Feature 233 (E816): Coefficient = -0.0025
+Feature 234 (E817): Coefficient = -0.0481
+Feature 235 (E818): Coefficient = 0.0229
+Feature 236 (E823): Coefficient = -0.0022
+Feature 237 (E824): Coefficient = -0.0046
+Feature 238 (E825): Coefficient = -0.0046
+Feature 239 (E856): Coefficient = -0.0612
+Feature 240 (E884): Coefficient = -0.0398
+Feature 241 (E9): Coefficient = -0.0025
+Feature 242 (E90): Coefficient = -0.1161
+Feature 243 (E925): Coefficient = 0.0085
+Feature 244 (E926): Coefficient = 0.0085
+Feature 245 (E960): Coefficient = -0.8933
+Feature 246 (E961): Coefficient = -0.0782
+Feature 247 (E969): Coefficient = 0.0000
+Feature 248 (E970): Coefficient = -0.0025
+Feature 249 (E971): Coefficient = -0.0025
+Feature 250 (E972): Coefficient = -0.0025
+Feature 251 (E973): Coefficient = -0.0025
+Feature 252 (E974): Coefficient = -0.0025
+Feature 253 (E975): Coefficient = -0.0025
+Feature 254 (E976): Coefficient = -0.0025
+Feature 255 (E977): Coefficient = -0.0025
+Feature 256 (E978): Coefficient = -0.0025
+Feature 257 (E979): Coefficient = -0.0025
+Feature 258 (E980): Coefficient = -0.0053
+Feature 259 (E981): Coefficient = -0.0025
+Feature 260 (E982): Coefficient = -0.0103
+Feature 261 (E983): Coefficient = -0.0025
+Feature 262 (E984): Coefficient = -0.0053
+Feature 263 (E985): Coefficient = -0.0025
+Feature 264 (E986): Coefficient = -0.0025
+Feature 265 (E987): Coefficient = -0.0025
+Feature 266 (E988): Coefficient = -0.1249
+Feature 267 (E989): Coefficient = -0.0344
+Feature 268 (E99): Coefficient = 0.0004
+Feature 269 (E990): Coefficient = -0.0025
+Feature 270 (E991): Coefficient = -0.1533
+Feature 271 (E992): Coefficient = -0.1725
+Feature 272 (E993): Coefficient = -0.0782
+Feature 273 (E999): Coefficient = -0.0046
 ------------------------------------
 
-Feature 0: Coefficient = -0.1158, Odds Ratio = 0.8907
-Feature 1: Coefficient = -0.0398, Odds Ratio = 0.9609
-Feature 2: Coefficient = -0.0521, Odds Ratio = 0.9492
-Feature 3: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 4: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 5: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 6: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 7: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 8: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 9: Coefficient = -0.0053, Odds Ratio = 0.9947
-Feature 10: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 11: Coefficient = 0.0264, Odds Ratio = 1.0267
-Feature 12: Coefficient = 0.0007, Odds Ratio = 1.0007
-Feature 13: Coefficient = -0.0103, Odds Ratio = 0.9898
-Feature 14: Coefficient = -0.1263, Odds Ratio = 0.8813
-Feature 15: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 16: Coefficient = -0.0046, Odds Ratio = 0.9954
-Feature 17: Coefficient = -0.0354, Odds Ratio = 0.9653
-Feature 18: Coefficient = 0.0076, Odds Ratio = 1.0076
-Feature 19: Coefficient = -0.0174, Odds Ratio = 0.9828
-Feature 20: Coefficient = -0.0053, Odds Ratio = 0.9947
-Feature 21: Coefficient = -0.0398, Odds Ratio = 0.9609
-Feature 22: Coefficient = -0.0074, Odds Ratio = 0.9926
-Feature 23: Coefficient = 0.0000, Odds Ratio = 1.0000
-Feature 24: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 25: Coefficient = -0.0050, Odds Ratio = 0.9950
-Feature 26: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 27: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 28: Coefficient = -0.0050, Odds Ratio = 0.9950
-Feature 29: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 30: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 31: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 32: Coefficient = -0.0099, Odds Ratio = 0.9901
-Feature 33: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 34: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 35: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 36: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 37: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 38: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 39: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 40: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 41: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 42: Coefficient = -0.0046, Odds Ratio = 0.9954
-Feature 43: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 44: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 45: Coefficient = -0.1162, Odds Ratio = 0.8903
-Feature 46: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 47: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 48: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 49: Coefficient = -0.0050, Odds Ratio = 0.9950
-Feature 50: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 51: Coefficient = -0.0050, Odds Ratio = 0.9950
-Feature 52: Coefficient = -0.0662, Odds Ratio = 0.9359
-Feature 53: Coefficient = -0.0046, Odds Ratio = 0.9954
-Feature 54: Coefficient = -0.1713, Odds Ratio = 0.8426
-Feature 55: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 56: Coefficient = -0.0637, Odds Ratio = 0.9383
-Feature 57: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 58: Coefficient = 0.0076, Odds Ratio = 1.0076
-Feature 59: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 60: Coefficient = 0.0007, Odds Ratio = 1.0007
-Feature 61: Coefficient = 0.0004, Odds Ratio = 1.0004
-Feature 62: Coefficient = 0.0000, Odds Ratio = 1.0000
-Feature 63: Coefficient = 0.0000, Odds Ratio = 1.0000
-Feature 64: Coefficient = -0.0074, Odds Ratio = 0.9926
-Feature 65: Coefficient = -0.0050, Odds Ratio = 0.9950
-Feature 66: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 67: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 68: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 69: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 70: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 71: Coefficient = -0.0053, Odds Ratio = 0.9947
-Feature 72: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 73: Coefficient = -0.0050, Odds Ratio = 0.9950
-Feature 74: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 75: Coefficient = -0.0078, Odds Ratio = 0.9923
-Feature 76: Coefficient = -0.0022, Odds Ratio = 0.9978
-Feature 77: Coefficient = -0.0046, Odds Ratio = 0.9954
-Feature 78: Coefficient = -0.1207, Odds Ratio = 0.8863
-Feature 79: Coefficient = -0.0046, Odds Ratio = 0.9954
-Feature 80: Coefficient = -0.0046, Odds Ratio = 0.9954
-Feature 81: Coefficient = -0.0099, Odds Ratio = 0.9901
-Feature 82: Coefficient = -0.0248, Odds Ratio = 0.9755
-Feature 83: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 84: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 85: Coefficient = -0.0050, Odds Ratio = 0.9950
-Feature 86: Coefficient = 0.2705, Odds Ratio = 1.3107
-Feature 87: Coefficient = 0.0085, Odds Ratio = 1.0085
-Feature 88: Coefficient = 0.0076, Odds Ratio = 1.0076
-Feature 89: Coefficient = -0.0099, Odds Ratio = 0.9901
-Feature 90: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 91: Coefficient = -0.0440, Odds Ratio = 0.9570
-Feature 92: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 93: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 94: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 95: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 96: Coefficient = -0.0074, Odds Ratio = 0.9926
-Feature 97: Coefficient = -0.0099, Odds Ratio = 0.9901
-Feature 98: Coefficient = -0.0074, Odds Ratio = 0.9926
-Feature 99: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 100: Coefficient = -0.7758, Odds Ratio = 0.4603
-Feature 101: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 102: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 103: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 104: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 105: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 106: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 107: Coefficient = -0.0050, Odds Ratio = 0.9950
-Feature 108: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 109: Coefficient = -0.0053, Odds Ratio = 0.9947
-Feature 110: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 111: Coefficient = -0.0022, Odds Ratio = 0.9978
-Feature 112: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 113: Coefficient = -0.0050, Odds Ratio = 0.9950
-Feature 114: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 115: Coefficient = -0.0099, Odds Ratio = 0.9901
-Feature 116: Coefficient = -0.0099, Odds Ratio = 0.9901
-Feature 117: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 118: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 119: Coefficient = -0.0053, Odds Ratio = 0.9947
-Feature 120: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 121: Coefficient = -0.1161, Odds Ratio = 0.8904
-Feature 122: Coefficient = 0.0085, Odds Ratio = 1.0085
-Feature 123: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 124: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 125: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 126: Coefficient = 0.3365, Odds Ratio = 1.4001
-Feature 127: Coefficient = -0.0127, Odds Ratio = 0.9873
-Feature 128: Coefficient = -0.1235, Odds Ratio = 0.8838
-Feature 129: Coefficient = -0.0053, Odds Ratio = 0.9947
-Feature 130: Coefficient = 0.7184, Odds Ratio = 2.0512
-Feature 131: Coefficient = -0.0053, Odds Ratio = 0.9947
-Feature 132: Coefficient = -0.1508, Odds Ratio = 0.8600
-Feature 133: Coefficient = 0.0000, Odds Ratio = 1.0000
-Feature 134: Coefficient = -0.0074, Odds Ratio = 0.9926
-Feature 135: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 136: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 137: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 138: Coefficient = -0.0050, Odds Ratio = 0.9950
-Feature 139: Coefficient = -0.0074, Odds Ratio = 0.9926
-Feature 140: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 141: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 142: Coefficient = -0.0050, Odds Ratio = 0.9950
-Feature 143: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 144: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 145: Coefficient = -0.0053, Odds Ratio = 0.9947
-Feature 146: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 147: Coefficient = -0.0149, Odds Ratio = 0.9852
-Feature 148: Coefficient = -0.0634, Odds Ratio = 0.9385
-Feature 149: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 150: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 151: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 152: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 153: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 154: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 155: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 156: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 157: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 158: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 159: Coefficient = -0.0099, Odds Ratio = 0.9901
-Feature 160: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 161: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 162: Coefficient = -0.0248, Odds Ratio = 0.9755
-Feature 163: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 164: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 165: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 166: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 167: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 168: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 169: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 170: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 171: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 172: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 173: Coefficient = -0.0053, Odds Ratio = 0.9947
-Feature 174: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 175: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 176: Coefficient = -0.0046, Odds Ratio = 0.9954
-Feature 177: Coefficient = -0.0046, Odds Ratio = 0.9954
-Feature 178: Coefficient = -0.0074, Odds Ratio = 0.9926
-Feature 179: Coefficient = -0.0046, Odds Ratio = 0.9954
-Feature 180: Coefficient = 0.0000, Odds Ratio = 1.0000
-Feature 181: Coefficient = 0.0000, Odds Ratio = 1.0000
-Feature 182: Coefficient = 0.0085, Odds Ratio = 1.0085
-Feature 183: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 184: Coefficient = 0.4729, Odds Ratio = 1.6046
-Feature 185: Coefficient = -0.1508, Odds Ratio = 0.8600
-Feature 186: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 187: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 188: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 189: Coefficient = -0.0074, Odds Ratio = 0.9926
-Feature 190: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 191: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 192: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 193: Coefficient = -0.0078, Odds Ratio = 0.9923
-Feature 194: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 195: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 196: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 197: Coefficient = -0.0053, Odds Ratio = 0.9947
-Feature 198: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 199: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 200: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 201: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 202: Coefficient = -0.0053, Odds Ratio = 0.9947
-Feature 203: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 204: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 205: Coefficient = 0.0000, Odds Ratio = 1.0000
-Feature 206: Coefficient = -0.1161, Odds Ratio = 0.8904
-Feature 207: Coefficient = -0.1161, Odds Ratio = 0.8904
-Feature 208: Coefficient = -0.1164, Odds Ratio = 0.8901
-Feature 209: Coefficient = 0.0076, Odds Ratio = 1.0076
-Feature 210: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 211: Coefficient = 0.0085, Odds Ratio = 1.0085
-Feature 212: Coefficient = -0.0398, Odds Ratio = 0.9609
-Feature 213: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 214: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 215: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 216: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 217: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 218: Coefficient = -0.0099, Odds Ratio = 0.9901
-Feature 219: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 220: Coefficient = -0.0053, Odds Ratio = 0.9947
-Feature 221: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 222: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 223: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 224: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 225: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 226: Coefficient = 0.0000, Odds Ratio = 1.0000
-Feature 227: Coefficient = -0.0050, Odds Ratio = 0.9950
-Feature 228: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 229: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 230: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 231: Coefficient = -0.0074, Odds Ratio = 0.9926
-Feature 232: Coefficient = -0.0127, Odds Ratio = 0.9873
-Feature 233: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 234: Coefficient = -0.0481, Odds Ratio = 0.9530
-Feature 235: Coefficient = 0.0229, Odds Ratio = 1.0231
-Feature 236: Coefficient = -0.0022, Odds Ratio = 0.9978
-Feature 237: Coefficient = -0.0046, Odds Ratio = 0.9954
-Feature 238: Coefficient = -0.0046, Odds Ratio = 0.9954
-Feature 239: Coefficient = -0.0612, Odds Ratio = 0.9406
-Feature 240: Coefficient = -0.0398, Odds Ratio = 0.9609
-Feature 241: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 242: Coefficient = -0.1161, Odds Ratio = 0.8904
-Feature 243: Coefficient = 0.0085, Odds Ratio = 1.0085
-Feature 244: Coefficient = 0.0085, Odds Ratio = 1.0085
-Feature 245: Coefficient = -0.8933, Odds Ratio = 0.4093
-Feature 246: Coefficient = -0.0782, Odds Ratio = 0.9248
-Feature 247: Coefficient = 0.0000, Odds Ratio = 1.0000
-Feature 248: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 249: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 250: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 251: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 252: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 253: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 254: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 255: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 256: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 257: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 258: Coefficient = -0.0053, Odds Ratio = 0.9947
-Feature 259: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 260: Coefficient = -0.0103, Odds Ratio = 0.9898
-Feature 261: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 262: Coefficient = -0.0053, Odds Ratio = 0.9947
-Feature 263: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 264: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 265: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 266: Coefficient = -0.1249, Odds Ratio = 0.8826
-Feature 267: Coefficient = -0.0344, Odds Ratio = 0.9662
-Feature 268: Coefficient = 0.0004, Odds Ratio = 1.0004
-Feature 269: Coefficient = -0.0025, Odds Ratio = 0.9975
-Feature 270: Coefficient = -0.1533, Odds Ratio = 0.8579
-Feature 271: Coefficient = -0.1725, Odds Ratio = 0.8415
-Feature 272: Coefficient = -0.0782, Odds Ratio = 0.9248
-Feature 273: Coefficient = -0.0046, Odds Ratio = 0.9954
