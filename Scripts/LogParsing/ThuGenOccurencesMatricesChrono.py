@@ -3,6 +3,9 @@ from collections import Counter
 import fileinput
 import sys
 
+# Node=an690 for 20M-10-30
+# Node=dn30 for 10M
+
 if len(sys.argv) >= 5:
     node_name = sys.argv[1]
     suffix = sys.argv[2]
@@ -83,7 +86,7 @@ def print_alarm_types(df_logs, suffix, node_name):
 
 
 def GenMatrices():
-   
+
     # Load the log data from the CSV file
     print(f"Processing log file: {logs_file}")
     df_logs = pd.read_csv(logs_file)
@@ -99,8 +102,9 @@ def GenMatrices():
         sequences_output_file.write("EventSequence,IsAlarm\n")
        
         print_alarm_types(df_logs, suffix, node_name)
-               
-        aggregated_alarms_TH = 5
+        #sys.exit(0)
+        
+        aggregated_alarms_TH = 2
         search_counter = 0
         
         window_box_sequence_start_time_epoch = df_logs.iloc[0]['EpochTime']

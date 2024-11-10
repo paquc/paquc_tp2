@@ -34,7 +34,7 @@ else:
     sys.exit(1)
 
 # Evaluation function
-def get_model_evaluation(y_test, y_pred, model_name, log_file, estimators, randomize_val, model = None, X_train = None):
+def get_model_evaluation(y_test, y_pred, model_name, log_file, estimators, randomize_val, model = None, X_train = None, RF = True):
     log_file.write("------------------------------------\n")
     log_file.write(f"--- {model_name} ---\n\n")
 
@@ -97,7 +97,25 @@ def get_model_evaluation(y_test, y_pred, model_name, log_file, estimators, rando
     print(msg)
     log_file.write(msg+"\n")
 
-    if model is not None:
+    if not RF:
+        # Get the coefficients and intercept
+        coefficients = model.coef_[0]  # array of coefficients for each feature
+        intercept = model.intercept_[0]  # intercept
+
+        # Exponentiate coefficients to get odds ratios
+        odds_ratios = np.exp(coefficients)
+
+        # Display the coefficients and odds ratios
+        print("Coefficients:")
+
+        feature_names = X_train.columns  # X_train is your training data in DataFrame format
+
+        # Print feature name, feature number, and coefficient
+        for feature_num, (feature_name, coef) in enumerate(zip(feature_names, coefficients)):
+            LR_log_file.write(f"Feature {feature_num} ({feature_name}): Coefficient = {coef:.4f}\n")
+
+
+    if model is not None and RF:
         # Obtenir l'importance des caractéristiques
         feature_importances = model.feature_importances_
 
@@ -114,8 +132,8 @@ def get_model_evaluation(y_test, y_pred, model_name, log_file, estimators, rando
         print(feature_importance_df)
 
         # Imprimer les 10 valeurs les plus importantes
-        log_file.write("Top 10 des caracteristiques les plus importantes:\n")
-        log_file.write(feature_importance_df.head(10).to_string(index=False) + "\n")
+        log_file.write("Caracteristiques les plus importantes:\n")
+        log_file.write(feature_importance_df.to_string(index=False) + "\n")
 
         # Visualiser les caractéristiques les plus importantes
         plt.figure(figsize=(10, 6))
@@ -228,14 +246,14 @@ with open(f"./BGL_Brain_results/{sub_folder}/{slide_window_suffix}_Training_Set_
             model.fit(X_train, y_train)
 
             y_test_pred = model.predict(X_test)
-            get_model_evaluation(y_test, y_test_pred, f'Random Forest Classifier - TEST DATA - {bs_index}', RF_log_file, estimators, randomize_val, model, X_train)
+            get_model_evaluation(y_test, y_test_pred, f'Random Forest Classifier - TEST DATA - {bs_index}', RF_log_file, estimators, randomize_val, model, X_train, True)
 
             if val_size > 0:
                 y_val_pred = model.predict(X_val)
-                get_model_evaluation(y_val, y_val_pred, f'Random Forest Classifier - VALIDATION DATA - {bs_index}', RF_log_file, estimators, randomize_val, model, X_train)
+                get_model_evaluation(y_val, y_val_pred, f'Random Forest Classifier - VALIDATION DATA - {bs_index}', RF_log_file, estimators, randomize_val, model, X_train, True)
 
             y_train_pred = model.predict(X_train)
-            get_model_evaluation(y_train, y_train_pred, f'Random Forest Classifier - TRAIN DATA - {bs_index}', RF_log_file, estimators, randomize_val, model, X_train)
+            get_model_evaluation(y_train, y_train_pred, f'Random Forest Classifier - TRAIN DATA - {bs_index}', RF_log_file, estimators, randomize_val, model, X_train, True)
 
 
             # Assume `model` is your trained model
@@ -253,29 +271,18 @@ with open(f"./BGL_Brain_results/{sub_folder}/{slide_window_suffix}_Training_Set_
                 model.fit(X_train, y_train)
 
                 y_test_pred = model.predict(X_test)
-                get_model_evaluation(y_test, y_test_pred, f'Linear Regression Classifier - TEST DATA', LR_log_file, -1, randomize_val)
+                get_model_evaluation(y_test, y_test_pred, f'Linear Regression Classifier - TEST DATA', LR_log_file, -1, randomize_val, model, X_train, False)
 
                 if val_size > 0:
                     y_val_pred = model.predict(X_val)
-                    get_model_evaluation(y_val, y_val_pred, f'Linear Regression Classifier - VALIDATION DATA', LR_log_file, -1, randomize_val)
+                    get_model_evaluation(y_val, y_val_pred, f'Linear Regression Classifier - VALIDATION DATA', LR_log_file, -1, randomize_val, model, X_train, False)
 
                 y_train_pred = model.predict(X_train)
-                get_model_evaluation(y_train, y_train_pred, f'Linear Regression Classifier - TRAIN DATA', LR_log_file, -1, randomize_val)
+                get_model_evaluation(y_train, y_train_pred, f'Linear Regression Classifier - TRAIN DATA', LR_log_file, -1, randomize_val, model, X_train, False)
             else:
                 LR_log_file.write(f'WARNING - Only 1 class present in the TRAINING set: {unique_classes_tests}\n\n')
 
-            # Get the coefficients and intercept
-            coefficients = model.coef_[0]  # array of coefficients for each feature
-            intercept = model.intercept_[0]  # intercept
-
-            # Exponentiate coefficients to get odds ratios
-            odds_ratios = np.exp(coefficients)
-
-            # Display the coefficients and odds ratios
-            print("Coefficients:")
-            for i, (coef, odds_ratio) in enumerate(zip(coefficients, odds_ratios)):
-                LR_log_file.write(f"Feature {i}: Coefficient = {coef:.4f}, Odds Ratio = {odds_ratio:.4f}\n")
-
+          
             # Assume `model` is your trained model
             #with open(f'linear_regression_model_{suffix}_{node_name}_{bs_index}.pkl', 'wb') as file:
             #    pickle.dump(model, file)
