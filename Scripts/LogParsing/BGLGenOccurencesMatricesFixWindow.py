@@ -56,17 +56,11 @@ def split_node_name(node_name):
     # print(split_node_name(node_name))  # Output: ['R33', 'M0', 'NC', 'I', 'J18', 'U11']
 
 def GenMatrices():
-    # logs_file = './BGL_Brain_results/BGL.log_structured_V4.csv'
-    # logs_file = f"./BGL_Brain_results/BGL.log_structured_full_content_filtered.csv"  
-    # logs_file = f"./BGL_Brain_results/BGL.log_structured_full_content.csv"  
-    logs_file = f"./BGL_Brain_results/BGL.log_structured_full_content_cleaned_3.csv"  
     
-    #logs_file = './BGL_Brain_results/BGL.Alarms_Samples.csv'
+    logs_file = f"./BGL_Brain_results/BGL.log_structured_full_content_cleaned_3.csv"  
+        
     df_logs = pd.read_csv(logs_file)
     
-    # Filter the dataframe to keep only lines where NodeLoc contains node_name
-    # df_logs = df_logs[df_logs['NodeLoc'].fillna('').str.contains(node_name)]
-
     # Open the output file in write mode
     with open(f"./BGL_Brain_results/{slide_window_suffix}_alarm_sequences_FixWindow.csv", "w") as sequences_output_file:
 
@@ -90,9 +84,7 @@ def GenMatrices():
                 # node_name = 'R33-M0-NC-I:J18-U11'
                 node_parts = split_node_name(current_node_name)
                 node = f"{node_parts[0]}-{node_parts[1]}"
-                #node = f"{node_parts[0]}-{node_parts[1]}-{node_parts[2]}-{node_parts[3]}"
-                #node = current_node_name    
-
+    
                 # Get the window preceding the current event
                 preceding_events_df = df_logs.iloc[index - window_size : index - 1]
                 #print(f"Range of preceding events: {index - window_size} to {index - 1}")
@@ -120,9 +112,9 @@ def GenMatrices():
     sequences_file_dedup = f"./BGL_Brain_results/{slide_window_suffix}_alarm_sequences_FixWindow_dedup.csv"
 
     # Count the number of alarms in df_sequences
-    #df_sequences_original = pd.read_csv(sequences_file, header=0)
-    #num_alarms = df_sequences_original['IsAlarm'].sum()
-    #print(f"Total number of alarms in sequences: {num_alarms}")
+    # df_sequences_original = pd.read_csv(sequences_file, header=0)
+    # num_alarms = df_sequences_original['IsAlarm'].sum()
+    # print(f"Total number of alarms in sequences: {num_alarms}")
 
     print("Sequences generated successfully!")
     remove_duplicates(sequences_file, sequences_file_dedup)
@@ -180,21 +172,7 @@ def GenMatrices():
     remove_duplicates(matrix_output_file_path, matrix_output_file_path.replace(".csv", "_dedup.csv"))
     print(f"Deduplicated occurrence matrix saved successfully at {matrix_output_file_path.replace('.csv', '_dedup.csv')}")
 
-    # Step 7: Dimensionality Reduction (Optional)
-    # occurrence_matrix_df = pd.read_csv(matrix_output_file_path.replace('.csv', '_dedup.csv'))
-    # pca = PCA(n_components=10)
-    # reduced_features = pca.fit_transform(occurrence_matrix_df)
-    # reduced_features_df = pd.DataFrame(reduced_features)
-    # reduced_features_df.to_csv(matrix_output_file_path.replace('.csv', '_PCA.csv'), index=False)
-    # print(f"PCA reduced features saved successfully at {matrix_output_file_path.replace('.csv', '_PCA.csv')}")
-
-    # # Visualize the first two principal components
-    # plt.scatter(reduced_features[:, 0], reduced_features[:, 1], c='blue', alpha=0.5)
-    # plt.xlabel('Principal Component 1')
-    # plt.ylabel('Principal Component 2')
-    # plt.title('PCA - First Two Principal Components')
-    # plt.show()
-
+   
 GenMatrices()
 
 print("Matrices FixWindow generated successfully!")

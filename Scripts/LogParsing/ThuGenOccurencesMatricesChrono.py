@@ -83,25 +83,7 @@ def print_alarm_types(df_logs, suffix, node_name):
 
 
 def GenMatrices():
-
-    # real_data = True
-    # #real_data = False
-
-    # if real_data:
-    #     node_name = 'dn30'  # 236445 alarms!
-    #     suffix = "10M"
-    #     time_window_epoch = 60*90
-    #     prediction_window_epoch = 60*45   
-    #     moving_window_epoch = 60*10
-    #     logs_file = f"./Thunderbird_Brain_results/Thunderbird_{suffix}.log_structured.csv"
-    # else:   
-    #     node_name = 'bn257' 
-    #     suffix = "Samples"
-    #     time_window_epoch = 60*20 
-    #     prediction_window_epoch = 60*10
-    #     moving_window_epoch = 60*1
-    #     logs_file = f"./Thunderbird_Brain_results/Thunderbird.log_structured_{suffix}.csv"
-
+   
     # Load the log data from the CSV file
     print(f"Processing log file: {logs_file}")
     df_logs = pd.read_csv(logs_file)
@@ -117,8 +99,7 @@ def GenMatrices():
         sequences_output_file.write("EventSequence,IsAlarm\n")
        
         print_alarm_types(df_logs, suffix, node_name)
-        # sys.exit(0)
-        
+               
         aggregated_alarms_TH = 5
         search_counter = 0
         

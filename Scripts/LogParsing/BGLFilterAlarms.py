@@ -5,12 +5,8 @@ print("Filtering BGL log file to remove duplicate alarms...")
 # Load the CSV file into a pandas DataFrame
 output_logs_file = f"./BGL_Brain_results/BGL.log_structured_full_content_cleaned_3.csv"
 logs_file = f"./BGL_Brain_results/BGL.log_structured_full_content_cleaned_2.csv"
-# logs_file = f"./BGL_Brain_resultsé/BGL.log_structured_full_content.csv"
 
 bgl_log_data_df = pd.read_csv(logs_file)
-
-# Sort the DataFrame by EpochTime to ensure chronological order
-#df = df.sort_values(by='EpochTime').reset_index(drop=True)
 
 # *************************************************
 # 1. Keep only logs with FATAL and FAILURE severity

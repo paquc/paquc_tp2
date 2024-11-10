@@ -224,7 +224,7 @@ with open(f"./BGL_Brain_results/{sub_folder}/{slide_window_suffix}_Training_Set_
         if train_RF == 1:
             RF_log_file.write(f"Data sample {bs_index} - Start index: {start_index}, End index: {end_index}, Chunk size: {data_chunk.shape[0]}\n\n")
             # Entraîner le modèle Random Forest Classifier
-            model = RandomForestClassifier(n_estimators=estimators, random_state=randomize_val)         # class_weight='balanced', n_estimators=(bs_index+1)*2, warm_start=False, random_state=(bs_index+1)*10)
+            model = RandomForestClassifier() # (n_estimators=estimators, random_state=randomize_val)         # class_weight='balanced', n_estimators=(bs_index+1)*2, warm_start=False, random_state=(bs_index+1)*10)
             model.fit(X_train, y_train)
 
             y_test_pred = model.predict(X_test)
@@ -246,7 +246,7 @@ with open(f"./BGL_Brain_results/{sub_folder}/{slide_window_suffix}_Training_Set_
         if train_LR == 1:
             LR_log_file.write(f"Data sample {bs_index} - Start index: {start_index}, End index: {end_index}, Chunk size: {data_chunk.shape[0]}\n\n")
             # Model de regression lineaire
-            model = LogisticRegression(random_state=randomize_val)      # random_state=(bs_index+1)*10, solver='liblinear')
+            model = LogisticRegression() # (random_state=randomize_val)      # random_state=(bs_index+1)*10, solver='liblinear')
             
             unique_classes_tests = np.unique(y_train)
             if len(unique_classes_tests) == 2:
@@ -263,6 +263,18 @@ with open(f"./BGL_Brain_results/{sub_folder}/{slide_window_suffix}_Training_Set_
                 get_model_evaluation(y_train, y_train_pred, f'Linear Regression Classifier - TRAIN DATA', LR_log_file, -1, randomize_val)
             else:
                 LR_log_file.write(f'WARNING - Only 1 class present in the TRAINING set: {unique_classes_tests}\n\n')
+
+            # Get the coefficients and intercept
+            coefficients = model.coef_[0]  # array of coefficients for each feature
+            intercept = model.intercept_[0]  # intercept
+
+            # Exponentiate coefficients to get odds ratios
+            odds_ratios = np.exp(coefficients)
+
+            # Display the coefficients and odds ratios
+            print("Coefficients:")
+            for i, (coef, odds_ratio) in enumerate(zip(coefficients, odds_ratios)):
+                LR_log_file.write(f"Feature {i}: Coefficient = {coef:.4f}, Odds Ratio = {odds_ratio:.4f}\n")
 
             # Assume `model` is your trained model
             #with open(f'linear_regression_model_{suffix}_{node_name}_{bs_index}.pkl', 'wb') as file:

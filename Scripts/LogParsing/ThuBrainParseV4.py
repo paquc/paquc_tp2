@@ -4,27 +4,26 @@ import sys
 sys.path.append('../../')
 from logparser.Brain import LogParser
 
-dataset    = 'THUNDERBIRD'  # The log file name
+if len(sys.argv) > 1:
+    log_file = sys.argv[1]
+else:
+    print("Usage: python ThuBrainParseV4.py <log_file>")
+    sys.exit(1)
+
+dataset = 'THUNDERBIRD'  # The log file name
 
 # Define the directory containing the log file to be parsed
 input_dir = '../../data/Thunderbird/'  # Path to the directory containing the log file
 
 # Define the directory where the parsing results will be saved
-output_dir = '../../data/Thunderbird/Thunderbird_Brain_results/Thunderbird_Brain_results/'  # Output directory for the parsed results
-
-# Specify the log file to be parsed
-log_file = 'Thunderbird_10M.log'
+output_dir = '../../data/Thunderbird/Thunderbird_Brain_results/Thunderbird_Brain_results/50M'  # Output directory for the parsed results
 
 # <Content> = <NodeFull> <Process>: <Content>
 log_format = '<AlertFlagLabel> <EpochTime> <Date> <Noeud> <Month> <Day> <Hour> <Content>'
-
 #log_format = '<AlertFlagLabel> <EpochTime> <Date> <Noeud> <Month> <Day> <Hour> <NodeFull> <Process>: <Content>'
 
 # Regular expression list for optional preprocessing (default: [])
-regex = [
-        r'(/|)([0-9]+\.){3}[0-9]+(:[0-9]+|)(:|)', # IP
-        r'(?<=[^A-Za-z0-9])(\-?\+?\d+)(?=[^A-Za-z0-9])|[0-9]+$', # Numbers
-]
+regex = []
 
 threshold  = 2      # Similarity threshold
 delimeter  = []     # Depth of all leaf nodes

@@ -2,6 +2,7 @@ import sys
 import pandas as pd
 import numpy as np
 import pickle
+import matplotlib.pyplot as plt
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
@@ -13,6 +14,8 @@ from collections import Counter
 from sklearn.datasets import make_regression
 from sklearn.utils import resample
 
+
+#Exemple: python Train.py 1 1 V1_part1_dedup KERNDTLB 5 1 1 1 10 60 20
 
 if len(sys.argv) > 5:
     train_LR = int(sys.argv[1])
@@ -26,6 +29,7 @@ if len(sys.argv) > 5:
     n_bootstrap_samples = int(sys.argv[9])
     train_data_size = int(sys.argv[10])
     test_data_size = int(sys.argv[11])
+    val_data_size = int(sys.argv[12])
 else:
     print("Usage: Train.py <data_set_id>")
     sys.exit(1)
@@ -41,7 +45,7 @@ full_data = pd.read_csv(input_file_path)
 #n_data_set_samples = 5000   # len(data)
 
 # Evaluation function
-def get_model_evaluation(y_test, y_pred, model_name, log_file, estimators, randomize_val):
+def get_model_evaluation(y_test, y_pred, model_name, log_file, estimators, randomize_val, model = None, X_train = None, RF = True):
     log_file.write("------------------------------------\n")
     log_file.write(f"--- {model_name} ---\n\n")
 
@@ -104,16 +108,66 @@ def get_model_evaluation(y_test, y_pred, model_name, log_file, estimators, rando
     print(msg)
     log_file.write(msg+"\n")
 
+    if not RF:
+        # Get the coefficients and intercept
+        coefficients = model.coef_[0]  # array of coefficients for each feature
+        intercept = model.intercept_[0]  # intercept
+
+        # Exponentiate coefficients to get odds ratios
+        odds_ratios = np.exp(coefficients)
+
+        # Display the coefficients and odds ratios
+        print("Coefficients:")
+
+        feature_names = X_train.columns  # X_train is your training data in DataFrame format
+
+        # Print feature name, feature number, and coefficient
+        for feature_num, (feature_name, coef) in enumerate(zip(feature_names, coefficients)):
+            LR_log_file.write(f"Feature {feature_num} ({feature_name}): Coefficient = {coef:.4f}\n")
+
+
+    if model is not None and RF:
+        # Obtenir l'importance des caractéristiques
+        feature_importances = model.feature_importances_
+
+        # Créer un DataFrame pour associer les caractéristiques à leur importance
+        feature_importance_df = pd.DataFrame({
+            'Feature': X_train.columns,
+            'Importance': feature_importances
+        })
+
+        # Trier les caractéristiques par importance décroissante
+        feature_importance_df = feature_importance_df.sort_values(by='Importance', ascending=False)
+
+        # Afficher les caractéristiques les plus importantes
+        print(feature_importance_df)
+
+        # Imprimer les 10 valeurs les plus importantes
+        log_file.write("Caracteristiques les plus importantes:\n")
+        log_file.write(feature_importance_df.to_string(index=False) + "\n")
+
+        # Visualiser les caractéristiques les plus importantes
+        plt.figure(figsize=(10, 6))
+        plt.barh(feature_importance_df['Feature'], feature_importance_df['Importance'], color='skyblue')
+        plt.xlabel('Importance')
+        plt.ylabel('Feature (Event)')
+        plt.title('Importance des Caractéristiques pour la Détection d’Anomalies')
+        plt.gca().invert_yaxis()
+        #plt.show()
+
     log_file.write("------------------------------------\n\n")
 
 
 print("************************************")
 print("Start of script")
 
-sampling_data_desc = f'{train_data_size}_{test_data_size}_{test_data_size}'
+sampling_data_desc = f'{train_data_size}_{test_data_size}_{val_data_size}'
 
-with open(f"./Thunderbird_Brain_results/Thu_VAPI_Training_Set_RF_{sampling_data_desc}_{file_suffix}_Output.log", "w") as RF_log_file, open(f"./Thunderbird_Brain_results/Thu_VAPI_Training_Set_LR_{sampling_data_desc}_{file_suffix}_Output.log", "w") as LR_log_file:
+with open(f"./Thunderbird_Brain_results/New/Thu_VAPI_Training_Set_RF_{sampling_data_desc}_{file_suffix}_Output.log", "w") as RF_log_file, open(f"./Thunderbird_Brain_results/New/Thu_VAPI_Training_Set_LR_{sampling_data_desc}_{file_suffix}_Output.log", "w") as LR_log_file:
     for bs_index in range(n_bootstrap_samples):
+
+        RF_log_file.write(f"Train data size: {train_data_size}, Validation size: {val_data_size}, Test size: {test_data_size}\n\n")
+        LR_log_file.write(f"Train data size: {train_data_size}, Validation size: {val_data_size}, Test size: {test_data_size}\n\n")
 
         # data_bootstrap = resample(full_data, replace=True, n_samples=len(full_data))
         # Generate a bootstrap sample from the original dataset and allow different random_state (random_state used with same value gives same result!!)
@@ -140,62 +194,73 @@ with open(f"./Thunderbird_Brain_results/Thu_VAPI_Training_Set_RF_{sampling_data_
 
         # Split the data into 60% training, 20% validation, and 20% testing
         train_size = int((train_data_size / 100) * len(data))
-        val_size = int((test_data_size / 100) * len(data)) - 1
-        test_size = val_size
+        test_size = int((test_data_size / 100) * len(data))
+        val_size = int((val_data_size / 100) * len(data))       # can be 0
         print(f"Train size: {train_size}, Validation size: {val_size}, Test size: {test_size}")
-
+        
         train_df = data.iloc[:train_size]
-        test_df = data.iloc[train_size + 1 : train_size + val_size + 1]
-        val_df = data.iloc[ train_size + val_size + 1 :  train_size + val_size + val_size + 1]
+        test_df = data.iloc[train_size:train_size + test_size]
+        val_df = data.iloc[train_size + test_size:train_size + test_size + val_size]
         print(f"Train size: {train_df.shape[0]}, Validation size: {val_df.shape[0]}, Test size: {test_df.shape[0]}")
 
         # Separate features and labels
         X_train = train_df.drop(columns=['IsAlarm'])
         y_train = train_df['IsAlarm'].astype(int)   
 
+        X_test = test_df.drop(columns=['IsAlarm'])
+        y_test = test_df['IsAlarm'].astype(int)
+        
         X_val = val_df.drop(columns=['IsAlarm'])
         y_val = val_df['IsAlarm'].astype(int)
 
-        X_test = test_df.drop(columns=['IsAlarm'])
-        y_test = test_df['IsAlarm'].astype(int)
-
-        estimators = 10 #(bs_index+1)*2
-        randomize_val= (bs_index+1)*10
+        estimators = 10  # (bs_index + 1) * 2
+        randomize_val= 55  # (bs_index + 5) * 11
 
         if train_RF == 1:
             RF_log_file.write(f"Data sample {bs_index} - Start index: {start_index}, End index: {end_index}, Chunk size: {data_chunk.shape[0]}\n\n")
             # Entraîner le modèle Random Forest Classifier
             model = RandomForestClassifier(n_estimators=estimators, random_state=randomize_val)         # class_weight='balanced', n_estimators=(bs_index+1)*2, warm_start=False, random_state=(bs_index+1)*10)
             model.fit(X_train, y_train)
+
             y_test_pred = model.predict(X_test)
-            y_val_pred = model.predict(X_val)
+            get_model_evaluation(y_test, y_test_pred, f'Random Forest Classifier - TEST DATA - {bs_index}', RF_log_file, estimators, randomize_val, model, X_train, True)
+
+            if val_size > 0:
+                y_val_pred = model.predict(X_val)
+                get_model_evaluation(y_val, y_val_pred, f'Random Forest Classifier - VALIDATION DATA - {bs_index}', RF_log_file, estimators, randomize_val, model, X_train, True)
+
             y_train_pred = model.predict(X_train)
+            get_model_evaluation(y_train, y_train_pred, f'Random Forest Classifier - TRAIN DATA - {bs_index}', RF_log_file, estimators, randomize_val, model, X_train, True)
+
 
             # Assume `model` is your trained model
             #with open(f'random_forest_model_{suffix}_{node_name}_{bs_index}.pkl', 'wb') as file:
             #    pickle.dump(model, file)
 
-            get_model_evaluation(y_train, y_train_pred, f'Random Forest Classifier - TRAIN DATA - {bs_index}', RF_log_file, estimators, randomize_val)
-            get_model_evaluation(y_test, y_test_pred, f'Random Forest Classifier - TEST DATA - {bs_index}', RF_log_file, estimators, randomize_val)
-            get_model_evaluation(y_val, y_val_pred, f'Random Forest Classifier - VALIDATION DATA - {bs_index}', RF_log_file, estimators, randomize_val)
 
         if train_LR == 1:
             LR_log_file.write(f"Data sample {bs_index} - Start index: {start_index}, End index: {end_index}, Chunk size: {data_chunk.shape[0]}\n\n")
             # Model de regression lineaire
-            randomize_val= (bs_index+1)*10
+            # randomize_val= (bs_index+1)*10
             model = LogisticRegression(random_state=randomize_val)      # random_state=(bs_index+1)*10, solver='liblinear')
             model.fit(X_train, y_train)
+
             y_test_pred = model.predict(X_test)
-            y_val_pred = model.predict(X_val)
+            get_model_evaluation(y_test, y_test_pred, f'Linear Regression Classifier - TEST DATA', LR_log_file, -1, randomize_val, model, X_train, False)
+
+            if val_size > 0:
+                y_val_pred = model.predict(X_val)
+                get_model_evaluation(y_val, y_val_pred, f'Linear Regression Classifier - VALIDATION DATA', LR_log_file, -1, randomize_val, model, X_train, False)
+
             y_train_pred = model.predict(X_train)
+            get_model_evaluation(y_train, y_train_pred, f'Linear Regression Classifier - TRAIN DATA', LR_log_file, -1, randomize_val, model, X_train, False)
+
+            
 
             # Assume `model` is your trained model
             #with open(f'linear_regression_model_{suffix}_{node_name}_{bs_index}.pkl', 'wb') as file:
             #    pickle.dump(model, file)
 
-            get_model_evaluation(y_train, y_train_pred, f'Linear Regression Classifier - TRAIN DATA', LR_log_file, -1, randomize_val)
-            get_model_evaluation(y_test, y_test_pred, f'Linear Regression Classifier - TEST DATA', LR_log_file, -1, randomize_val)
-            get_model_evaluation(y_val, y_val_pred, f'Linear Regression Classifier - VALIDATION DATA', LR_log_file, -1, randomize_val)
 
 
 print(f"RF log file: {RF_log_file.name}")
