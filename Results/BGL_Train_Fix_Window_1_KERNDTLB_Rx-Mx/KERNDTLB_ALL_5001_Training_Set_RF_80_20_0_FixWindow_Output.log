@@ -1,0 +1,256 @@
+Train data size: 80, Validation size: 0, Test size: 20
+
+./BGL_Brain_results/KERNDTLB_ALL_5001_alarm_occurences_matrix_FixWindow_dedup.csv
+
+Data sample 0 - Start index: 0, End index: 126, Chunk size: 126
+
+------------------------------------
+--- Random Forest Classifier - TEST DATA - 0 ---
+
+Size of test set: 25
+Size of predicted set: 25
+
+Number of estimators: 10
+Randomize value: 55
+
+Unique classes in TESTS\VALIDATION set: [0 1]
+Unique classes in PREDICTED set: [0 1]
+
+Accuracy: 0.9200
+Recall: 0.78
+AUC: 0.89
+Mean Absolute Error (MAE): 0.08
+R-squared: 0.65
+              precision    recall  f1-score   support
+
+           0       0.89      1.00      0.94        16
+           1       1.00      0.78      0.88         9
+
+    accuracy                           0.92        25
+   macro avg       0.94      0.89      0.91        25
+weighted avg       0.93      0.92      0.92        25
+
+Caracteristiques les plus importantes:
+Feature  Importance
+   E257        0.08
+   E171        0.07
+     E2        0.05
+   E374        0.05
+   E375        0.05
+   E359        0.05
+     E4        0.05
+   E256        0.04
+   E231        0.04
+   E230        0.04
+   E199        0.04
+   E169        0.04
+     E3        0.04
+   E306        0.04
+   E232        0.04
+   E349        0.04
+   E259        0.04
+   E332        0.03
+   E347        0.03
+   E258        0.03
+   E168        0.03
+   E345        0.02
+   E348        0.02
+   E331        0.02
+   E172        0.01
+   E104        0.01
+   E126        0.00
+   E103        0.00
+   E127        0.00
+   E102        0.00
+     E1        0.00
+    E21        0.00
+    E20        0.00
+   E194        0.00
+   E198        0.00
+   E193        0.00
+   E192        0.00
+   E170        0.00
+   E191        0.00
+   E167        0.00
+   E161        0.00
+   E133        0.00
+   E141        0.00
+   E142        0.00
+   E159        0.00
+    E16        0.00
+   E160        0.00
+   E125        0.00
+   E124        0.00
+   E123        0.00
+   E222        0.00
+   E224        0.00
+    E28        0.00
+   E280        0.00
+   E260        0.00
+   E255        0.00
+   E249        0.00
+    E24        0.00
+   E225        0.00
+    E23        0.00
+   E229        0.00
+   E223        0.00
+    E22        0.00
+   E342        0.00
+   E330        0.00
+   E324        0.00
+    E33        0.00
+   E323        0.00
+   E322        0.00
+    E30        0.00
+   E301        0.00
+   E357        0.00
+   E356        0.00
+   E354        0.00
+   E358        0.00
+   E373        0.00
+   E391        0.00
+   E392        0.00
+   E343        0.00
+   E393        0.00
+   E405        0.00
+   E406        0.00
+   E425        0.00
+   E426        0.00
+   E427        0.00
+   E437        0.00
+   E438        0.00
+   E439        0.00
+   E452        0.00
+   E456        0.00
+   E485        0.00
+   E487        0.00
+   E499        0.00
+   E500        0.00
+   E501        0.00
+------------------------------------
+
+------------------------------------
+--- Random Forest Classifier - TRAIN DATA - 0 ---
+
+Size of test set: 100
+Size of predicted set: 100
+
+Number of estimators: 10
+Randomize value: 55
+
+Unique classes in TESTS\VALIDATION set: [0 1]
+Unique classes in PREDICTED set: [0 1]
+
+Accuracy: 1.0000
+Recall: 1.00
+AUC: 1.00
+Mean Absolute Error (MAE): 0.00
+R-squared: 1.00
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        38
+           1       1.00      1.00      1.00        62
+
+    accuracy                           1.00       100
+   macro avg       1.00      1.00      1.00       100
+weighted avg       1.00      1.00      1.00       100
+
+Caracteristiques les plus importantes:
+Feature  Importance
+   E257        0.08
+   E171        0.07
+     E2        0.05
+   E374        0.05
+   E375        0.05
+   E359        0.05
+     E4        0.05
+   E256        0.04
+   E231        0.04
+   E230        0.04
+   E199        0.04
+   E169        0.04
+     E3        0.04
+   E306        0.04
+   E232        0.04
+   E349        0.04
+   E259        0.04
+   E332        0.03
+   E347        0.03
+   E258        0.03
+   E168        0.03
+   E345        0.02
+   E348        0.02
+   E331        0.02
+   E172        0.01
+   E104        0.01
+   E126        0.00
+   E103        0.00
+   E127        0.00
+   E102        0.00
+     E1        0.00
+    E21        0.00
+    E20        0.00
+   E194        0.00
+   E198        0.00
+   E193        0.00
+   E192        0.00
+   E170        0.00
+   E191        0.00
+   E167        0.00
+   E161        0.00
+   E133        0.00
+   E141        0.00
+   E142        0.00
+   E159        0.00
+    E16        0.00
+   E160        0.00
+   E125        0.00
+   E124        0.00
+   E123        0.00
+   E222        0.00
+   E224        0.00
+    E28        0.00
+   E280        0.00
+   E260        0.00
+   E255        0.00
+   E249        0.00
+    E24        0.00
+   E225        0.00
+    E23        0.00
+   E229        0.00
+   E223        0.00
+    E22        0.00
+   E342        0.00
+   E330        0.00
+   E324        0.00
+    E33        0.00
+   E323        0.00
+   E322        0.00
+    E30        0.00
+   E301        0.00
+   E357        0.00
+   E356        0.00
+   E354        0.00
+   E358        0.00
+   E373        0.00
+   E391        0.00
+   E392        0.00
+   E343        0.00
+   E393        0.00
+   E405        0.00
+   E406        0.00
+   E425        0.00
+   E426        0.00
+   E427        0.00
+   E437        0.00
+   E438        0.00
+   E439        0.00
+   E452        0.00
+   E456        0.00
+   E485        0.00
+   E487        0.00
+   E499        0.00
+   E500        0.00
+   E501        0.00
+------------------------------------
+

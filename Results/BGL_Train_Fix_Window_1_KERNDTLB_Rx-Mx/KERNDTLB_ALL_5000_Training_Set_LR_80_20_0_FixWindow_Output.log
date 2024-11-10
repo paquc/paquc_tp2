@@ -1,0 +1,252 @@
+Train data size: 80, Validation size: 0, Test size: 20
+
+./BGL_Brain_results/KERNDTLB_ALL_5000_alarm_occurences_matrix_FixWindow_dedup.csv
+
+Data sample 0 - Start index: 0, End index: 126, Chunk size: 126
+
+------------------------------------
+--- Linear Regression Classifier - TEST DATA ---
+
+Size of test set: 25
+Size of predicted set: 25
+
+Number of estimators: -1
+Randomize value: 55
+
+Unique classes in TESTS\VALIDATION set: [0 1]
+Unique classes in PREDICTED set: [0 1]
+
+Accuracy: 0.6000
+Recall: 0.41
+AUC: 0.71
+Mean Absolute Error (MAE): 0.40
+R-squared: -0.84
+              precision    recall  f1-score   support
+
+           0       0.44      1.00      0.62         8
+           1       1.00      0.41      0.58        17
+
+    accuracy                           0.60        25
+   macro avg       0.72      0.71      0.60        25
+weighted avg       0.82      0.60      0.59        25
+
+Feature 0 (E1): Coefficient = 0.1458
+Feature 1 (E102): Coefficient = 0.1458
+Feature 2 (E103): Coefficient = 0.1458
+Feature 3 (E104): Coefficient = 0.1863
+Feature 4 (E123): Coefficient = 0.0000
+Feature 5 (E124): Coefficient = 0.0000
+Feature 6 (E125): Coefficient = 0.0000
+Feature 7 (E126): Coefficient = 0.0000
+Feature 8 (E127): Coefficient = 0.0000
+Feature 9 (E133): Coefficient = -0.0834
+Feature 10 (E141): Coefficient = 0.1458
+Feature 11 (E142): Coefficient = 0.1458
+Feature 12 (E159): Coefficient = 0.0000
+Feature 13 (E16): Coefficient = 0.0000
+Feature 14 (E160): Coefficient = 0.0000
+Feature 15 (E161): Coefficient = 0.0000
+Feature 16 (E167): Coefficient = 0.1458
+Feature 17 (E168): Coefficient = 0.1863
+Feature 18 (E169): Coefficient = 0.1863
+Feature 19 (E170): Coefficient = 0.1863
+Feature 20 (E171): Coefficient = 0.1863
+Feature 21 (E172): Coefficient = 0.1863
+Feature 22 (E191): Coefficient = 0.0000
+Feature 23 (E192): Coefficient = 0.0000
+Feature 24 (E193): Coefficient = 0.0000
+Feature 25 (E194): Coefficient = 0.0000
+Feature 26 (E198): Coefficient = 0.1458
+Feature 27 (E199): Coefficient = 0.1863
+Feature 28 (E2): Coefficient = 0.1863
+Feature 29 (E20): Coefficient = 0.0000
+Feature 30 (E21): Coefficient = 0.0000
+Feature 31 (E22): Coefficient = 0.0000
+Feature 32 (E222): Coefficient = 0.0000
+Feature 33 (E223): Coefficient = 0.0000
+Feature 34 (E224): Coefficient = 0.0000
+Feature 35 (E225): Coefficient = 0.0000
+Feature 36 (E229): Coefficient = 0.1458
+Feature 37 (E23): Coefficient = 0.0000
+Feature 38 (E230): Coefficient = 0.3726
+Feature 39 (E231): Coefficient = 0.1863
+Feature 40 (E232): Coefficient = 0.1863
+Feature 41 (E24): Coefficient = 0.0000
+Feature 42 (E249): Coefficient = 0.0000
+Feature 43 (E255): Coefficient = 0.5402
+Feature 44 (E256): Coefficient = 0.1863
+Feature 45 (E257): Coefficient = 0.1863
+Feature 46 (E258): Coefficient = 0.1863
+Feature 47 (E259): Coefficient = 0.6034
+Feature 48 (E260): Coefficient = -0.0056
+Feature 49 (E28): Coefficient = 0.0000
+Feature 50 (E280): Coefficient = 0.0179
+Feature 51 (E3): Coefficient = 0.1863
+Feature 52 (E30): Coefficient = 0.0000
+Feature 53 (E301): Coefficient = 0.0000
+Feature 54 (E306): Coefficient = 0.1863
+Feature 55 (E322): Coefficient = 0.0000
+Feature 56 (E323): Coefficient = 0.0000
+Feature 57 (E324): Coefficient = 0.0000
+Feature 58 (E33): Coefficient = 0.0000
+Feature 59 (E330): Coefficient = 0.1458
+Feature 60 (E331): Coefficient = 0.1863
+Feature 61 (E332): Coefficient = 0.1863
+Feature 62 (E342): Coefficient = 0.0000
+Feature 63 (E343): Coefficient = 0.0000
+Feature 64 (E345): Coefficient = 0.1863
+Feature 65 (E347): Coefficient = 0.3726
+Feature 66 (E348): Coefficient = 0.0405
+Feature 67 (E349): Coefficient = 0.0405
+Feature 68 (E354): Coefficient = 0.0000
+Feature 69 (E356): Coefficient = 0.0000
+Feature 70 (E357): Coefficient = 0.0000
+Feature 71 (E358): Coefficient = 0.0000
+Feature 72 (E359): Coefficient = 0.1863
+Feature 73 (E373): Coefficient = 0.0000
+Feature 74 (E374): Coefficient = 0.1863
+Feature 75 (E375): Coefficient = 0.1863
+Feature 76 (E391): Coefficient = 0.0000
+Feature 77 (E392): Coefficient = 0.0000
+Feature 78 (E393): Coefficient = 0.0000
+Feature 79 (E4): Coefficient = 0.1863
+Feature 80 (E405): Coefficient = 0.0000
+Feature 81 (E406): Coefficient = 0.0000
+Feature 82 (E425): Coefficient = 0.0000
+Feature 83 (E426): Coefficient = 0.0000
+Feature 84 (E427): Coefficient = 0.0000
+Feature 85 (E437): Coefficient = 0.0000
+Feature 86 (E438): Coefficient = 0.0000
+Feature 87 (E439): Coefficient = 0.0000
+Feature 88 (E452): Coefficient = 0.0000
+Feature 89 (E456): Coefficient = 0.0000
+Feature 90 (E485): Coefficient = 0.0000
+Feature 91 (E487): Coefficient = 0.1421
+Feature 92 (E499): Coefficient = 0.0000
+Feature 93 (E500): Coefficient = 0.0000
+Feature 94 (E501): Coefficient = 0.0000
+------------------------------------
+
+------------------------------------
+--- Linear Regression Classifier - TRAIN DATA ---
+
+Size of test set: 100
+Size of predicted set: 100
+
+Number of estimators: -1
+Randomize value: 55
+
+Unique classes in TESTS\VALIDATION set: [0 1]
+Unique classes in PREDICTED set: [0 1]
+
+Accuracy: 0.9900
+Recall: 0.99
+AUC: 0.99
+Mean Absolute Error (MAE): 0.01
+R-squared: 0.95
+              precision    recall  f1-score   support
+
+           0       0.96      1.00      0.98        25
+           1       1.00      0.99      0.99        75
+
+    accuracy                           0.99       100
+   macro avg       0.98      0.99      0.99       100
+weighted avg       0.99      0.99      0.99       100
+
+Feature 0 (E1): Coefficient = 0.1458
+Feature 1 (E102): Coefficient = 0.1458
+Feature 2 (E103): Coefficient = 0.1458
+Feature 3 (E104): Coefficient = 0.1863
+Feature 4 (E123): Coefficient = 0.0000
+Feature 5 (E124): Coefficient = 0.0000
+Feature 6 (E125): Coefficient = 0.0000
+Feature 7 (E126): Coefficient = 0.0000
+Feature 8 (E127): Coefficient = 0.0000
+Feature 9 (E133): Coefficient = -0.0834
+Feature 10 (E141): Coefficient = 0.1458
+Feature 11 (E142): Coefficient = 0.1458
+Feature 12 (E159): Coefficient = 0.0000
+Feature 13 (E16): Coefficient = 0.0000
+Feature 14 (E160): Coefficient = 0.0000
+Feature 15 (E161): Coefficient = 0.0000
+Feature 16 (E167): Coefficient = 0.1458
+Feature 17 (E168): Coefficient = 0.1863
+Feature 18 (E169): Coefficient = 0.1863
+Feature 19 (E170): Coefficient = 0.1863
+Feature 20 (E171): Coefficient = 0.1863
+Feature 21 (E172): Coefficient = 0.1863
+Feature 22 (E191): Coefficient = 0.0000
+Feature 23 (E192): Coefficient = 0.0000
+Feature 24 (E193): Coefficient = 0.0000
+Feature 25 (E194): Coefficient = 0.0000
+Feature 26 (E198): Coefficient = 0.1458
+Feature 27 (E199): Coefficient = 0.1863
+Feature 28 (E2): Coefficient = 0.1863
+Feature 29 (E20): Coefficient = 0.0000
+Feature 30 (E21): Coefficient = 0.0000
+Feature 31 (E22): Coefficient = 0.0000
+Feature 32 (E222): Coefficient = 0.0000
+Feature 33 (E223): Coefficient = 0.0000
+Feature 34 (E224): Coefficient = 0.0000
+Feature 35 (E225): Coefficient = 0.0000
+Feature 36 (E229): Coefficient = 0.1458
+Feature 37 (E23): Coefficient = 0.0000
+Feature 38 (E230): Coefficient = 0.3726
+Feature 39 (E231): Coefficient = 0.1863
+Feature 40 (E232): Coefficient = 0.1863
+Feature 41 (E24): Coefficient = 0.0000
+Feature 42 (E249): Coefficient = 0.0000
+Feature 43 (E255): Coefficient = 0.5402
+Feature 44 (E256): Coefficient = 0.1863
+Feature 45 (E257): Coefficient = 0.1863
+Feature 46 (E258): Coefficient = 0.1863
+Feature 47 (E259): Coefficient = 0.6034
+Feature 48 (E260): Coefficient = -0.0056
+Feature 49 (E28): Coefficient = 0.0000
+Feature 50 (E280): Coefficient = 0.0179
+Feature 51 (E3): Coefficient = 0.1863
+Feature 52 (E30): Coefficient = 0.0000
+Feature 53 (E301): Coefficient = 0.0000
+Feature 54 (E306): Coefficient = 0.1863
+Feature 55 (E322): Coefficient = 0.0000
+Feature 56 (E323): Coefficient = 0.0000
+Feature 57 (E324): Coefficient = 0.0000
+Feature 58 (E33): Coefficient = 0.0000
+Feature 59 (E330): Coefficient = 0.1458
+Feature 60 (E331): Coefficient = 0.1863
+Feature 61 (E332): Coefficient = 0.1863
+Feature 62 (E342): Coefficient = 0.0000
+Feature 63 (E343): Coefficient = 0.0000
+Feature 64 (E345): Coefficient = 0.1863
+Feature 65 (E347): Coefficient = 0.3726
+Feature 66 (E348): Coefficient = 0.0405
+Feature 67 (E349): Coefficient = 0.0405
+Feature 68 (E354): Coefficient = 0.0000
+Feature 69 (E356): Coefficient = 0.0000
+Feature 70 (E357): Coefficient = 0.0000
+Feature 71 (E358): Coefficient = 0.0000
+Feature 72 (E359): Coefficient = 0.1863
+Feature 73 (E373): Coefficient = 0.0000
+Feature 74 (E374): Coefficient = 0.1863
+Feature 75 (E375): Coefficient = 0.1863
+Feature 76 (E391): Coefficient = 0.0000
+Feature 77 (E392): Coefficient = 0.0000
+Feature 78 (E393): Coefficient = 0.0000
+Feature 79 (E4): Coefficient = 0.1863
+Feature 80 (E405): Coefficient = 0.0000
+Feature 81 (E406): Coefficient = 0.0000
+Feature 82 (E425): Coefficient = 0.0000
+Feature 83 (E426): Coefficient = 0.0000
+Feature 84 (E427): Coefficient = 0.0000
+Feature 85 (E437): Coefficient = 0.0000
+Feature 86 (E438): Coefficient = 0.0000
+Feature 87 (E439): Coefficient = 0.0000
+Feature 88 (E452): Coefficient = 0.0000
+Feature 89 (E456): Coefficient = 0.0000
+Feature 90 (E485): Coefficient = 0.0000
+Feature 91 (E487): Coefficient = 0.1421
+Feature 92 (E499): Coefficient = 0.0000
+Feature 93 (E500): Coefficient = 0.0000
+Feature 94 (E501): Coefficient = 0.0000
+------------------------------------
+
