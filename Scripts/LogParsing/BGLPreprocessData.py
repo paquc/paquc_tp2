@@ -40,7 +40,7 @@ def split_and_aggregate_by_cluster(df, time_interval='30T', error_threshold=5, a
 
     # ******************************************
     # IMPORTANT!!!!!!!!!
-    # Drop the columns corresponding to the Cluster IDs in anomaly_clusters
+    # Drop the columns corresponding to the EventIds in anomaly_clusters
     if anomaly_clusters:
         print("Dropping columns: ", anomaly_clusters)
         cluster_counts.drop(columns = anomaly_clusters, inplace=True)
@@ -59,14 +59,7 @@ df = pd.read_csv(logs_file)
 # time_interval = '15min'  # Change to your preferred interval
 
 # Define the anomaly conditions (specific clusters or thresholds)
-#KERNDTLB - E255 -- E345
-#KERNRTSP - E5 -- E349, E259, E347, E258, E232, E4, E375, E104, E257, E171, E199, E230, E231, E170,  E331, E359, E169, E3, E2, E168, E256, E348, E345, E255, 
-#APPSEV - E419 -- E329, E139
-#KERNMC - E346 -- E212
-#APPREAD - E140 -- E329, E139
-anomaly_clusters = ['E349', 'E259', 'E347', 'E258', 'E232', 'E4', 'E375', 'E104', 'E257', 'E171', 'E199', 'E230', 'E231',
-                     'E170', 'E331', 'E359', 'E169', 'E3', 'E2', 'E168', 'E256', 'E348', 'E345', 'E255', 'E329', 'E139', 'E212', 'E139']
-
+anomaly_clusters = ['E162','E140','E5','E346','E307','E178','E348','E371','E120','E419','E507','E255']  # Define the Cluster IDs that you consider anomalous
 # error_threshold = 3  # If the sum of occurrences of these clusters in a chunk exceeds this, label as anomaly
 
 # Split and aggregate the DataFrame into chunks based on the specified time interval
