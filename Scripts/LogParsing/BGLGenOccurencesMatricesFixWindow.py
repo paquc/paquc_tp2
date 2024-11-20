@@ -90,15 +90,13 @@ def GenMatrices():
                 # node_name = 'R33-M0-NC-I:J18-U11'
                 node_parts = split_node_name(current_node_name)
                 node = f"{node_parts[0]}-{node_parts[1]}"
-                #node = f"{node_parts[0]}-{node_parts[1]}-{node_parts[2]}-{node_parts[3]}"
-                #node = current_node_name    
-
+               
                 # Get the window preceding the current event
                 preceding_events_df = df_logs.iloc[index - window_size : index - 1]
                 #print(f"Range of preceding events: {index - window_size} to {index - 1}")
                 
                 # Filter the preceding events to keep only lines where NodeLoc is equal to current_node_name and it comes from the same Sub system
-                preceding_events_df = preceding_events_df[(preceding_events_df['NodeLoc'].str.contains(node)) & (preceding_events_df['SubSys'] == current_subsys_name) & ((preceding_events_df['AlertFlagLabel'] == '-') | (preceding_events_df['AlertFlagLabel'] == alarm_name))]
+                preceding_events_df = preceding_events_df[(preceding_events_df['NodeLoc'].str.contains(node)) & (preceding_events_df['SubSys'] == current_subsys_name) & (preceding_events_df['AlertFlagLabel'] == '-')]
                 
                 # Get the number of lines in preceding_events_df
                 if len(preceding_events_df) >= 1:
@@ -120,9 +118,9 @@ def GenMatrices():
     sequences_file_dedup = f"./BGL_Brain_results/{slide_window_suffix}_alarm_sequences_FixWindow_dedup.csv"
 
     # Count the number of alarms in df_sequences
-    #df_sequences_original = pd.read_csv(sequences_file, header=0)
-    #num_alarms = df_sequences_original['IsAlarm'].sum()
-    #print(f"Total number of alarms in sequences: {num_alarms}")
+    # df_sequences_original = pd.read_csv(sequences_file, header=0)
+    # num_alarms = df_sequences_original['IsAlarm'].sum()
+    # print(f"Total number of alarms in sequences: {num_alarms}")
 
     print("Sequences generated successfully!")
     remove_duplicates(sequences_file, sequences_file_dedup)
