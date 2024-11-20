@@ -40,7 +40,7 @@ def split_and_aggregate_by_cluster(df, time_interval='30T', error_threshold=5, a
 
     # ******************************************
     # IMPORTANT!!!!!!!!!
-    # Drop the columns corresponding to the Cluster IDs in anomaly_clusters
+    # Drop the columns corresponding to the EventIds in anomaly_clusters
     if anomaly_clusters:
         print("Dropping columns: ", anomaly_clusters)
         cluster_counts.drop(columns = anomaly_clusters, inplace=True)

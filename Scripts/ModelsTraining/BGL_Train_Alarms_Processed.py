@@ -18,7 +18,7 @@ import os
 
 #Exemple: python Train.py 1 1 V1_part1_dedup KERNDTLB 5 1 1 1 10 60 20
 
-if len(sys.argv) >= 7:
+if len(sys.argv) >= 10:
     train_LR = int(sys.argv[1])
     train_RF = int(sys.argv[2])
     window_size = str(sys.argv[3])
@@ -28,7 +28,7 @@ if len(sys.argv) >= 7:
     train_data_size = int(sys.argv[7])
     test_data_size = int(sys.argv[8])
     val_data_size = int(sys.argv[9])
-    
+    file_suffix = str(sys.argv[10])
 else:
     print("Usage: script time_wnd_hours")
     sys.exit(1)
@@ -159,7 +159,7 @@ slide_window_suffix = f"{window_size}_{TH}"
 
 # Ex. KERNDTLB_alarm_occurences_matrix_R30-M0-N9-C-J16-U01_1800_600_350_chrono_dedup
 # Charger la matrice d'occurrence BGL_15min_10_alarm_occurences_matrix_preprocessed.csv
-input_file_path = f"./BGL_Brain_results/BGL_{slide_window_suffix}_alarm_occurences_matrix_preprocessed.csv"
+input_file_path = f"./BGL_Brain_results/BGL_{slide_window_suffix}_alarm_occurences_matrix_preprocessed_{file_suffix}.csv"
 
 full_data = pd.read_csv(input_file_path)
 
@@ -180,7 +180,7 @@ sub_folder = f"BGL_Train_Aggregate_{n_bootstrap_samples}_{slide_window_suffix}"
 if not os.path.exists(f"BGL_Brain_results/{sub_folder}"):
     os.makedirs(f"BGL_Brain_results/{sub_folder}")
 
-with open(f"./BGL_Brain_results/{sub_folder}/{slide_window_suffix}_Training_Set_RF_{sampling_data_desc}_FixWindow_Output.log", "w") as RF_log_file, open(f"./BGL_Brain_results/{sub_folder}/{slide_window_suffix}_Training_Set_LR_{sampling_data_desc}_FixWindow_Output.log", "w") as LR_log_file:
+with open(f"./BGL_Brain_results/{sub_folder}/{slide_window_suffix}_Training_Set_RF_{sampling_data_desc}_FixWindow_Output_{file_suffix}.log", "w") as RF_log_file, open(f"./BGL_Brain_results/{sub_folder}/{slide_window_suffix}_Training_Set_LR_{sampling_data_desc}_FixWindow_Output_{file_suffix}.log", "w") as LR_log_file:
     for bs_index in range(n_bootstrap_samples):
 
         RF_log_file.write(f"Train data size: {train_data_size}, Validation size: {val_data_size}, Test size: {test_data_size}\n\n")

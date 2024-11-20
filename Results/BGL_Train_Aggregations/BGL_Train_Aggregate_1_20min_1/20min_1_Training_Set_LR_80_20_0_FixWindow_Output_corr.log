@@ -1,0 +1,170 @@
+Train data size: 80, Validation size: 0, Test size: 20
+
+./BGL_Brain_results/BGL_20min_1_alarm_occurences_matrix_preprocessed_corr.csv
+
+Data sample 0 - Start index: 0, End index: 1075, Chunk size: 1075
+
+------------------------------------
+--- Linear Regression Classifier - TEST DATA ---
+
+Size of test set: 215
+Size of predicted set: 215
+
+Number of estimators: -1
+Randomize value: 55
+
+Unique classes in TESTS\VALIDATION set: [0 1]
+Unique classes in PREDICTED set: [0 1]
+
+Accuracy: 0.7535
+Recall: 0.99
+AUC: 0.73
+Mean Absolute Error (MAE): 0.25
+R-squared: 0.00
+              precision    recall  f1-score   support
+
+           0       0.98      0.46      0.63        97
+           1       0.69      0.99      0.82       118
+
+    accuracy                           0.75       215
+   macro avg       0.84      0.73      0.72       215
+weighted avg       0.82      0.75      0.73       215
+
+Feature 0 (E1): Coefficient = 0.5231
+Feature 1 (E10): Coefficient = -0.2384
+Feature 2 (E105): Coefficient = 0.0404
+Feature 3 (E112): Coefficient = 0.1000
+Feature 4 (E114): Coefficient = -0.0273
+Feature 5 (E115): Coefficient = -0.0137
+Feature 6 (E116): Coefficient = -0.0091
+Feature 7 (E118): Coefficient = -0.1439
+Feature 8 (E12): Coefficient = -0.0433
+Feature 9 (E122): Coefficient = -0.0046
+Feature 10 (E123): Coefficient = 0.0000
+Feature 11 (E131): Coefficient = 0.0062
+Feature 12 (E133): Coefficient = -0.0698
+Feature 13 (E134): Coefficient = -0.0215
+Feature 14 (E135): Coefficient = -0.0017
+Feature 15 (E136): Coefficient = -0.0165
+Feature 16 (E137): Coefficient = -0.0769
+Feature 17 (E139): Coefficient = -0.0058
+Feature 18 (E14): Coefficient = 0.0026
+Feature 19 (E149): Coefficient = 0.1975
+Feature 20 (E15): Coefficient = -0.0422
+Feature 21 (E156): Coefficient = 0.0043
+Feature 22 (E163): Coefficient = 0.0000
+Feature 23 (E164): Coefficient = 0.0000
+Feature 24 (E165): Coefficient = 0.0000
+Feature 25 (E168): Coefficient = 0.9365
+Feature 26 (E17): Coefficient = -0.5127
+Feature 27 (E170): Coefficient = -0.0174
+Feature 28 (E174): Coefficient = -0.0796
+Feature 29 (E18): Coefficient = -0.0046
+Feature 30 (E183): Coefficient = -1.5111
+Feature 31 (E184): Coefficient = -0.7314
+Feature 32 (E186): Coefficient = -0.0091
+Feature 33 (E190): Coefficient = -0.0079
+Feature 34 (E195): Coefficient = 0.0000
+Feature 35 (E200): Coefficient = -0.3971
+Feature 36 (E211): Coefficient = -0.0126
+Feature 37 (E212): Coefficient = -0.2113
+Feature 38 (E213): Coefficient = -0.0465
+Feature 39 (E216): Coefficient = -0.0588
+Feature 40 (E217): Coefficient = -0.0186
+Feature 41 (E218): Coefficient = 0.0043
+Feature 42 (E221): Coefficient = -0.3419
+Feature 43 (E226): Coefficient = 0.0000
+Feature 44 (E241): Coefficient = -0.0045
+Feature 45 (E242): Coefficient = -0.0156
+Feature 46 (E245): Coefficient = -0.0261
+Feature 47 (E250): Coefficient = 0.0000
+Feature 48 (E251): Coefficient = 0.0000
+Feature 49 (E252): Coefficient = 0.0000
+Feature 50 (E258): Coefficient = 0.4188
+Feature 51 (E261): Coefficient = 0.0028
+Feature 52 (E262): Coefficient = 0.0028
+Feature 53 (E263): Coefficient = 0.0028
+Feature 54 (E264): Coefficient = 0.0028
+Feature 55 (E265): Coefficient = 0.0028
+Feature 56 (E266): Coefficient = 0.0028
+Feature 57 (E267): Coefficient = 0.0030
+Feature 58 (E268): Coefficient = 0.0997
+Feature 59 (E269): Coefficient = 0.0028
+Feature 60 (E270): Coefficient = 0.0028
+Feature 61 (E271): Coefficient = 0.0028
+Feature 62 (E272): Coefficient = 0.0028
+Feature 63 (E273): Coefficient = 0.0028
+Feature 64 (E274): Coefficient = 0.0028
+Feature 65 (E275): Coefficient = 0.0069
+Feature 66 (E276): Coefficient = 0.0030
+Feature 67 (E277): Coefficient = 0.0028
+Feature 68 (E278): Coefficient = 0.0028
+Feature 69 (E279): Coefficient = 0.0000
+Feature 70 (E281): Coefficient = 0.0028
+Feature 71 (E285): Coefficient = 0.0030
+Feature 72 (E286): Coefficient = 0.0030
+Feature 73 (E287): Coefficient = 0.0057
+Feature 74 (E288): Coefficient = -0.0046
+Feature 75 (E295): Coefficient = 0.0000
+Feature 76 (E297): Coefficient = 0.0059
+Feature 77 (E298): Coefficient = 0.0057
+Feature 78 (E302): Coefficient = 0.0000
+Feature 79 (E31): Coefficient = 0.0000
+Feature 80 (E318): Coefficient = -0.1278
+Feature 81 (E321): Coefficient = 0.0215
+Feature 82 (E327): Coefficient = 0.0000
+Feature 83 (E328): Coefficient = 0.0000
+Feature 84 (E329): Coefficient = -0.0007
+Feature 85 (E339): Coefficient = -0.8959
+Feature 86 (E34): Coefficient = 0.0000
+Feature 87 (E340): Coefficient = -0.0633
+Feature 88 (E345): Coefficient = 1.2773
+Feature 89 (E35): Coefficient = 0.0000
+Feature 90 (E352): Coefficient = -0.0436
+Feature 91 (E353): Coefficient = -0.0477
+Feature 92 (E354): Coefficient = 0.0381
+Feature 93 (E36): Coefficient = 0.0000
+Feature 94 (E370): Coefficient = -0.2932
+Feature 95 (E38): Coefficient = 0.0000
+Feature 96 (E382): Coefficient = -0.3095
+Feature 97 (E384): Coefficient = -0.0001
+Feature 98 (E386): Coefficient = -0.0181
+Feature 99 (E388): Coefficient = -0.0039
+Feature 100 (E39): Coefficient = 0.0000
+Feature 101 (E40): Coefficient = 0.0000
+Feature 102 (E400): Coefficient = -0.1043
+Feature 103 (E403): Coefficient = 0.0043
+Feature 104 (E413): Coefficient = 0.8761
+Feature 105 (E421): Coefficient = 0.1878
+Feature 106 (E433): Coefficient = -0.1177
+Feature 107 (E442): Coefficient = -0.4936
+Feature 108 (E445): Coefficient = 0.1577
+Feature 109 (E45): Coefficient = 0.0000
+Feature 110 (E452): Coefficient = 0.2729
+Feature 111 (E456): Coefficient = 1.2339
+Feature 112 (E46): Coefficient = 0.0000
+Feature 113 (E468): Coefficient = 0.0013
+Feature 114 (E47): Coefficient = 0.0000
+Feature 115 (E486): Coefficient = 0.0000
+Feature 116 (E488): Coefficient = 0.0032
+Feature 117 (E49): Coefficient = 0.0000
+Feature 118 (E50): Coefficient = 0.0000
+Feature 119 (E508): Coefficient = 0.0000
+Feature 120 (E52): Coefficient = 0.0000
+Feature 121 (E55): Coefficient = 0.0000
+Feature 122 (E57): Coefficient = 0.0000
+Feature 123 (E63): Coefficient = 0.0000
+Feature 124 (E70): Coefficient = 0.0000
+Feature 125 (E77): Coefficient = 0.0000
+Feature 126 (E78): Coefficient = 0.0000
+Feature 127 (E79): Coefficient = 0.0000
+Feature 128 (E8): Coefficient = 0.0463
+Feature 129 (E81): Coefficient = 0.0000
+Feature 130 (E82): Coefficient = 0.0000
+Feature 131 (E83): Coefficient = 0.0000
+Feature 132 (E87): Coefficient = 0.0000
+Feature 133 (E88): Coefficient = 0.0000
+Feature 134 (E93): Coefficient = 0.0000
+Feature 135 (E97): Coefficient = 0.0000
+------------------------------------
+
